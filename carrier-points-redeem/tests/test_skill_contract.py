@@ -16,16 +16,15 @@ from urllib.parse import parse_qs, urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 ENTRY = "SKILL.md"
 # Include the entry itself: counting only child files hid the largest fixed cost.
+# The Cola phone-fee fast path is inlined in the entry, so those branches read nothing else.
+ENTRY_BUDGET = 6500
 READ_PATHS = {
-    "联通话费方法": (["skills/cucc-points-redeem/references/phonefee-text.md"], 3000),
-    # Includes same-page recovery when the login URL lands on the homepage.
-    "移动": (["skills/cmcc-points-redeem/GUIDE.md"], 4100),
-    "联通查询": (["skills/cucc-points-redeem/GUIDE.md"], 4300),
+    "移动 / 联通话费 / 电信": ([], ENTRY_BUDGET),
+    "移动异常核对": (["skills/cmcc-points-redeem/GUIDE.md"], 8400),
+    "联通异常核对": (["skills/cucc-points-redeem/GUIDE.md"], 8600),
     "联通选品": (["skills/cucc-points-redeem/GUIDE.md",
-                 "skills/cucc-points-redeem/references/redemption-types.md"], 5600),
-    # Conservatively count the complete adapter even though only its mobile section is needed.
-    "电信直达登录": (["skills/ct-points-redeem/GUIDE.md"], 5100),
-    "电信登录后兑换适配": (["skills/ct-points-redeem/GUIDE.md", "references/browser.md"], 7800),
+                 "skills/cucc-points-redeem/references/redemption-types.md"], 9900),
+    "电信电脑查询": (["skills/ct-points-redeem/GUIDE.md"], 9500),
 }
 EXAMPLE_NUMBERS = {"13800138000", "13900139000", "13900000000"}
 LINK = re.compile(r"\[[^\]]*\]\(([^)\s]+)\)")
@@ -75,7 +74,7 @@ class SkillBundle(unittest.TestCase):
 
     def test_context_budgets(self):
         entry_size = len((ROOT / ENTRY).read_text(encoding="utf-8"))
-        self.assertLessEqual(entry_size, 2500)
+        self.assertLessEqual(entry_size, ENTRY_BUDGET)
         for name, (paths, budget) in READ_PATHS.items():
             with self.subTest(name=name):
                 size = entry_size + sum(len((ROOT / p).read_text(encoding="utf-8"))
@@ -127,6 +126,45 @@ class DirectLoginEntries(unittest.TestCase):
         self.assertEqual(inner["channelCode"], ["HGOKHD"])
         self.assertEqual(inner["ssoType"], ["1"])
         self.assertEqual(inner["errPage"], ["https://cdn.img.telefen.com/webstatic/sso/error.html?msg="])
+
+
+class ColaFastPath(unittest.TestCase):
+    """The onboarding branches must work from the inlined entry alone."""
+
+    def setUp(self):
+        self.text = (ROOT / ENTRY).read_text(encoding="utf-8")
+
+    def test_mobile_login_url_and_browser_bridge_are_inline(self):
+        self.assertIn('"targetUrl":"https://jf.10086.cn/#/loginPage?back=true"', self.text)
+        self.assertIn("select:browser", self.text)
+        self.assertIn("tool_call", self.text)
+        self.assertIn('"profile":"cola"', self.text)
+
+    def test_unicom_sms_text_is_inline_and_verbatim(self):
+        for line in ("感谢用户 **林福灿** 提供以下联通积分换话费方法：",
+                     "先查可兑面额：编辑 5011 发到 10010",
+                     "再兑换：编辑 JFCZ#金额 发到 10010，例如 JFCZ#10 就是兑 10 元",
+                     "按回复Y确认兑换，话费实时到账"):
+            self.assertIn(line, self.text)
+        self.assertNotIn("\u200b", self.text)
+        self.assertNotIn("uac.10010.com", self.text)
+
+    def test_telecom_goes_to_the_phone_without_the_browser(self):
+        self.assertIn("https://apps.telefen.com/jycalls/?channelCode=HGOKHD", self.text)
+        self.assertIn("**不开浏览器**", self.text)
+
+    def test_laicai_task_is_closed_with_both_outcomes(self):
+        self.assertIn("laicai_task_done", self.text)
+        self.assertIn("`claimed`", self.text)
+        self.assertIn("`failed`", self.text)
+
+    def test_onboarding_asks_the_carrier_instead_of_inferring_it(self):
+        self.assertIn("你用的是哪家运营商？回复「移动」「联通」或「电信」就行。", self.text)
+        self.assertIn("**不从中推断**", self.text)
+
+    def test_entry_does_not_ask_for_a_phone_number(self):
+        self.assertIn("**不要手机号**", self.text)
+        self.assertNotRegex(self.text, MOBILE)
 
 
 class ExistingSubmissionGuards(unittest.TestCase):
