@@ -1,0 +1,13 @@
+{
+  "_说明": "页面规则模板。复制一份改 match / signature / elements。",
+  "name": "example-login",
+  "match": "example\\.com/login",
+  "signature": "",
+  "elements": {
+    "username": "css:#username",
+    "password": "css:#password",
+    "submit": "css:#submit",
+    "errorTip": "text~:错误"
+  },
+  "exit": { "urlMatches": "example\\.com/home" }
+}

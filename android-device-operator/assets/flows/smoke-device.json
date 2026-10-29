@@ -1,0 +1,13 @@
+{
+  "name": "smoke：装完先跑这个",
+  "channel": "device",
+  "_说明": "用 device 通道打开 example.com 并确认加载。不需要任何 App 的调试开关，能验证 adb 链路是通的。",
+  "defaultTimeout": 30,
+  "steps": [
+    {
+      "name": "打开 example.com",
+      "act": { "op": "navigate", "url": "https://example.com/" },
+      "expect": { "textMatches": "Example|example" }
+    }
+  ]
+}

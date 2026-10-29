@@ -1,0 +1,29 @@
+{
+  "name": "示例：三层验证的表单流程",
+  "_说明": "演示每种 expect 写法。跑之前把 urlPart 和选择器换成目标页的真实值。",
+  "target": { "urlPart": "example.com/form" },
+  "defaultTimeout": 8,
+  "steps": [
+    {
+      "name": "页面就位",
+      "expect": { "text": "请填写" }
+    },
+    {
+      "name": "填姓名",
+      "act": { "op": "type", "ref": "css:#name", "text": "张三" },
+      "expect": { "value": "张三", "ref": "css:#name" }
+    },
+    {
+      "name": "填手机号",
+      "act": { "op": "type", "ref": "css:#phone", "text": "13800000000" },
+      "expect": { "value": "13800000000", "ref": "css:#phone" }
+    },
+    {
+      "name": "提交",
+      "act": { "op": "click", "ref": "css:#submit" },
+      "expect": { "text": "提交成功" },
+      "timeout": 10,
+      "retries": 1
+    }
+  ]
+}
