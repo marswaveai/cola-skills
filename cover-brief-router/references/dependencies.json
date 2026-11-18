@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "verified_date": "2026-11-18",
+  "source_policy": "Official public GitHub codeload archives pinned to commits verified with git ls-remote HEAD. Install only requested subtrees; never update existing skills or user configuration.",
+  "dependencies": [
+    {
+      "id": "gbro-cover-design",
+      "family": "gbro",
+      "folder": "gbro-cover-design",
+      "aliases": [],
+      "repo": "pyang5166/gbro-cover-design",
+      "ref": "8d1a0a5487e9ee6539b2b0a471b58469aadfedd6",
+      "verified_branch": "main",
+      "subdir": "",
+      "required": ["SKILL.md", "references/examples.md", "references/style-01-深色渐变风.md", "references/style-02-纯色扁平风.md", "references/style-03-产品主视觉风.md", "references/style-04-对比卡片风.md", "references/style-05-极简留白风.md", "references/style-06-海报拼贴风.md", "references/style-07-人物侧置留白风.md", "references/style-08-背影构图风.md", "references/style-09-局部出镜风.md", "references/style-10-正面对视风.md"]
+    },
+    {
+      "id": "guizang-social-card-skill",
+      "family": "guizang",
+      "folder": "guizang-social-card-skill",
+      "aliases": [],
+      "repo": "op7418/guizang-social-card-skill",
+      "ref": "64d02d435fb092d3b403455a875e842fc8f29b8b",
+      "verified_branch": "main",
+      "subdir": "",
+      "required": ["SKILL.md", "references/style-system.md", "references/platform-specs.md", "references/production-workflow.md", "assets/template-swiss-card.html", "assets/template-editorial-card.html"]
+    },
+    {
+      "id": "heytea-doodle-poster",
+      "family": "heytea",
+      "folder": "heytea-style",
+      "aliases": ["heytea-style"],
+      "repo": "Hchen1218/heytea-style",
+      "ref": "d5125372adcc945c2314cfb649c50407379a18ab",
+      "verified_branch": "main",
+      "subdir": "",
+      "required": ["SKILL.md", "references/style-guide.md", "references/lettering-guide.md"]
+    },
+    {
+      "id": "article2media",
+      "family": "article2media",
+      "folder": "article2media",
+      "aliases": [],
+      "repo": "threerocks/article2media",
+      "ref": "772d3402655d5223002d48713d9b8af3bc7fda99",
+      "verified_branch": "main",
+      "subdir": "skills/article2media",
+      "layout_note": "The current official repository has no root SKILL.md; the entry skill and its shared engine live at skills/article2media. Nonrequested sibling skills and .claude symlinks are not extracted.",
+      "required": ["SKILL.md", "references/pipeline.md", "references/styles.md", "engine/scripts/doctor.mjs", "engine/scripts/render.mjs", "engine/themes/catalog.json", "engine/layouts/card.css"],
+      "external_skill_dependencies": ["article-fetch", "video-transcript", "article-rewrite", "article-translate", "long-image", "image-cards", "wechat-layout", "explainer-video", "logic-whiteboard", "article-comic"]
+    },
+    {
+      "id": "ip-illustration-character-system",
+      "family": "ip",
+      "folder": "ip-illustration-for-yourself",
+      "aliases": ["ip-illustration-for-yourself", "ip_illustration_for_yourself"],
+      "repo": "EverettFish/ip_illustration_for_yourself",
+      "ref": "6b0cb54e63fb270bb0c966991795d89d15499e76",
+      "verified_branch": "main",
+      "subdir": "",
+      "required": ["SKILL.md", "references/core-style-and-identity.md", "references/article-illustrations.md", "references/infographics.md", "references/photo-fusion.md", "references/sticker-sheets.md", "references/scene-avatars.md"]
+    },
+    {
+      "id": "punk-cover",
+      "family": "punk",
+      "folder": "punk-cover",
+      "aliases": ["punk-skill-punk-cover"],
+      "repo": "adrianpunk/Punk-Skill",
+      "ref": "15b816cea5dcc7a3b028561d34604246369939b0",
+      "verified_branch": "main",
+      "subdir": "skills/punk-cover",
+      "required": ["SKILL.md", "references/style-catalog.md", "references/cover-prompt-blueprint.md"],
+      "copy_resources": [{"source": "styles", "target": "styles"}],
+      "patch_files": ["SKILL.md", "references/style-catalog.md"]
+    },
+    {
+      "id": "punk-avatar",
+      "family": "punk",
+      "folder": "punk-avatar",
+      "aliases": ["punk-skill-punk-avatar"],
+      "repo": "adrianpunk/Punk-Skill",
+      "ref": "15b816cea5dcc7a3b028561d34604246369939b0",
+      "verified_branch": "main",
+      "subdir": "skills/punk-avatar",
+      "required": ["SKILL.md", "references/style-catalog.md", "references/avatar-prompt-blueprint.md"],
+      "copy_resources": [{"source": "styles", "target": "styles"}],
+      "patch_files": ["SKILL.md", "references/style-catalog.md"]
+    },
+    {
+      "id": "baoyu-cover-image",
+      "family": "baoyu",
+      "folder": "baoyu-cover-image",
+      "aliases": ["baoyu-skills-baoyu-cover-image"],
+      "repo": "JimLiu/baoyu-skills",
+      "ref": "ca703c2d7c2c4399a1dc0cf82224f8551e05a96d",
+      "verified_branch": "main",
+      "subdir": "skills/baoyu-cover-image",
+      "required": ["SKILL.md", "references/base-prompt.md", "references/types.md", "references/style-presets.md", "references/workflow/prompt-template.md"],
+      "required_any": [["references/renderings/flat-vector.md", "references/renderings/hand-drawn.md"]]
+    },
+    {
+      "id": "baoyu-image-gen",
+      "family": "baoyu",
+      "folder": "baoyu-image-gen",
+      "aliases": ["baoyu-skills-baoyu-image-gen"],
+      "repo": "JimLiu/baoyu-skills",
+      "ref": "ca703c2d7c2c4399a1dc0cf82224f8551e05a96d",
+      "verified_branch": "main",
+      "subdir": "skills/baoyu-image-gen",
+      "required": ["SKILL.md", "scripts/main.ts", "scripts/types.ts", "scripts/providers/openai.ts", "scripts/providers/google.ts", "references/usage-examples.md"],
+      "required_any": [["references/config/preferences-schema.md", "references/config/first-time-setup.md"]]
+    },
+    {
+      "id": "baoyu-xhs-images",
+      "family": "baoyu",
+      "folder": "baoyu-xhs-images",
+      "aliases": ["baoyu-skills-baoyu-xhs-images"],
+      "repo": "JimLiu/baoyu-skills",
+      "ref": "ca703c2d7c2c4399a1dc0cf82224f8551e05a96d",
+      "verified_branch": "main",
+      "subdir": "skills/baoyu-xhs-images",
+      "required": ["SKILL.md", "references/style-presets.md", "references/workflows/outline-template.md", "references/workflows/prompt-assembly.md"],
+      "required_any": [["references/presets/cute.md", "references/presets/bold.md"], ["references/elements/canvas.md", "references/layouts.md"]]
+    }
+  ]
+}
