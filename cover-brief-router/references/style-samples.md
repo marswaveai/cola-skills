@@ -15,9 +15,9 @@
 | 7 | 黑红剪影 | assets/style-samples/07-黑红剪影-Punk作者例图.webp | punk-cover | https://colaskill.com/skills/zh/punk-skill/ ；https://files.meetcola.com/skill-hub/readmes/punk-skill/f4d94dd6.webp |
 | 8 | 产品界面主视觉 | assets/style-samples/08-GBro作者示例-下一代Agent来了.webp | gbro-cover-design | https://colaskill.com/skills/zh/gbro-cover-design/ ；作者安装包 README 效果区 assets/examples/02-下一代Agent来了.webp |
 | 9 | 实物照片＋手写涂鸦 | assets/style-samples/09-实物手写涂鸦-喜茶风作者例图.webp | heytea-doodle-poster | https://colaskill.com/skills/zh/heytea-style/ ；https://files.meetcola.com/skill-hub/readmes/heytea-style/30e7cdac.webp |
-| 10 | 摄影杂志封面 | assets/style-samples/10-摄影杂志-归藏新制样张.png | guizang-social-card-skill视觉规范 | 本次新制；提示词 assets/sample-prompts/10-归藏.md；详见 new-case-records.md；不是HTML渲染实测 |
-| 11 | 暖色绘画隐喻 | assets/style-samples/11-暖色绘画-宝玉新制样张.png | baoyu-cover-image | 本次新制；提示词 assets/sample-prompts/11-宝玉.md；metaphor＋warm＋painterly；详见 new-case-records.md |
-| 12 | 萌粒角色阅读 | assets/style-samples/12-角色阅读-萌粒IP新制样张.png | ip-illustration-character-system | 本次新制；提示词 assets/sample-prompts/12-萌粒IP.md；原创示例角色；详见 new-case-records.md |
+| 10 | 摄影杂志封面 | assets/style-samples/10-摄影杂志-归藏新制样张.webp | guizang-social-card-skill视觉规范 | 本次新制；提示词 assets/sample-prompts/10-归藏.md；详见 new-case-records.md；不是HTML渲染实测 |
+| 11 | 暖色绘画隐喻 | assets/style-samples/11-暖色绘画-宝玉新制样张.webp | baoyu-cover-image | 本次新制；提示词 assets/sample-prompts/11-宝玉.md；metaphor＋warm＋painterly；详见 new-case-records.md |
+| 12 | 萌粒角色阅读 | assets/style-samples/12-角色阅读-萌粒IP新制样张.webp | ip-illustration-character-system | 本次新制；提示词 assets/sample-prompts/12-萌粒IP.md；原创示例角色；详见 new-case-records.md |
 
 2026-11-17 核实：八张均为作者现有例图，已下载/从安装包复制并核对来源，文件均能读取。其中 1–3、8 已做看图核验，4–7 的风格标签来自作者页面；没有生成新的例图。GBro 技能站介绍显示 10 种构图；Punk 技能站当前风格例图区显示 24 种封面风格，不等于本机源码全部风格数量。
 

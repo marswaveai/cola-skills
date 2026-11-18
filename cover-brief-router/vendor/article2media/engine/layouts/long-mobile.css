@@ -1,0 +1,53 @@
+/* Layout: long, phone width (the default) — one column, 540 CSS px wide → 1080 px at 2x, so the body text
+   is readable on a phone without zooming. Loaded after long.css; every rule is scoped to .m so it also wins
+   over a theme's size tweaks for the wide (1200 px, two-column) page. */
+
+body:has(.m) { width: 540px; }
+.page.m { width: 540px; padding: 30px 30px 28px; font-size: 17.5px; line-height: 1.8; }
+
+.m .pg-top { font-size: 11.5px; }
+.m .pg-title { font-size: calc(var(--fs-title, 58px) * .8); line-height: 1.18; margin-top: 22px; }
+.m .pg-part { font-size: 15.5px; }
+.m .pg-intro { font-size: 17.5px; line-height: 1.8; padding-bottom: 20px; }
+.m .pg-head.has-hero { flex-direction: column-reverse; gap: 0; }
+.m .pg-hero { flex: none; width: 100%; height: 300px; margin-top: 14px; }
+
+.m .sec { display: block; padding-top: 24px; padding-bottom: 26px; }
+.m .sec.solo .sec-text { max-width: none; }
+.m .sec-label { font-size: 12px; }
+.m .sec-h { font-size: calc(var(--fs-h2, 34px) * .9); margin: 10px 0 12px; }
+.m .sec-text p { margin-bottom: 12px; }
+.m .sec-bullets li { margin-bottom: 8px; }
+.m .sec-take { font-size: 17.5px; font-weight: 700; margin-top: 12px; }
+
+/* Figures: one per row, drawn 1.5x so the text inside them matches the body size. */
+.m .sec-vis { margin-top: 18px; gap: 14px; padding-top: 0; }
+.m .figs { grid-template-columns: 1fr; gap: 14px; }
+.m .fig-card { padding: 12px 12px 14px; }
+.m .fig-id { font-size: 11px; }
+.m .fig-canvas, .m .figs-1 .fig-canvas { height: 196px; zoom: 1.5; }
+.m .fig-cap { font-size: 14.5px; }
+
+.m .panel { padding: 14px 16px 16px; }
+.m .p-title { font-size: 13px; }
+.m .p-table .row { grid-template-columns: 104px 1fr; gap: 14px; font-size: 15.5px; }
+.m .cards.c3 { grid-template-columns: 1fr; }
+.m .cards.c2 { grid-template-columns: 1fr 1fr; }
+.m .p-card { font-size: 14.5px; padding: 12px 14px; }
+.m .p-card .t { font-size: 15.5px; }
+.m .p-quote .q { font-size: 16.5px; }
+.m .p-quote .n { font-size: 14px; }
+
+.m .sec-checklist .sec-h { font-size: calc(var(--fs-h2, 34px) * .9); }
+.m .cl-grid { grid-template-columns: 1fr; gap: 14px; margin-top: 16px; }
+.m .cl-label { font-size: 12.5px; }
+.m .cl-title { font-size: 20px; }
+.m .cl-card li { font-size: 15.5px; }
+.m .cl-done { font-size: 14.5px; }
+.m .cl-guard-note, .m .cl-note { font-size: 13.5px; }
+
+.m .pg-closing { padding: 22px 12px; font-size: 18px; }
+.m .pg-foot { flex-direction: column; align-items: flex-start; gap: 14px; padding-top: 20px; }
+.m .pg-src { font-size: 12px; max-width: none; }
+.m .pg-brand { text-align: left; }
+.m .pg-brand-name { font-size: 21px; }

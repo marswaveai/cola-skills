@@ -1,0 +1,82 @@
+/* glass | 液态玻璃：暖灰底上的彩色柔光、半透明磨砂玻璃卡片、细白高光描边与大圆角，像新一代手机系统界面；适合给普通用户看的 AI 应用、数码与智能汽车新品、科技趋势 */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=block');
+:root {
+  --font-head: 'Plus Jakarta Sans', 'Noto Sans SC', 'PingFang SC', sans-serif;
+  --font-body: 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --bg: #EEEAE5;
+  --ink: #1D1C1A;
+  --muted: #6B665F;
+  --rule: rgba(29, 28, 26, .14);
+  --rule-soft: rgba(29, 28, 26, .08);
+  --fig-bg: rgba(255, 255, 255, .62);
+  --card: rgba(255, 255, 255, .78);
+  --on-acc: #FFFFFF;
+  --radius: 26px;
+  --radius-sm: 14px;
+  --panel-mix: 0%;
+  --w-title: 800;
+  --w-h2: 800;
+  --sec-rule: 1px solid rgba(29, 28, 26, .1);
+  --glass-edge: inset 0 1.5px 0 rgba(255, 255, 255, .95), inset 0 0 0 1px rgba(255, 255, 255, .7);
+  --glass-shadow: 0 24px 48px -28px rgba(70, 55, 40, .38);
+  --card-shadow: var(--glass-edge), var(--glass-shadow);
+  --guard-bg: rgba(29, 28, 26, .86);
+  --guard-ink: #F6F3EF;
+  --guard-muted: #B9B3AA;
+  --guard-x: #FF8FA3;
+  --accent-1: #6F5CE0;
+  --accent-2: #D6466C;
+  --accent-3: #1A80B8;
+  --accent-4: #16946C;
+  --accent-5: #C2621A;
+  --accent-6: #9B4FD1;
+}
+/* Soft colored light behind the glass */
+.page, .card {
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(42% 30% at 88% 6%, rgba(247, 186, 160, .75), transparent 70%),
+    radial-gradient(40% 32% at 8% 30%, rgba(204, 192, 250, .7), transparent 72%),
+    radial-gradient(44% 30% at 92% 62%, rgba(170, 214, 242, .65), transparent 72%),
+    radial-gradient(40% 26% at 12% 92%, rgba(186, 234, 214, .65), transparent 72%);
+}
+.page { background-size: 100% 2400px; background-repeat: repeat-y; }
+.card { isolation: isolate; }
+/* Halo ring on the cover */
+.c-cover::before {
+  content: ""; position: absolute; z-index: -1; right: -120px; top: -130px; width: 320px; height: 320px; border-radius: 50%; opacity: .9;
+  background: conic-gradient(#FFC2A6, #E7C7FF, #A3D3F3, #BFEEDB, #FFE0AE, #FFC2A6);
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 30px), #000 calc(100% - 28px), #000 calc(100% - 2px), transparent);
+  mask: radial-gradient(farthest-side, transparent calc(100% - 30px), #000 calc(100% - 28px), #000 calc(100% - 2px), transparent);
+}
+/* Titles: ink fading to warm gray */
+.pg-title, .cv-title { letter-spacing: -.02em; background: linear-gradient(180deg, #2B2826 35%, #77706A); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.pg-title b, .cv-title b { background: linear-gradient(120deg, #6F5CE0, #E0567A 60%, #E8894A); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.sec-h, .card .sec-h { letter-spacing: -.01em; }
+.pg-part { font-weight: 700; }
+.cv-kicker { display: inline-block; align-self: flex-start; padding: 4px 14px; border-radius: 999px; background: rgba(255, 255, 255, .7); box-shadow: var(--glass-edge); color: var(--ink); font-weight: 500; }
+.cv-rule { width: 56px; height: 5px; border-radius: 5px; background: linear-gradient(90deg, #6F5CE0, #E0567A); }
+.card .sec-label { background: rgba(255, 255, 255, .7); box-shadow: var(--glass-edge); border-radius: 999px; color: var(--acc-text); }
+/* Frosted glass panels */
+.fig-card, .c-fig-card, .panel, .cv-toc, .c-stage, .cl-card, .c-take, .sec-take {
+  background: linear-gradient(155deg, rgba(255, 255, 255, .88), rgba(255, 255, 255, .58) 45%, rgba(255, 255, 255, .7));
+  box-shadow: var(--glass-edge), var(--glass-shadow);
+  -webkit-backdrop-filter: blur(18px) saturate(1.3); backdrop-filter: blur(18px) saturate(1.3);
+}
+.panel .p-card, .panel .q { background: rgba(255, 255, 255, .72); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .9); }
+.box { background: rgba(255, 255, 255, .8); border-width: 1.2px; border-radius: 12px; }
+.box.hl { background: linear-gradient(135deg, var(--acc), color-mix(in srgb, var(--acc) 70%, #FFFFFF)); border-color: transparent; }
+.hb-bar { border-radius: 99px; }
+.cmp-col { border-radius: 16px; }
+.c-take { border-left: 0; border-radius: var(--radius-sm); }
+.sec-take { display: inline-block; padding: 8px 16px; border-radius: var(--radius-sm); font-weight: 700; }
+.c-take::before, .sec-take::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--acc); margin-right: 9px; vertical-align: 2px; }
+/* Checklists */
+.cl-card { border-top: 0; border-radius: var(--radius-sm); }
+.cl-done { border-radius: 0 0 var(--radius-sm) var(--radius-sm); background: rgba(255, 255, 255, .5); }
+.c-stage { border-left: 0; border-radius: var(--radius-sm); }
+.c-stage-h small, .cl-label { color: var(--acc-text); }
+.c-box, .cl-box { border-radius: 50%; }
+.c-guard, .cl-guard { -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px); border-radius: var(--radius-sm); }
+.end-cta { background: linear-gradient(120deg, #6F5CE0, #E0567A); border-radius: 999px; box-shadow: 0 12px 24px -12px rgba(111, 92, 224, .6); }
+.pg-closing { border: 0; border-radius: var(--radius); background: rgba(255, 255, 255, .55); box-shadow: var(--glass-edge); margin-top: 6px; }

@@ -1,0 +1,197 @@
+{
+  "_comment": "口播视频的字幕样式：每个主题选一个预设（pill 卡片 / sticker 描边贴纸 / block 硬框 / ink 无框墨字 / marker 荧光笔 / cinema 电影字幕 / glass 毛玻璃），再用 --cap-* 变量取主题自己的颜色和字体。预设在 layouts/video.css。没列出的主题用 default。",
+  "default": {
+    "style": "pill"
+  },
+  "bento": {
+    "style": "pill",
+    "vars": {
+      "--cap-radius": "16px",
+      "--cap-key": "#2F6BFF",
+      "--cap-shadow": "0 10px 26px -14px rgba(20,22,26,.45)"
+    }
+  },
+  "brutal": {
+    "style": "block",
+    "vars": {
+      "--cap-bg": "#FFFFFF",
+      "--cap-fg": "#111111",
+      "--cap-border": "3px solid #111111",
+      "--cap-shadow": "5px 5px 0 #111111",
+      "--cap-radius": "4px",
+      "--cap-weight": "900",
+      "--cap-key": "#111111",
+      "--cap-key-bg": "#FFD23F"
+    }
+  },
+  "cloud": {
+    "style": "ink",
+    "vars": {
+      "--cap-weight": "600",
+      "--cap-track": ".08em",
+      "--cap-key": "#5E7C68"
+    }
+  },
+  "collage": {
+    "style": "block",
+    "vars": {
+      "--cap-bg": "#2A2520",
+      "--cap-fg": "#FFFDF7",
+      "--cap-key": "#F2B33D",
+      "--cap-font": "var(--font-head)",
+      "--cap-weight": "700",
+      "--cap-radius": "0",
+      "--cap-shadow": "3px 3px 0 rgba(42,37,32,.25)"
+    }
+  },
+  "dopamine": {
+    "style": "sticker",
+    "vars": {
+      "--cap-stroke": "#2A1F3D",
+      "--cap-key": "#FF4FA0",
+      "--cap-drop": "0 4px 0 rgba(42,31,61,.9)",
+      "--cap-stroke-w": "5px"
+    }
+  },
+  "earth": {
+    "style": "ink",
+    "vars": {
+      "--cap-weight": "700",
+      "--cap-track": ".05em",
+      "--cap-key": "#A8481F"
+    }
+  },
+  "editorial": {
+    "style": "ink",
+    "vars": {
+      "--cap-weight": "700",
+      "--cap-track": ".06em",
+      "--cap-key": "#2f5e4e"
+    }
+  },
+  "film": {
+    "style": "cinema",
+    "vars": {
+      "--cap-fg": "#F3ECE0",
+      "--cap-key": "#F2C27B",
+      "--cap-track": ".08em"
+    }
+  },
+  "glass": {
+    "style": "glass",
+    "vars": {
+      "--cap-key": "#6F5CE0"
+    }
+  },
+  "guochao": {
+    "style": "ink",
+    "vars": {
+      "--cap-weight": "800",
+      "--cap-track": ".06em",
+      "--cap-key": "#FFF3DC",
+      "--cap-key-bg": "#B01E17",
+      "--cap-key-pad": "0 .14em"
+    }
+  },
+  "memo": {
+    "style": "marker",
+    "vars": {
+      "--cap-weight": "600",
+      "--cap-mark": "rgba(255,204,0,.6)",
+      "--cap-font": "'PingFang SC', 'Noto Sans SC', sans-serif"
+    }
+  },
+  "midnight": {
+    "style": "pill",
+    "vars": {
+      "--cap-bg": "rgba(22,28,38,.88)",
+      "--cap-border": "1px solid rgba(94,234,212,.38)",
+      "--cap-radius": "10px",
+      "--cap-fg": "#e6e8ee",
+      "--cap-key": "#5eead4",
+      "--cap-shadow": "0 0 24px -6px rgba(94,234,212,.25)"
+    }
+  },
+  "notebook": {
+    "style": "marker",
+    "vars": {
+      "--cap-weight": "700",
+      "--cap-size": "33px",
+      "--cap-mark": "rgba(255,213,79,.62)"
+    }
+  },
+  "pixel": {
+    "style": "block",
+    "vars": {
+      "--cap-bg": "#FFFFFF",
+      "--cap-fg": "#1E1B3A",
+      "--cap-border": "3px solid #1E1B3A",
+      "--cap-shadow": "4px 4px 0 #1E1B3A",
+      "--cap-radius": "0",
+      "--cap-key": "#4B3BFF"
+    }
+  },
+  "pop": {
+    "style": "sticker",
+    "vars": {
+      "--cap-stroke": "#111111",
+      "--cap-key": "#FFC800",
+      "--cap-drop": "0 4px 0 #111111",
+      "--cap-stroke-w": "5px"
+    }
+  },
+  "prosperity": {
+    "style": "pill",
+    "vars": {
+      "--cap-bg": "#FFF8EF",
+      "--cap-border": "3px double #B8924A",
+      "--cap-radius": "10px",
+      "--cap-key": "#8E1B32",
+      "--cap-shadow": "0 8px 20px -12px rgba(59,36,24,.45)"
+    }
+  },
+  "quiet": {
+    "style": "ink",
+    "vars": {
+      "--cap-weight": "600",
+      "--cap-track": ".1em",
+      "--cap-key": "#B6533F"
+    }
+  },
+  "riso": {
+    "style": "marker",
+    "vars": {
+      "--cap-weight": "800",
+      "--cap-mark": "rgba(232,49,143,.42)"
+    }
+  },
+  "shanshui": {
+    "style": "ink",
+    "vars": {
+      "--cap-weight": "600",
+      "--cap-track": ".1em",
+      "--cap-key": "#2B6670"
+    }
+  },
+  "swiss": {
+    "style": "block",
+    "vars": {
+      "--cap-bg": "#111111",
+      "--cap-fg": "#FFFFFF",
+      "--cap-key": "#FF3B2F",
+      "--cap-radius": "0",
+      "--cap-shadow": "none"
+    }
+  },
+  "y2k": {
+    "style": "sticker",
+    "vars": {
+      "--cap-stroke": "#1C1442",
+      "--cap-key": "#FF5CC8",
+      "--cap-drop": "0 3px 0 #7B5CFF",
+      "--cap-font": "var(--font-head)",
+      "--cap-stroke-w": "5px",
+      "--cap-size": "33px"
+    }
+  }
+}

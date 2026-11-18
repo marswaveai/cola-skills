@@ -1,0 +1,53 @@
+/* midnight | 深色科技：近黑底、思源黑体、霓虹主色、圆角卡片与等宽标签，前沿感强；适合技术向的 AI、编程、开发者工具 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=JetBrains+Mono:wght@500&display=block');
+:root {
+  --font-head: 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --font-body: var(--font-head);
+  --font-label: 'JetBrains Mono', ui-monospace, monospace;
+  --bg: #0d1117;
+  --ink: #e6e8ee;
+  --ink-strong: #ffffff;
+  --muted: #8b93a3;
+  --rule: #252c38;
+  --rule-soft: #1d232d;
+  --fig-bg: #151b24;
+  --card: #1c2330;
+  --on-acc: #0d1117;
+  --radius: 14px;
+  --radius-sm: 7px;
+  --panel-mix: 11%;
+  --guard-bg: #05070a;
+  --guard-ink: #e6e8ee;
+  --guard-muted: #7d8696;
+  --guard-x: #fb7185;
+  --warn: #fb7185;
+  --card-shadow: 0 0 0 1px #252c38;
+  --fig-border: 1px solid #1f2632;
+  --accent-1: #5eead4;
+  --accent-2: #a78bfa;
+  --accent-3: #f472b6;
+  --accent-4: #fbbf24;
+  --accent-5: #60a5fa;
+  --accent-6: #a3e635;
+  --accent-7: #fb923c;
+  --accent-8: #38bdf8;
+  --accent-9: #c084fc;
+  --accent-10: #34d399;
+}
+.pg-title { letter-spacing: -.01em; }
+.sec-label, .fig-id { text-transform: uppercase; }
+
+/* Cover: a glow and a faint terminal grid behind the headline */
+.cv-deco { right: -120px; top: -120px; width: 420px; height: 420px; }
+.cv-deco i:nth-child(1) { border-radius: 50%; opacity: 1; background: radial-gradient(closest-side, color-mix(in srgb, var(--acc) 38%, transparent), transparent); }
+.cv-deco i:nth-child(2) {
+  inset: 0; border: 0; border-radius: 0; opacity: .5;
+  background-image: linear-gradient(color-mix(in srgb, var(--acc) 30%, transparent) 1px, transparent 1px), linear-gradient(90deg, color-mix(in srgb, var(--acc) 30%, transparent) 1px, transparent 1px);
+  background-size: 28px 28px; -webkit-mask-image: radial-gradient(closest-side, #000, transparent); mask-image: radial-gradient(closest-side, #000, transparent);
+}
+.cv-deco i:nth-child(3) { display: none; }
+.cv-kicker::before { content: "> "; font-family: var(--font-label); }
+.cv-band .cv-sub { font-weight: 700; }
+.cv-chips span { font-family: var(--font-label), var(--font-body); border-radius: 6px; border-width: 1px; }
+.cv-num b, .cn-num b { text-shadow: 0 0 34px color-mix(in srgb, var(--acc) 55%, transparent); }
+.cv-vs-col.no { background: var(--fig-bg); }

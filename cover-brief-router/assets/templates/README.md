@@ -8,19 +8,19 @@
 
 | # | 文件 | 风格 | 来源技能 |
 |---|---|---|---|
-| 00 | `00-contact-sheet.jpg` | 联系表（12 张总览） | — |
-| 01 | `01-real-person-headline.jpg` | 真人大标题 | gbro-cover-design |
-| 02 | `02-giant-perspective.jpg` | 巨型透视 | punk-cover |
-| 03 | `03-retro-collage.jpg` | 复古手撕拼贴 | punk-cover |
-| 04 | `04-business-magazine.jpg` | 商业杂志头版 | punk-cover |
-| 05 | `05-retro-scifi.jpg` | 复古科幻动画 | punk-cover |
-| 06 | `06-block-world.jpg` | 方块世界 | punk-cover |
-| 07 | `07-black-red-silhouette.jpg` | 黑红剪影 | punk-cover |
-| 08 | `08-product-ui.jpg` | 产品界面主视觉 | gbro-cover-design |
-| 09 | `09-object-doodle.jpg` | 实物照片＋手写涂鸦 | heytea-style |
-| 10 | `10-photo-editorial.jpg` | 摄影杂志 | guizang-social-card-skill |
-| 11 | `11-warm-painting.jpg` | 暖色绘画隐喻 | baoyu-cover-image |
-| 12 | `12-cute-character.jpg` | 萌粒角色 | ip-illustration-for-yourself |
+| 00 | `00-contact-sheet.webp` | 联系表（12 张总览） | — |
+| 01 | `01-real-person-headline.webp` | 真人大标题 | gbro-cover-design |
+| 02 | `02-giant-perspective.webp` | 巨型透视 | punk-cover |
+| 03 | `03-retro-collage.webp` | 复古手撕拼贴 | punk-cover |
+| 04 | `04-business-magazine.webp` | 商业杂志头版 | punk-cover |
+| 05 | `05-retro-scifi.webp` | 复古科幻动画 | punk-cover |
+| 06 | `06-block-world.webp` | 方块世界 | punk-cover |
+| 07 | `07-black-red-silhouette.webp` | 黑红剪影 | punk-cover |
+| 08 | `08-product-ui.webp` | 产品界面主视觉 | gbro-cover-design |
+| 09 | `09-object-doodle.webp` | 实物照片＋手写涂鸦 | heytea-style |
+| 10 | `10-photo-editorial.webp` | 摄影杂志 | guizang-social-card-skill |
+| 11 | `11-warm-painting.webp` | 暖色绘画隐喻 | baoyu-cover-image |
+| 12 | `12-cute-character.webp` | 萌粒角色 | ip-illustration-for-yourself |
 
 ## 说明
 

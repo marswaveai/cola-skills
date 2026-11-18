@@ -1,0 +1,57 @@
+/* bento | 便当格：浅灰底上一块块白色大圆角卡片、清爽黑体、鲜明撞色，像产品发布会的信息页；适合产品或工具的测评、横评、对比、盘点，年度总结 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=block');
+:root {
+  --font-head: 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --font-body: var(--font-head);
+  --bg: #ECEEF2;
+  --ink: #14161A;
+  --muted: #6B7280;
+  --rule: #D9DCE2;
+  --rule-soft: #E6E8EC;
+  --fig-bg: #F3F4F7;
+  --card: #FFFFFF;
+  --on-acc: #FFFFFF;
+  --radius: 22px;
+  --radius-sm: 12px;
+  --panel-mix: 8%;
+  --guard-bg: #14161A;
+  --guard-ink: #FFFFFF;
+  --guard-muted: #9CA3AF;
+  --card-shadow: none;
+  --accent-1: #2F6BFF;
+  --accent-2: #FF6A1A;
+  --accent-3: #12A150;
+  --accent-4: #7C4DFF;
+  --accent-5: #E8457C;
+  --accent-6: #0E9F9E;
+}
+.pg-title { letter-spacing: -.01em; }
+/* Long page: every section is its own white tile */
+.sec { background: #FFFFFF; border-radius: 28px; border-top: 0; padding: 28px 30px 30px; margin: 0 -18px 14px; }
+.pg-intro { padding-bottom: 18px; }
+.pg-closing { background: #FFFFFF; border-radius: 28px; border: 0; margin: 0 -18px; }
+.cl-card { border-top-width: 0; box-shadow: inset 0 5px 0 var(--acc); background: var(--fig-bg); border-radius: var(--radius); }
+.cl-done { border-radius: 0 0 var(--radius) var(--radius); }
+/* Cards: white face, rounded tiles inside */
+.card { background: #FFFFFF; }
+.c-take { border-left: 0; border-radius: 16px; }
+.c-stage { border-left: 0; box-shadow: inset 5px 0 0 var(--acc); background: var(--fig-bg); border-radius: 16px; }
+.cv-toc { background: var(--fig-bg); }
+
+/* Cover: gray tray, the deck sits in a rounded accent tile; soft tiles behind the headline */
+.c-cover { background: var(--bg); }
+.cv-deco { right: -30px; top: -30px; width: 240px; height: 118px; }
+.cv-deco i:nth-child(1) { inset: 0 0 0 46%; border-radius: 30px; background: #FFFFFF; opacity: 1; }
+.cv-deco i:nth-child(2) { inset: 46% 58% 0 22%; border: 0; border-radius: 16px; background: var(--accent-2); opacity: .95; }
+.cv-deco i:nth-child(3) { left: 0; bottom: 0; top: 46%; width: 19%; height: auto; border-radius: 16px; background: var(--accent-3); opacity: .95; }
+.wx-cover.wide .cv-deco { width: 380px; height: 300px; right: -40px; }
+.wx-cover.wide .cv-deco i:nth-child(1) { inset: 0 0 30% 40%; border-radius: 44px; }
+.wx-cover.wide .cv-deco i:nth-child(2) { inset: 74% 0 0 40%; border-radius: 30px; }
+.wx-cover.wide .cv-deco i:nth-child(3) { top: 30%; bottom: 0; width: 36%; border-radius: 36px; }
+.cv-band { margin: auto 0 0; border-radius: 26px; padding: 20px 22px 20px; }
+.cv-hook .c-foot { background: transparent; color: var(--muted); margin: 0; padding: 12px 0 20px; }
+.cv-hook .c-foot span { opacity: 1; }
+.cv-toc { background: #FFFFFF; }
+.card.c-quote { border-radius: 0; }
+.cv-vs-col { border-radius: 26px; }
+.cv-vs-col.no { background: #FFFFFF; border: 0; }

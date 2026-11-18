@@ -1,0 +1,46 @@
+/* swiss | 瑞士极简：纯白底、黑体、粗黑分割线、红黑两色、零圆角，冷静克制、信息密度高；适合数据报告、严肃议题、研究综述、财经 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=block');
+:root {
+  --font-head: 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --font-body: var(--font-head);
+  --bg: #ffffff;
+  --ink: #111111;
+  --muted: #6e6e6e;
+  --rule: #111111;
+  --rule-soft: #e6e6e6;
+  --fig-bg: #f3f3f1;
+  --card: #ffffff;
+  --on-acc: #ffffff;
+  --radius: 0;
+  --radius-sm: 0;
+  --panel-mix: 7%;
+  --guard-bg: #111111;
+  --guard-ink: #ffffff;
+  --guard-muted: #9a9a9a;
+  --sec-rule: 2px solid #111111;
+  --h2-ink: #111111;
+  --w-h2: 900;
+  --fs-title: 62px;
+  --accent-1: #e3120b;
+  --accent-2: #111111;
+}
+.pg-title { letter-spacing: -.02em; }
+.sec-label { color: var(--acc); font-weight: 700; }
+.sec-h { border-left: 6px solid var(--acc); padding-left: 14px; margin-left: -20px; }
+.cl-card { border-top-width: 6px; }
+
+/* Cover: grid poster — a red block, a black bar, nothing else */
+.cv-deco { right: 0; top: 0; width: 96px; height: 96px; }
+.c-cover:not(.wx-cover) .c-top span:last-child { color: #ffffff; position: relative; z-index: 2; }
+.cv-deco i:nth-child(1) { inset: 0; border-radius: 0; opacity: 1; background: var(--accent-1); }
+.cv-deco i:nth-child(2) { inset: auto; left: -34%; top: 0; width: 34%; height: 34%; border: 0; border-radius: 0; opacity: 1; background: #111111; }
+.cv-deco i:nth-child(3) { display: none; }
+.cv-hook .cv-title { padding-right: 0; letter-spacing: -.03em; }
+.cv-band, .cv-hook .c-foot { background: #111111; color: #ffffff; }
+.cv-chips span { border-radius: 0; }
+.cv-rule { width: 100%; height: 6px; background: #111111; }
+.card.c-quote .cq-text { letter-spacing: -.02em; }
+.wx-cover.wide .cv-deco { width: 383px; height: 383px; transform: none; top: 0; right: 0; }
+.wx-cover.wide .cv-deco i:nth-child(1) { inset: 0 0 50% 50%; }
+.wx-cover.wide .cv-deco i:nth-child(2) { left: 25%; top: 50%; width: 25%; height: 25%; }
+.wx-cover.square .cv-deco { right: 0; top: 0; }

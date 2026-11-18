@@ -1,4 +1,17 @@
-# 验证记录｜1.0.0｜2026-11-18
+# 验证记录｜1.1.0｜2026-11-18
+
+## 0. 1.1.0 随包自包含改造
+
+1.0.0 依赖首次使用时联网下载十个子技能，中国大陆无代理时全部失败。1.1.0 把十个技能打进包内，正常路径不再联网。
+
+- 包内形式：仓库为 `vendor/<技能目录>/` 可读副本；发布包为同内容的 `vendor/cola-skills-bundle.zip` ＋ `cola-skills-bundle.manifest.json`（690 个文件、逐文件 sha256）。
+- 图片：102 个 png/jpg/gif 全部转成同名 WebP（`cwebp -q 80 -resize 1200 0`，GIF 用 `gif2webp`），一张未删；32 个文本文件的引用同步改写，远端 URL 保持原后缀不动。
+- 校验：仓库内 `python3 -B scripts/ensure_dependencies.py --check --json` 十项 existing、`network_downloads` 0、`ok` true。
+- 离网安装：清空临时 `--skills-dir` 并去掉全部 proxy 环境变量后跑安装模式，十项 installed、`network_downloads` 0、下游 `SKILL.md` 可读；再跑一次全部 existing。
+- bundle 检测不落盘：`--check` 只用 `zipfile` 读清单，目标 skills 目录不产生任何文件。
+- 单元测试：31 项通过（新增 vendor 目录优先、bundle 离线安装、`--check` 不解压、非清单 commit 不使用随包副本）。
+
+以下 1–6 节为 1.0.0 的联网历史记录，保留用于对比。
 
 ## 1. 安装器单元测试
 

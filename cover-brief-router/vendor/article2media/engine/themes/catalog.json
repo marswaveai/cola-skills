@@ -1,0 +1,28 @@
+{
+  "_": "Main themes are listed, recommended and matrix-tested. Legacy themes still render by name; each names the main theme that replaces it.",
+  "main": [
+    "editorial",
+    "swiss",
+    "quiet",
+    "bento",
+    "brutal",
+    "dopamine",
+    "midnight",
+    "film",
+    "guochao",
+    "shanshui",
+    "notebook",
+    "y2k"
+  ],
+  "legacy": {
+    "cloud": "quiet",
+    "earth": "editorial",
+    "memo": "notebook",
+    "glass": "bento",
+    "collage": "notebook",
+    "pop": "brutal",
+    "pixel": "y2k",
+    "prosperity": "guochao",
+    "riso": "swiss"
+  }
+}

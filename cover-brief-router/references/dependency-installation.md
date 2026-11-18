@@ -16,20 +16,28 @@
 
 只检测以上技能，不下载整个宝玉合集或与封面无关的其他几十个子技能。默认补齐缺失的清单项，实际生成时只调用选定路线；辅助技能不是默认增加的成品。一稿多发当前官方版本的入口还会调用抓取、转写、长图等其他同仓库子技能，清单会报告这层额外依赖；这十项安装完成不等于一稿多发整套功能已就绪，它也不在本包默认封面选项中。
 
-脚本与清单都随包提供，无需管理员密钥。官方来源、下载版本与必要资源由 `dependencies.json` 指定。Skill Hub的slug与本机文件夹名可能不同，因此同时识别SKILL.md的name与安装别名；不凭文件夹字符串判定缺失。
+这十项都已随包附带，不需要联网，也不需要管理员密钥：
+
+| 包内形式 | 用途 |
+|---|---|
+| `vendor/<技能目录>/` | 仓库里可读、可校验的完整副本（含 SKILL.md、样式资源、许可证） |
+| `vendor/cola-skills-bundle.zip` | 发布包内的同一份副本（外层包只允许一个根 SKILL.md，无法放十个嵌套技能目录） |
+| `vendor/cola-skills-bundle.manifest.json` | 逐文件清单、体积与 sha256，用于核对包内副本 |
+
+`scripts/build_vendor_bundle.py` 由 `vendor/<技能目录>/` 重新生成 bundle 与 manifest，产物可重复（固定条目时间戳，内容不变则 sha256 不变）。官方来源、固定 commit 与必要资源由 `dependencies.json` 指定。Skill Hub的slug与本机文件夹名可能不同，因此同时识别SKILL.md的name与安装别名；不凭文件夹字符串判定缺失。
 
 ## 启动命令
 
-先纯检测：
-
-```bash
-python3 "$SKILL_ROOT/scripts/ensure_dependencies.py" --check --json
-```
-
-发现缺失后自动下载：
+首次制作前离线装配（推荐先跑这个）：
 
 ```bash
 python3 "$SKILL_ROOT/scripts/ensure_dependencies.py" --json
+```
+
+只读复核（不落盘、不联网，只读包内副本与已装目录）：
+
+```bash
+python3 "$SKILL_ROOT/scripts/ensure_dependencies.py" --check --json
 ```
 
 其他本地Agent或自定义安装位置：
@@ -47,20 +55,22 @@ python3 "$SKILL_ROOT/scripts/ensure_dependencies.py" \
 python3 "$SKILL_ROOT/scripts/ensure_dependencies.py" --only punk-cover --json
 ```
 
-`--check`不下载、不创建技能目录。运行时在标准skills目录内定位到本包则默认同级安装；开发目录运行则回退到 `COLA_SKILLS_DIR` 或 `~/.cola/skills`。不能因为开发目录存在就把其他依赖散落在项目根。
+查找顺序固定三层：`vendor/<技能目录>/` 真实副本 → 包内 `vendor/cola-skills-bundle.zip` → 原 GitHub 归档（仅兜底）。前两层都不联网，`network_downloads` 为 0。
+
+`--check`不下载、不创建技能目录、不解压：它用 `zipfile` 读包内清单，核对必需文件、`SKILL.md` 的 name 与 Punk 的 styles 目录。安装模式才把单个技能解包到目标目录，并复用同一套路径穿越、符号链接与体积限制校验，最后原子改名落盘。运行时在标准skills目录内定位到本包则默认同级安装；开发目录运行则回退到 `COLA_SKILLS_DIR` 或 `~/.cola/skills`。不能因为开发目录存在就把其他依赖散落在项目根。
 
 ## 结果处理
 
 读取JSON中每项的状态和真实路径：
 
-- 已存在：复用，不联网更新。
-- 新安装：校验通过再读对应SKILL.md，按流程选择时使用。
-- 缺失：检测模式用incomplete且exists=false记录，安装模式自动尝试官方来源。
+- 已存在：复用，不联网更新。`message` 为 `Bundled with this skill; no network required.` 时表示用的是随包副本。
+- 新安装：从包内副本解包并通过校验后，再读对应SKILL.md，按流程选择时使用。
+- 缺失：随包副本与已装目录都没有时，检测模式用incomplete且exists=false记录；安装模式先试包内 bundle，都没有才按固定 commit 联网兜底。
 - 明确关闭：不重新启用、不改关闭配置、不另名绕过；该路线暂不调用，按实际需求说明。
 - 已存在但不完整：incomplete且exists=true，不覆盖。标明缺什么资源，继续其他路线；修复旧目录属于另一步，不能伪称自动安装成功。
-- 下载/校验失败：保留成功项，只说明失败项；不能把总失败说成全部安装成功。
+- 装配/校验失败：保留成功项，只说明失败项；不能把总失败说成全部安装成功。
 
-退出码不代替逐项状态；即使有一项失败，其余成功项仍可用。无联网也能展示随包案例，但制作前要确认所选路线可用。
+退出码不代替逐项状态；即使有一项失败，其余成功项仍可用。包内副本完整时全程不需要联网；随包副本缺失又无网络时仍可展示随包案例，但要确认所选路线可用。
 
 ## Punk资源补齐
 
@@ -70,12 +80,12 @@ python3 "$SKILL_ROOT/scripts/ensure_dependencies.py" --only punk-cover --json
 
 ## 安全约束
 
-- 下载官方公开仓库归档，先做路径与压缩包安全检查，再暂存、校验、创建新目录。
+- 安装模式从包内归档解压，同样先做路径与压缩包安全检查，再暂存、校验、创建新目录；联网兜底时才下载官方公开仓库归档。
 - 拒绝目录越界、绝对路径或符号链接等不安全归档；限制归档及解压体积。
 - 不执行下载的安装脚本，不读取或复制使用者自己的密码、头像、账号配置。
 - 不覆盖任何已有技能或目录，不改明确禁用记录。网络中断不会留下伪装成成功的半成品技能。
-- 自定义代理通过标准环境变量配置，不硬编码开发机器代理。
-- 不在本包包含第三方SKILL.md副本；依赖在首次实际使用时装到目标skills目录，因此压缩包根只有一个SKILL.md。
+- 自定义代理通过标准环境变量配置，不硬编码开发机器代理（正常装配路径不使用网络）。
+- 包内第三方副本放在 `vendor/` 下，发布包用 bundle 归档承载，因此压缩包根仍只有一个 SKILL.md；解包到目标 skills 目录才出现十个技能目录。
 
 ## 图片服务与软件依赖
 
@@ -88,4 +98,4 @@ python3 "$SKILL_ROOT/scripts/ensure_dependencies.py" --only punk-cover --json
 
 ## 验证范围
 
-自动安装器的单元测试和干净目录实测记录见 `verification.md`。它们验证检测、下载与落盘，不代替所有风格在不同图像服务上的实跑，也不承诺案例风格100%复现。
+装配器的单元测试（含离线 bundle 路径）与干净目录实测记录见 `verification.md`。它们验证检测、离线装配与落盘，不代替所有风格在不同图像服务上的实跑，也不承诺案例风格100%复现。

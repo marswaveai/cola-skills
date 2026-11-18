@@ -1,0 +1,32 @@
+/* cloud | 云舞白：Pantone 2026 年度色 Cloud Dancer 的柔白底，大留白、低饱和莫兰迪主色、圆角与细线，安静克制；适合情绪、成长、心理、人文、随笔 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&display=block');
+:root {
+  --font-head: 'Noto Serif SC', 'Songti SC', 'STSong', serif;
+  --font-body: 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --bg: #F0EEE9;
+  --ink: #2F2D2A;
+  --muted: #8C877F;
+  --rule: #DBD7CF;
+  --rule-soft: #E5E1DA;
+  --fig-bg: #F8F7F3;
+  --card: #FFFFFF;
+  --on-acc: #FFFFFF;
+  --radius: 16px;
+  --radius-sm: 9px;
+  --panel-mix: 9%;
+  --w-title: 700;
+  --w-h2: 700;
+  --fig-border: 1px solid #E2DED6;
+  --card-shadow: 0 1px 0 #E2DED6, 0 8px 22px rgba(70, 60, 50, .06);
+  --guard-bg: #3A3833;
+  --guard-ink: #F0EEE9;
+  --guard-muted: #ABA59A;
+  --accent-1: #6E8E79;
+  --accent-2: #6B84A3;
+  --accent-3: #B07A5E;
+  --accent-4: #8C7393;
+  --accent-5: #A08848;
+  --accent-6: #5C8A8A;
+}
+.pg-title, .cv-title { letter-spacing: .03em; }
+.sec-h, .card .sec-h { letter-spacing: .03em; }

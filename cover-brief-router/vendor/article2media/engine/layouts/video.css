@@ -1,0 +1,175 @@
+/* Layout: video — 9:16 explainer stage, 540×960 CSS px (1080×1920 at 2x). Loaded after components.css and BEFORE the theme,
+   so themes restyle colors, fonts and surfaces. Safe areas (CSS px): top 120, bottom 215, left 30, right 72. */
+
+html, body { margin: 0; width: 540px; height: 960px; overflow: hidden; background: var(--bg); }
+.page.stage { width: 540px; height: 960px; padding: 0; position: relative; overflow: hidden; isolation: isolate; color: var(--ink); }
+
+/* Chrome around the content: progress, credit, captions */
+.v-progress { position: absolute; left: 30px; right: 72px; top: 98px; height: 4px; border-radius: 4px; background: color-mix(in srgb, var(--ink) 10%, transparent); z-index: 5; overflow: hidden; }
+.v-progress i { display: block; height: 100%; width: 0; background: var(--accent-1); border-radius: 4px; }
+.v-credit { position: absolute; left: 30px; right: 72px; top: 108px; font-size: 10.5px; color: var(--muted); letter-spacing: .04em; z-index: 5; font-family: var(--font-label, var(--font-body)); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.v-chip { position: absolute; left: 30px; top: 132px; z-index: 4; font-size: 15px; font-weight: 800; color: var(--on-acc); background: var(--acc); padding: 4px 13px; border-radius: 999px; letter-spacing: .04em; font-family: var(--font-head); }
+
+/* Captions: one line that never wraps (the font shrinks to fit), hard cuts between phrases — no pop, no resize animation,
+   no blinking gaps. Each theme picks a preset in themes/caption-styles.json and tunes it through --cap-* variables. */
+.v-cap { position: absolute; left: 30px; right: 72px; top: 676px; height: 64px; display: flex; align-items: center; justify-content: center; z-index: 6; pointer-events: none; }
+.v-cap span.c {
+  display: inline-block; white-space: nowrap; text-align: center; line-height: 1.25; word-spacing: .3em;
+  font-family: var(--cap-font, var(--font-body)); font-weight: var(--cap-weight, 800); font-size: var(--cap-size, 30px);
+  letter-spacing: var(--cap-track, .02em); color: var(--cap-fg, var(--ink));
+  padding: var(--cap-pad, 6px 16px 7px); border-radius: var(--cap-radius, 14px);
+  background: var(--cap-bg, transparent); border: var(--cap-border, 0 solid transparent); box-shadow: var(--cap-shadow, none);
+}
+.v-cap span.c b { font-weight: inherit; color: var(--cap-key, var(--acc-text, var(--accent-1))); }
+/* pill — a solid card that hugs the text */
+.v-cap.cap-pill span.c { background: var(--cap-bg, var(--card)); box-shadow: var(--cap-shadow, 0 8px 22px -12px rgba(0,0,0,.4)); }
+/* sticker — white fill, thick outline, offset drop: the loud short-video look */
+.v-cap.cap-sticker span.c {
+  --cap-pad: 4px 10px; color: var(--cap-fg, #fff); font-size: var(--cap-size, 32px); font-weight: var(--cap-weight, 900);
+  -webkit-text-stroke: var(--cap-stroke-w, 5px) var(--cap-stroke, var(--ink)); paint-order: stroke fill;
+  text-shadow: var(--cap-drop, 0 4px 0 var(--cap-stroke, var(--ink)));
+}
+/* block — a hard-edged box with a hard shadow (poster / window themes) */
+.v-cap.cap-block span.c { --cap-pad: 6px 16px 8px; background: var(--cap-bg, var(--ink)); color: var(--cap-fg, var(--bg)); border-radius: var(--cap-radius, 2px); }
+.v-cap.cap-block span.c b { background: var(--cap-key-bg, none); padding: 0 .1em; border-radius: 2px; }
+/* ink — no box: text on the page with a soft halo of the paper color (quiet, editorial, oriental themes) */
+.v-cap.cap-ink span.c { --cap-pad: 4px 8px; text-shadow: 0 0 2px var(--bg), 0 0 6px var(--bg), 0 0 12px var(--bg), 0 0 18px var(--bg); }
+.v-cap.cap-ink span.c b { background: var(--cap-key-bg, none); color: var(--cap-key, var(--accent-1)); padding: var(--cap-key-pad, 0); border-radius: 3px; text-shadow: none; }
+/* marker — no box, keywords swiped with a highlighter */
+.v-cap.cap-marker span.c { --cap-pad: 4px 8px; text-shadow: 0 0 2px var(--bg), 0 0 8px var(--bg), 0 0 14px var(--bg); }
+.v-cap.cap-marker span.c b { color: var(--cap-key, inherit); text-shadow: none; background: linear-gradient(transparent 50%, var(--cap-mark, rgba(255, 204, 0, .5)) 50%, var(--cap-mark, rgba(255, 204, 0, .5)) 94%, transparent 94%); padding: 0 .06em; }
+/* cinema — film subtitles: light text, deep shadow, wide tracking (dark themes) */
+.v-cap.cap-cinema span.c { --cap-pad: 4px 8px; font-weight: var(--cap-weight, 600); letter-spacing: var(--cap-track, .07em); text-shadow: 0 2px 3px rgba(0,0,0,.9), 0 0 14px rgba(0,0,0,.65); }
+/* glass — frosted translucent pill */
+.v-cap.cap-glass span.c { background: var(--cap-bg, rgba(255,255,255,.6)); -webkit-backdrop-filter: blur(14px) saturate(1.5); backdrop-filter: blur(14px) saturate(1.5);
+  border: 1px solid rgba(255,255,255,.9); border-radius: var(--cap-radius, 999px); box-shadow: 0 10px 26px -14px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.9); --cap-pad: 6px 20px 7px; }
+
+/* Scenes fill the content box between the chrome */
+.v-scene { position: absolute; left: 30px; right: 72px; top: 132px; height: 528px; display: flex; flex-direction: column; justify-content: center; opacity: 0; }
+.v-scene.has-chip { top: 172px; height: 488px; }
+.v-cam { transform-origin: 50% 45%; width: 100%; }
+
+.v-title { font-family: var(--font-head); font-weight: var(--w-h2, 900); font-size: 46px; line-height: 1.22; margin: 0 0 22px; color: var(--title-ink, var(--ink)); letter-spacing: .01em; }
+.v-title.big { font-size: 58px; }
+.v-title b, .v-headline b { color: var(--acc-text); }
+
+/* number */
+.sc-number { text-align: center; }
+.v-label { font-size: 22px; font-weight: 700; color: var(--muted); letter-spacing: .1em; }
+.v-from { margin-top: 18px; font-family: var(--font-head); font-size: 40px; color: var(--muted); line-height: 1.2; }
+.v-from .v-arrow { display: block; font-style: normal; font-size: 30px; color: var(--acc-text); margin-top: 4px; }
+.v-bigwrap { position: relative; display: inline-block; margin-top: 4px; }
+.v-big { position: relative; display: inline-block; font-family: var(--font-head); font-weight: 900; font-size: 112px; line-height: 1.05; color: var(--acc-text); letter-spacing: -.01em; font-variant-numeric: tabular-nums; }
+.v-badge { position: absolute; right: -54px; top: -26px; font-style: normal; font-size: 20px; font-weight: 800; color: var(--on-acc); background: var(--accent-2, var(--acc)); padding: 6px 12px; border-radius: 12px; rotate: 8deg; white-space: nowrap; font-family: var(--font-head); }
+.v-proof { margin: 18px auto 0; width: 228px; background: var(--card); border-radius: 16px; padding: 10px 10px 8px; box-shadow: 0 18px 40px -18px rgba(0,0,0,.45); rotate: -3deg; }
+.v-proof img { width: 100%; display: block; border-radius: 10px; }
+.v-proof figcaption { font-size: 13px; color: var(--muted); margin-top: 6px; }
+
+/* list */
+.v-tags { display: flex; gap: 12px; margin-bottom: 18px; flex-wrap: wrap; }
+.v-tag { position: relative; font-size: 25px; font-weight: 700; color: var(--muted); background: color-mix(in srgb, var(--ink) 7%, transparent); padding: 6px 14px; border-radius: 10px; }
+.v-strike { position: absolute; left: 8px; right: 8px; top: 50%; height: 3px; background: var(--accent-1); border-radius: 2px; transform-origin: 0 50%; transform: scaleX(0); }
+.v-items { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.v-item { display: flex; align-items: center; gap: 16px; background: var(--card); border-radius: var(--radius, 16px); padding: 13px 18px; box-shadow: var(--card-shadow, 0 10px 26px -18px rgba(0,0,0,.4)); border: var(--card-border, 0); font-size: 30px; font-weight: 800; font-family: var(--font-head); }
+.v-no { flex: none; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--acc); color: var(--on-acc); font-size: 24px; }
+
+/* timeline */
+.v-tl { position: relative; padding-left: 8px; }
+.v-tl-line { position: absolute; left: 21px; top: 14px; bottom: 14px; width: 4px; border-radius: 2px; background: var(--acc); transform-origin: 50% 0; transform: scaleY(0); }
+.v-tl ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 30px; }
+.v-pt { position: relative; padding-left: 48px; }
+.v-dot { position: absolute; left: 4px; top: 6px; width: 26px; height: 26px; border-radius: 50%; background: var(--card); border: 5px solid var(--acc); box-sizing: border-box; }
+.v-pt.low .v-dot { background: var(--accent-1); border-color: var(--accent-1); }
+.v-pt b { display: block; font-family: var(--font-head); font-size: 34px; line-height: 1.2; }
+.v-pt span { display: block; font-size: 25px; color: var(--muted); margin-top: 4px; }
+.v-pt.low span { color: var(--acc-text); font-weight: 700; }
+
+/* merge */
+.sc-merge { display: flex; flex-direction: column; }
+.v-srcs { display: flex; justify-content: space-around; gap: 8px; }
+.v-src { font-size: 23px; font-weight: 800; padding: 10px 12px; border-radius: 14px; background: var(--card); border: 2px solid var(--acc-line); box-shadow: var(--card-shadow, none); white-space: nowrap; font-family: var(--font-head); }
+.v-arrows { width: 100%; height: 120px; display: block; overflow: visible; }
+.v-arrows path { fill: none; stroke: var(--acc-line); stroke-width: 3; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; }
+.v-target { align-self: center; position: relative; font-family: var(--font-head); font-size: 50px; font-weight: 900; color: var(--on-acc); background: var(--acc); padding: 18px 30px 16px; border-radius: 22px; box-shadow: 0 18px 36px -18px rgba(0,0,0,.45); }
+.v-spark { display: block; width: 200px; height: 52px; margin: 8px auto 0; overflow: visible; }
+.v-spark path { fill: none; stroke: var(--on-acc); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; }
+
+/* compare */
+.v-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.v-col { background: var(--card); border-radius: var(--radius, 16px); padding: 16px 14px 14px; border: 2px solid var(--acc-line); box-shadow: var(--card-shadow, none); }
+.v-col.bad { border: 2px dashed color-mix(in srgb, var(--muted) 60%, transparent); background: color-mix(in srgb, var(--card) 70%, var(--bg)); }
+.v-col h3 { margin: 0 0 12px; font-family: var(--font-head); font-size: 30px; text-align: center; }
+.v-col.good h3 { color: var(--acc-text); }
+.v-col.bad h3 { color: var(--muted); }
+.v-col ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.v-col li { display: flex; gap: 8px; align-items: flex-start; font-size: 24px; font-weight: 700; line-height: 1.35; }
+.v-col.bad li { color: var(--muted); font-weight: 600; }
+.v-mk { flex: none; width: 26px; height: 26px; margin-top: 1px; }
+.ic { width: 100%; height: 100%; display: block; }
+.ic path { fill: none; stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; }
+.good .ic path, .v-box .ic path { stroke: var(--acc-line); }
+.bad .ic path { stroke: var(--guard-x, #e2725b); }
+
+/* stats */
+.v-stat-list { display: flex; flex-direction: column; gap: 14px; }
+.v-stat { display: flex; align-items: baseline; gap: 12px; background: var(--card); border-radius: var(--radius, 18px); padding: 14px 22px; box-shadow: var(--card-shadow, 0 10px 26px -18px rgba(0,0,0,.4)); border: var(--card-border, 0); }
+.v-stat b { font-family: var(--font-head); font-size: 96px; line-height: 1; color: var(--acc-text); font-variant-numeric: tabular-nums; min-width: 2.3em; }
+.v-stat span { font-size: 27px; font-weight: 800; white-space: nowrap; }
+.v-note { align-self: flex-start; margin-top: 18px; font-size: 24px; font-weight: 700; color: var(--acc-text); background: var(--panel-bg); padding: 8px 14px; border-radius: 12px; }
+
+/* quote */
+.sc-quote { padding: 0 6px; }
+.v-qmark { font-family: Georgia, serif; font-size: 120px; line-height: .8; color: var(--acc-text); height: 64px; }
+.v-quote { margin: 0; font-family: var(--font-head); font-weight: 900; font-size: 56px; line-height: 1.32; }
+.v-quote span { opacity: .18; }
+.v-by { margin-top: 26px; font-size: 21px; color: var(--muted); font-weight: 700; }
+
+/* checklist */
+.v-checks { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 16px; }
+.v-checks li { display: flex; align-items: center; gap: 16px; font-family: var(--font-head); font-size: 36px; font-weight: 900; background: var(--card); border-radius: var(--radius, 16px); padding: 14px 18px; box-shadow: var(--card-shadow, none); border: var(--card-border, 0); }
+.v-box { flex: none; width: 40px; height: 40px; border-radius: 10px; border: 3px solid var(--acc-line); display: grid; place-items: center; }
+.v-box > i { width: 28px; height: 28px; display: block; }
+.v-checks li > span { background: linear-gradient(transparent 62%, color-mix(in srgb, var(--acc) 34%, transparent) 62%) 0 0 / 0% 100% no-repeat; padding: 0 2px; }
+.v-cta { align-self: center; margin-top: 26px; font-family: var(--font-head); font-size: 28px; font-weight: 900; color: var(--on-acc); background: var(--acc); padding: 14px 28px; border-radius: 999px; box-shadow: 0 16px 30px -16px rgba(0,0,0,.5); }
+.sc-check { display: flex; flex-direction: column; }
+
+/* title / image */
+.v-headline { font-family: var(--font-head); font-weight: 900; font-size: 54px; line-height: 1.25; margin: 0; }
+.v-headline b { background: linear-gradient(transparent 60%, color-mix(in srgb, var(--acc) 35%, transparent) 60%) 0 0 / 0% 100% no-repeat; }
+.v-sub { font-size: 24px; color: var(--muted); margin: 18px 0 0; line-height: 1.5; }
+.v-illo, .v-photo { margin: 22px 0 0; }
+.v-illo img, .v-photo img { width: 100%; display: block; border-radius: var(--radius, 16px); }
+
+/* AI illustration of a scene (video.json "illustration"). top: a picture card above the content, which shrinks when the
+   content is tall. bottom: a full-width band under the captions (y 750–960, the platform-UI zone), faded in from above,
+   so it never competes with the content or the caption line. Pictures carry no text. */
+.v-scene-illo { margin: 0; }
+.v-scene-illo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.v-scene-illo.top { flex: 0 1 250px; min-height: 110px; margin-bottom: 20px; border-radius: var(--radius, 16px); overflow: hidden; box-shadow: var(--card-shadow, 0 14px 34px -20px rgba(0,0,0,.45)); }
+.v-scene-illo.bottom { position: absolute; left: -30px; width: 540px; top: calc(100% + 90px); height: 210px; z-index: -1;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 42%); mask-image: linear-gradient(to bottom, transparent 0, #000 42%); }
+.v-scene-illo.bottom img { object-position: 50% 40%; }
+
+/* Clip from a source video (video.json "clip"): the same top / bottom slots as the illustration, or full — behind the
+   whole scene, edge to edge. A full clip sits under a scrim of the page color, so the theme's text, cards and caption
+   style keep the contrast they were designed with; it is a little stronger behind the caption line. */
+.v-clip.full { position: absolute; left: -30px; top: -132px; width: 540px; height: 960px; z-index: -1; overflow: hidden; }
+.v-scene.has-chip .v-clip.full { top: -172px; }
+.v-clip.full::after { content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bg) var(--clip-scrim, 66%), transparent) 0 66%,
+    color-mix(in srgb, var(--bg) calc(var(--clip-scrim, 66%) + 14%), transparent) 71% 77%, color-mix(in srgb, var(--bg) var(--clip-scrim, 66%), transparent) 82%); }
+.v-scene.has-clip-full .v-deco { display: none; }
+
+/* cover: first frame, survives a 3:4 crop (content kept inside y 120–840) */
+.v-cover { position: absolute; inset: 0; z-index: 8; display: flex; flex-direction: column; justify-content: center; padding: 140px 44px 150px; background: var(--bg); }
+.v-cover-k { align-self: flex-start; font-size: 20px; font-weight: 800; color: var(--on-acc); background: var(--acc); padding: 6px 14px; border-radius: 999px; font-family: var(--font-head); letter-spacing: .04em; }
+.v-cover-t { margin: 22px 0 0; font-family: var(--font-head); font-weight: 900; font-size: 64px; line-height: 1.18; color: var(--title-ink, var(--ink)); }
+.v-cover-t b { color: var(--acc-text); display: inline-block; }
+.v-cover-img { margin-top: 26px; height: 300px; display: flex; justify-content: center; }
+.v-cover-img img { height: 100%; width: auto; max-width: 100%; border-radius: 22px; object-fit: cover; }
+.v-cover-ai { position: absolute; left: 44px; bottom: 156px; font-size: 12px; color: var(--muted); }
+
+/* Depth behind the content: a giant faint numeral for "第 N 件事" scenes, a soft drifting color blob otherwise. */
+.v-deco { position: absolute; z-index: -1; pointer-events: none; }
+.v-deco.num { right: -18px; top: 50%; translate: 0 -55%; font-family: var(--font-head); font-weight: 900; font-size: 380px; line-height: 1; color: var(--acc); opacity: .1; }
+.v-deco.blob { right: -60px; top: 6%; width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(circle at 40% 40%, color-mix(in srgb, var(--acc) 34%, transparent), transparent 70%); }

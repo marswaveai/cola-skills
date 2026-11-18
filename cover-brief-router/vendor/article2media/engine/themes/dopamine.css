@@ -1,0 +1,80 @@
+/* dopamine | 多巴胺：奶白底配彩色光斑、糖果色高饱和撞色、渐变色块、大圆角与柔和彩色投影，明亮快乐；适合好物种草与购物清单、美食探店、家居、快乐生活方式 */
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Noto+Sans+SC:wght@400;500;700;900&display=block');
+:root {
+  --font-head: 'ZCOOL KuaiLe', 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+  --font-body: 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --bg: #FFF8F2;
+  --ink: #2A1F3D;
+  --muted: #7B6F8C;
+  --rule: #F2D6E4;
+  --rule-soft: #F7E7EF;
+  --fig-bg: #FFFFFF;
+  --card: #FFFFFF;
+  --on-acc: #FFFFFF;
+  --radius: 22px;
+  --radius-sm: 14px;
+  --panel-mix: 11%;
+  --w-title: 400;
+  --w-h2: 400;
+  --sec-rule: 2px dashed #F3C3DA;
+  --card-shadow: 0 6px 18px rgba(240, 53, 138, .10);
+  --guard-bg: #2A1F3D;
+  --guard-ink: #FFF8F2;
+  --guard-muted: #B9AECB;
+  --guard-x: #FF8AC2;
+  --pop-grad: linear-gradient(90deg, #F0358A, #FF7A1A 50%, #7B4DFF);
+  --accent-1: #F0358A;
+  --accent-2: #FF6B1A;
+  --accent-3: #7B4DFF;
+  --accent-4: #0EA5E9;
+  --accent-5: #10B981;
+  --accent-6: #F43F5E;
+}
+/* Color glows in the corners */
+.page, .card {
+  background-image:
+    radial-gradient(circle at 6% 3%, rgba(255, 214, 0, .30), transparent 340px),
+    radial-gradient(circle at 98% 8%, rgba(255, 79, 163, .20), transparent 360px),
+    radial-gradient(circle at 94% 98%, rgba(61, 184, 255, .20), transparent 380px),
+    radial-gradient(circle at 3% 96%, rgba(139, 224, 78, .20), transparent 340px);
+}
+.pg-title, .cv-title { letter-spacing: .03em; }
+.cv-title b, .end-h b, .pg-closing b { background: var(--pop-grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.sec-h, .card .sec-h { letter-spacing: .03em; }
+.pg-part { display: inline-block; background: var(--acc); color: #FFFFFF; border-radius: 999px; padding: 3px 14px; margin-top: 12px; }
+.card .sec-label { background: var(--acc); color: #FFFFFF; border-radius: 999px; }
+/* Soft colored shadows instead of borders */
+.fig-card, .c-fig-card { box-shadow: 0 8px 22px color-mix(in srgb, var(--acc) 16%, transparent); }
+.panel { box-shadow: 0 8px 22px color-mix(in srgb, var(--acc) 12%, transparent); }
+.box { border-width: 1.6px; border-radius: 12px; }
+.box.hl { background: linear-gradient(135deg, var(--acc), color-mix(in srgb, var(--acc) 55%, #FFC83D)); border-color: transparent; }
+.hb-bar { border-radius: 99px; background: linear-gradient(90deg, var(--acc), color-mix(in srgb, var(--acc) 55%, #FFC83D)); }
+.ss-val { background: linear-gradient(90deg, var(--acc), #FF9A1A); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.cmp-col { border-radius: 16px; }
+/* Gradient takeaways */
+.c-take, .sec-take { background: linear-gradient(90deg, color-mix(in srgb, var(--acc) 20%, #FFFFFF), color-mix(in srgb, #FFD23F 28%, #FFFFFF)); color: var(--ink); font-weight: 700; }
+.c-take { border-left: 0; border-radius: 18px; }
+.sec-take { display: inline-block; padding: 6px 14px; border-radius: 14px; }
+/* Checklists */
+.cl-card { border-top: 0; border-radius: 22px; box-shadow: inset 0 7px 0 var(--acc), 0 8px 22px color-mix(in srgb, var(--acc) 14%, transparent); }
+.cl-done { border-radius: 0 0 22px 22px; }
+.c-stage { border-left: 0; border-radius: 18px; box-shadow: inset 7px 0 0 var(--acc), 0 6px 16px color-mix(in srgb, var(--acc) 12%, transparent); }
+.cv-rule { height: 8px; width: 120px; border-radius: 8px; background: linear-gradient(90deg, #F0358A, #FFB000, #10B981, #0EA5E9, #7B4DFF); }
+.end-cta { background: var(--pop-grad); border-radius: 999px; }
+.cv-toc li i, .end-list li i { color: var(--acc); }
+/* The display face is for big headlines only; sentences and small titles use the body face */
+.pg-closing, .qt-text, .end-h, .p-quote .q { font-family: var(--font-body); font-weight: 900; }
+.p-quote .q { font-weight: 400; }
+
+/* Cover: candy blobs behind the headline, gradient band */
+.cv-deco { right: -70px; top: -60px; width: 300px; height: 300px; filter: blur(2px); }
+.cv-deco i:nth-child(1) { inset: 0 0 30% 30%; opacity: .55; background: #FFD23F; }
+.cv-deco i:nth-child(2) { inset: 40% 30% 0 10%; border: 0; opacity: .4; background: #FF4FA3; }
+.cv-deco i:nth-child(3) { left: 62%; bottom: 8%; width: 30%; height: 30%; opacity: .45; background: #3DB8FF; }
+.cv-band, .cv-hook .c-foot { background: var(--pop-grad); color: #FFFFFF; }
+.cv-band { border-radius: 28px 28px 0 0; }
+.cv-chips span { border: 0; background: rgba(255, 255, 255, .26); }
+.card.c-quote { background: linear-gradient(160deg, var(--acc), color-mix(in srgb, var(--acc) 55%, #FFC83D)); }
+.cq-text, .cn-num b, .cv-num b { font-family: var(--font-head); }
+.cq-text { font-weight: 400; }
+.cv-vs-col.yes { background: var(--pop-grad); }
