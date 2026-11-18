@@ -1,0 +1,101 @@
+/* film | 电影感：暖黑底与暗角、胶片颗粒、上下黑边像宽银幕、宋体大字距标题、黄色字幕式金句与等宽场记标签；适合电影、剧集、纪录片与影视评论，人物传记与特写、深度访谈 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500&display=block');
+:root {
+  --font-head: 'Noto Serif SC', 'Songti SC', serif;
+  --font-body: 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --font-label: 'IBM Plex Mono', ui-monospace, monospace;
+  --bg: #12100E;
+  --ink: #EDE7DD;
+  --ink-strong: #FFFFFF;
+  --muted: #9A9186;
+  --rule: #3A342E;
+  --rule-soft: #27231F;
+  --fig-bg: #1B1815;
+  --card: #221E1A;
+  --on-acc: #12100E;
+  --radius: 2px;
+  --radius-sm: 2px;
+  --panel-mix: 10%;
+  --w-title: 700;
+  --w-h2: 700;
+  --sec-rule: 1px solid #3A342E;
+  --fig-border: 1px solid #2E2925;
+  --card-shadow: 0 0 0 1px #2E2925;
+  --guard-bg: #000000;
+  --guard-ink: #EDE7DD;
+  --guard-muted: #8C847A;
+  --guard-x: #F2A65A;
+  --subtitle: #FFE08A;
+  --film-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --accent-1: #F2C27B;
+  --accent-2: #E58E6B;
+  --accent-3: #8FBFC4;
+  --accent-4: #C9B27A;
+  --accent-5: #B6A3D9;
+  --accent-6: #9CC08A;
+}
+/* Vignette and grain */
+.page, .card { isolation: isolate; background-image: radial-gradient(ellipse 80% 70% at 50% 45%, #1C1916 0%, #12100E 62%, #080706 100%); }
+.page::after, .card::after {
+  content: ""; position: absolute; inset: 0; z-index: 3; pointer-events: none; mix-blend-mode: screen; opacity: .09;
+  background: var(--film-grain) 0 0 / 220px 220px;
+}
+/* Letterbox bars with sprocket holes, slate-style mono text */
+.c-top, .c-foot, .pg-top {
+  background:
+    repeating-linear-gradient(90deg, rgba(237, 231, 221, .22) 0 9px, transparent 9px 22px) left 4px top 5px / 100% 5px no-repeat,
+    #000000;
+  font-family: var(--font-label), var(--font-body); color: #8C847A; letter-spacing: .08em;
+}
+.c-top { margin: -26px -30px 0; padding: 20px 30px 10px; }
+.c-foot { margin: 0 -30px -20px; padding: 12px 30px 18px; background-position: left 4px bottom 5px, 0 0; }
+.pg-top { margin: -44px -64px 0; padding: 22px 64px 14px; }
+/* Titles: wide-tracked serif */
+.pg-title, .cv-title { letter-spacing: .12em; line-height: 1.28; }
+.cv-title { margin-top: 14px; line-height: 1.18; letter-spacing: .08em; }
+.pg-title b, .cv-title b, .end-h b { color: var(--subtitle); }
+.sec-h, .card .sec-h { letter-spacing: .06em; color: var(--ink-strong); }
+.pg-part, .cv-kicker { font-family: var(--font-label), var(--font-body); font-weight: 500; font-size: 13px; color: var(--muted); letter-spacing: .2em; }
+.pg-part::before, .cv-kicker::before { content: ""; display: inline-block; width: 36px; height: 1px; background: var(--muted); vertical-align: middle; margin-right: 14px; }
+.cv-rule { width: 100%; height: 1px; background: var(--rule); }
+.sec-label { font-family: var(--font-label), var(--font-body); color: var(--acc-text); letter-spacing: .12em; }
+.card .sec-label { background: transparent; padding: 0; color: var(--acc-text); font-family: var(--font-label), var(--font-body); letter-spacing: .14em; }
+.card .sec-label::before { content: "SC. "; color: var(--muted); }
+.fig-id::before { content: "▶ "; color: var(--acc-text); }
+/* Subtitle-style takeaways */
+.c-take, .sec-take { background: transparent; border: 0; color: var(--subtitle); text-align: center; font-weight: 500; letter-spacing: .04em; text-shadow: 0 1px 8px rgba(0, 0, 0, .8); }
+.c-take b, .sec-take b { color: var(--subtitle); }
+.c-take { padding: 8px 10px; font-size: 17px; }
+.sec-take { display: block; text-align: left; }
+.c-take::before, .sec-take::before { content: "— "; opacity: .7; }
+.c-take::after { content: " —"; opacity: .7; }
+.box { border-width: 1px; }
+.panel { border-left: 2px solid var(--acc); }
+.cl-card { border-top-width: 2px; }
+.c-stage { border-left-width: 2px; }
+.c-guard, .cl-guard { box-shadow: 0 0 0 1px #2E2925; }
+.end-cta { background: transparent; color: var(--subtitle); border: 1px solid #5A5148; letter-spacing: .2em; font-weight: 500; }
+.pg-closing { letter-spacing: .06em; font-weight: 400; }
+.pg-closing b { color: var(--subtitle); }
+.pg-brand-name { letter-spacing: .1em; }
+
+/* Cover: keep the letterbox; the deck reads like a subtitle */
+.cv-deco { display: none; }
+.cv-hook { padding-bottom: 20px; }
+.cv-hook .c-body { margin: 0; padding: 30px 0 0; }
+.cv-band { background: transparent; color: var(--subtitle); margin: auto 0 0; padding: 16px 0 14px; border-top: 1px solid #3A342E; text-align: center; }
+.cv-band .cv-sub { font-weight: 500; letter-spacing: .04em; text-shadow: 0 1px 8px rgba(0, 0, 0, .8); }
+.cv-chips { justify-content: center; }
+.cv-chips span { border: 0; color: #8C847A; font-family: var(--font-label), var(--font-body); font-weight: 500; padding: 0 6px; }
+.cv-chips span + span::before { content: "/"; margin-right: 12px; opacity: .6; }
+.cv-hook .c-foot { margin: 0 -30px -20px; padding: 12px 30px 18px; color: #8C847A; background: repeating-linear-gradient(90deg, rgba(237, 231, 221, .22) 0 9px, transparent 9px 22px) left 4px bottom 5px / 100% 5px no-repeat, #000000; }
+.cv-hook .c-foot span { opacity: 1; }
+.card.c-quote { background: #000000; color: var(--subtitle); }
+.card.c-quote .c-top, .card.c-quote .c-foot { color: #8C847A; opacity: 1; }
+.card.c-quote .sec-label { border: 0; color: var(--subtitle); }
+.card.c-quote .cq { text-align: center; align-items: center; }
+.card.c-quote .cq-text { font-weight: 600; letter-spacing: .06em; }
+.cq-mark { display: none; }
+.cv-vs-col.yes { background: transparent; color: var(--subtitle); border: 1px solid var(--subtitle); }
+.cv-vs-col.no { background: transparent; border: 1px solid #3A342E; }
+.cv-vs-mid { background: var(--subtitle); color: #000000; }

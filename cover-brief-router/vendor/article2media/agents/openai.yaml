@@ -1,0 +1,4 @@
+interface:
+  display_name: "article2media"
+  short_description: "把文章或视频一键做成长图、小红书卡片、公众号排版、口播视频等：10 个独立能力 + 推荐组合"
+  default_prompt: "使用 $article2media 把这篇文章做成总结图；没说版式就出长图，主题按内容选择。"

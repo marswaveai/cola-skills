@@ -369,5 +369,75 @@ class DependenciesTests(unittest.TestCase):
         self.assertEqual(opener.call_args.kwargs["timeout"], 5)
 
 
+class BundledDependencyTests(unittest.TestCase):
+    """The shipped payload must satisfy installs without any network."""
+
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory(prefix="cover-bundle-tests-")
+        self.addCleanup(self.temp.cleanup)
+        self.root = Path(self.temp.name)
+        self.skills = self.root / "skills"
+        self.settings = self.root / "settings.json"
+        self.settings.write_text('{"disabled": []}')
+        self.dep = dependency()
+        self.vendor = self.root / "vendor"
+        self.vendor.mkdir()
+        self.bundle = self.vendor / "cola-skills-bundle.zip"
+        patcher = mock.patch.multiple(deps, VENDOR_ROOT=self.vendor, VENDOR_BUNDLE=self.bundle)
+        patcher.start()
+        self.addCleanup(patcher.stop)
+        self.addCleanup(deps._SHIPPED.clear)
+        deps._SHIPPED["entries"] = {(self.dep["repo"], self.dep["ref"], self.dep["folder"])}
+
+    def run_deps(self, **kwargs):
+        def no_network(*args, **inner):
+            raise AssertionError("Network must not be used")
+        return deps.run([self.dep], self.skills, settings_path=self.settings,
+                        downloader=no_network, **kwargs)
+
+    def write_bundle(self, name=None):
+        folder = name or self.dep["folder"]
+        prefix = "cola-skills-bundle/deps/" + folder + "/"
+        payload = archive_bytes({prefix + "SKILL.md": "---\nname: {}\n---\nBody".format(folder),
+                                 prefix + "references/core.md": "core"})
+        self.bundle.write_bytes(payload)
+
+    def test_vendor_directory_is_used_offline(self):
+        populate(self.vendor / self.dep["folder"], self.dep)
+        report = self.run_deps(check=True)
+        self.assertEqual(report["counts"]["existing"], 1)
+        self.assertEqual(report["network_downloads"], 0)
+        self.assertEqual(report["dependencies"][0]["path"], str(self.vendor / self.dep["folder"]))
+        self.assertTrue(report["dependencies"][0]["bundled"])
+
+    def test_bundled_archive_installs_without_network(self):
+        self.write_bundle()
+        report = self.run_deps()
+        self.assertEqual(report["counts"]["installed"], 1)
+        self.assertEqual(report["network_downloads"], 0)
+        target = self.skills / self.dep["folder"]
+        self.assertTrue((target / "SKILL.md").is_file())
+        self.assertTrue((target / "references/core.md").is_file())
+        self.assertEqual(report["dependencies"][0]["message"], deps.BUNDLED_MESSAGE)
+
+    def test_check_mode_reads_bundle_without_extracting(self):
+        self.write_bundle()
+        report = self.run_deps(check=True)
+        self.assertEqual(report["counts"]["existing"], 1)
+        self.assertEqual(report["network_downloads"], 0)
+        self.assertFalse(self.skills.exists())
+
+    def test_bundle_for_other_commit_is_ignored(self):
+        self.write_bundle()
+        other = dict(self.dep, id="lookalike", folder="lookalike")
+        payload = archive_bytes({"cola-skills-bundle/deps/lookalike/SKILL.md": "---\nname: lookalike\n---\n",
+                                 "cola-skills-bundle/deps/lookalike/references/core.md": "core"})
+        self.bundle.write_bytes(payload)
+        report = deps.run([dict(other, ref="b" * 40)], self.skills, settings_path=self.settings,
+                          check=True, downloader=None)
+        self.assertEqual(report["counts"]["incomplete"], 1)
+        self.assertFalse(self.skills.exists())
+
+
 if __name__ == "__main__":
     unittest.main()

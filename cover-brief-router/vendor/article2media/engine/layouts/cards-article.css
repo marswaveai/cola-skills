@@ -1,0 +1,40 @@
+/* Layout: cards-article — the original text, verbatim, flowed into fixed-ratio cards (540 CSS px wide → 1080 at 2x).
+   Loaded after full.css: the reading surface (fonts, sizes, colors) is the full-text layout's; this file adds the card
+   frame. Body text stays at the full layout's 40 px / 1.9 (at 1080 px). */
+
+html, body { width: auto; background: #d9d9d6; }
+.ac-deck { display: flex; flex-wrap: wrap; gap: 24px; padding: 24px; width: calc(3 * var(--card-w) + 4 * 24px); align-items: flex-start; }
+.ac-card.full-page {
+  width: var(--card-w); height: var(--card-h); padding: 30px 38px 0; display: flex; flex-direction: column; overflow: hidden; position: relative;
+}
+.ac-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-bottom: 12px; margin-bottom: 18px; border-bottom: 1px solid var(--rule);
+  font-family: var(--display); font-size: 12.5px; line-height: 1.5; color: var(--faint); letter-spacing: .04em; }
+.ac-head .ac-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ac-head .ac-no { font-family: Menlo, 'SF Mono', Consolas, monospace; font-size: 11px; white-space: nowrap; color: var(--accent); }
+.ac-body { flex: 1 1 auto; min-height: 0; overflow: hidden; }
+.ac-foot { flex: none; height: 46px; display: flex; justify-content: space-between; align-items: center; gap: 16px; border-top: 1px solid var(--rule);
+  font-family: Menlo, 'SF Mono', Consolas, monospace; font-size: 10.5px; line-height: 1.4; color: var(--faint); }
+.ac-foot .ac-src { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ac-foot .ac-brand { font-family: var(--display); font-size: 12px; color: var(--muted); white-space: nowrap; }
+
+/* First element of a card never pushes a top margin. */
+.ac-body > :first-child { margin-top: 0 !important; padding-top: 0; }
+.ac-body > h2:first-child { border-top: 0; }
+/* A block split across cards: the head keeps full justified lines, the continuation has no list marker / indent. */
+.ac-body .ac-cut { text-align-last: justify; }
+.full-latin .ac-body .ac-cut { text-align-last: auto; }
+.ac-body li.ac-cont { list-style: none; }
+.ac-body p.opening.ac-cont { font-size: 20px; }
+.ac-body blockquote.ac-cut { padding-bottom: 0; }
+.ac-body blockquote.ac-cont { padding-top: 0; }
+.ac-body .source-figure img { max-height: 420px; width: auto; max-width: 100%; margin: 0 auto; object-fit: contain; }
+
+/* Cover: title large, byline below, rest of the card left for the opening text. */
+.ac-cover .ac-head { visibility: hidden; }
+.ac-cover .ac-body { display: flex; flex-direction: column; justify-content: center; }
+.ac-cover .full-document h1.full-title { font-size: var(--cover-size, 44px); line-height: 1.32; border-bottom: 0; padding-bottom: 0; margin-bottom: 26px; }
+.ac-cover .ac-byline { font-family: var(--display); font-size: 15px; line-height: 1.6; color: var(--muted); padding-top: 18px; border-top: 2px solid var(--accent); width: fit-content; }
+.ac-cover .ac-byline .ac-count { display: block; margin-top: 4px; font-size: 13px; color: var(--faint); }
+
+/* Shorter cards (1:1) and taller ones (9:16) keep the same type; only the frame changes. */
+.ratio-1x1 .ac-cover .full-document h1.full-title { --cover-size: 36px; }

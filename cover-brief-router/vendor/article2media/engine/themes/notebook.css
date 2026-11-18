@@ -1,0 +1,63 @@
+/* notebook | 格纹手帐：方格纸底、霞鹜文楷手写感字体、胶带标签与荧光笔划重点，亲切好读；适合学习方法、读书笔记、课程笔记 */
+@import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/lxgwwenkai-regular.css');
+@import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/lxgwwenkai-bold.css');
+:root {
+  --font-head: 'LXGW WenKai', 'Kaiti SC', 'STKaiti', 'KaiTi', serif;
+  --font-body: var(--font-head);
+  --bg: #FBF8F1;
+  --ink: #2A2926;
+  --muted: #857F74;
+  --rule: #D6CEBE;
+  --rule-soft: #E7E0D2;
+  --fig-bg: #FFFFFF;
+  --card: #FFFFFF;
+  --on-acc: #FFFFFF;
+  --radius: 4px;
+  --radius-sm: 3px;
+  --panel-mix: 14%;
+  --w-title: 700;
+  --w-h2: 700;
+  --fs-body: 17px;
+  --fig-border: 1.5px dashed #CFC6B4;
+  --card-shadow: 0 1px 3px rgba(80, 70, 50, .12);
+  --guard-bg: #34322D;
+  --guard-ink: #FBF8F1;
+  --guard-muted: #B4AC9C;
+  --grid: rgba(110, 135, 175, .13);
+  --accent-1: #3A5C9C;
+  --accent-2: #D65F48;
+  --accent-3: #4A8757;
+  --accent-4: #8A5A9C;
+  --accent-5: #CF8526;
+  --accent-6: #2D8A8A;
+}
+/* Grid paper */
+.page, .card {
+  background-color: var(--bg);
+  background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+/* Highlighter under bold text in running copy */
+p b, li b, .q b, .c-text b, .pg-intro b, .pg-closing b, .end-h b {
+  background: linear-gradient(transparent 55%, rgba(255, 207, 72, .7) 55%);
+  color: var(--ink);
+}
+/* Washi-tape labels */
+.card .sec-label {
+  background: color-mix(in srgb, var(--acc) 22%, rgba(255, 255, 255, .6)); color: var(--ink);
+  transform: rotate(-1.2deg); border-radius: 0;
+}
+.cv-rule { height: 4px; background: repeating-linear-gradient(90deg, var(--acc) 0 10px, transparent 10px 16px); }
+
+/* Cover: two strips of washi tape and a sticky note for the deck */
+.cv-deco { right: -30px; top: 52px; width: 190px; height: 90px; }
+.wx-cover.wide .cv-deco { width: 420px; height: 200px; right: -50px; top: 30%; }
+.cv-deco i:nth-child(1) { inset: 0 0 auto auto; width: 86%; height: 22px; border-radius: 0; opacity: .5; background: var(--accent-2); transform: rotate(8deg); }
+.cv-deco i:nth-child(2) { inset: 30px 6% auto auto; width: 60%; height: 18px; border: 0; border-radius: 0; opacity: .45; background: var(--accent-3); transform: rotate(-5deg); }
+.cv-deco i:nth-child(3) { display: none; }
+.cv-band { margin: auto 0 4px; padding: 18px 20px 18px; background: #FFE9A0; color: var(--ink); transform: rotate(-.8deg); box-shadow: 2px 5px 12px rgba(80, 70, 50, .18); }
+.cv-band .cv-sub { font-family: var(--font-head); font-size: 18px; }
+.cv-chips span { border: 0; border-bottom: 2px solid var(--accent-2); border-radius: 0; padding: 0 2px; }
+.cv-hook .c-foot { background: transparent; color: var(--muted); }
+.cv-title b { background: linear-gradient(transparent 60%, rgba(255, 207, 72, .75) 60%); color: var(--ink); }
+.card.c-quote .cq-text { font-weight: 700; }

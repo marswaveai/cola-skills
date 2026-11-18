@@ -1,0 +1,86 @@
+/* prosperity | 繁荣主义（小红书 2026 秋冬趋势）：奶油底配波尔多红、山楂红、喜悦粉与榉木绿，金色双线边框、扇贝花边、格纹与圆点层层叠加，复古又热闹；适合时尚穿搭、节日送礼清单、品牌联名 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&family=Noto+Sans+SC:wght@400;500;700;900&family=DM+Serif+Display&display=block');
+:root {
+  --font-head: 'DM Serif Display', 'Noto Serif SC', 'Songti SC', serif;
+  --font-body: 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --bg: #F6EBDD;
+  --ink: #3B2418;
+  --muted: #7D6152;
+  --rule: #C9A27E;
+  --rule-soft: #E6D3BF;
+  --fig-bg: #FFF8EF;
+  --card: #FFF8EF;
+  --on-acc: #FFF3E4;
+  --radius: 10px;
+  --radius-sm: 8px;
+  --panel-mix: 9%;
+  --h2-ink: #5E1224;
+  --title-ink: #5E1224;
+  --sec-rule: 3px double #C9A24A;
+  --card-shadow: 0 0 0 1px #E6D3BF;
+  --guard-bg: #5E1224;
+  --guard-ink: #FFF3E4;
+  --guard-muted: #E3B9B0;
+  --guard-x: #F4A6C0;
+  --burgundy: #5E1224;
+  --haw: #C8202F;
+  --joy: #F4A6C0;
+  --beech: #6E7B3A;
+  --gold: #C9A24A;
+  --check: conic-gradient(#5E1224 25%, #F6EBDD 0 50%, #5E1224 0 75%, #F6EBDD 0);
+  --awning: repeating-linear-gradient(90deg, rgba(200, 32, 47, .55) 0 8px, rgba(244, 166, 192, .55) 8px 16px);
+  --accent-1: #8E1B32;
+  --accent-2: #C8202F;
+  --accent-3: #5F6B2E;
+  --accent-4: #9A5B2E;
+  --accent-5: #B8436F;
+  --accent-6: #3B2418;
+}
+/* Burgundy frame with a gold hairline, like a printed invitation */
+.page, .card { box-shadow: inset 0 0 0 9px var(--burgundy), inset 0 0 0 13px var(--bg), inset 0 0 0 14.5px var(--gold); background-image: radial-gradient(rgba(201, 162, 74, .16) 1.2px, transparent 1.6px); background-size: 14px 14px; }
+.page { box-shadow: inset 0 0 0 14px var(--burgundy), inset 0 0 0 20px var(--bg), inset 0 0 0 22px var(--gold); }
+/* Scalloped valance across the top of the cover and end card */
+.c-cover::before, .c-end::before, .page::before {
+  content: ""; position: absolute; left: 13px; right: 13px; top: 9px; height: 12px; pointer-events: none;
+  background: radial-gradient(circle at 9px 0, var(--joy) 8.5px, transparent 9px) 0 0 / 18px 12px repeat-x;
+}
+.page::before { left: 20px; right: 20px; top: 14px; height: 16px; background: radial-gradient(circle at 12px 0, var(--joy) 11.5px, transparent 12px) 0 0 / 24px 16px repeat-x; }
+.pg-top { margin-top: 8px; }
+/* Titles */
+.pg-title, .cv-title { letter-spacing: .01em; }
+.pg-title b, .cv-title b, .end-h b { color: var(--haw); background: linear-gradient(transparent 70%, color-mix(in srgb, var(--joy) 75%, transparent) 70% 94%, transparent 94%); -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.sec-h, .card .sec-h, .end-h, .cl-title, .c-stage-h b, .c-guard-h { font-family: 'Noto Serif SC', 'Songti SC', serif; }
+.pg-title, .cv-title { font-family: 'DM Serif Display', 'Noto Serif SC', 'Songti SC', serif; }
+.pg-part, .cv-kicker {
+  display: inline-block; align-self: flex-start; background: var(--burgundy); color: #FFF3E4; padding: 3px 16px; border-radius: 999px;
+  box-shadow: 0 0 0 2px var(--bg), 0 0 0 3.5px var(--gold); letter-spacing: .1em; margin-top: 14px;
+}
+.cv-kicker { margin-top: 0; padding: 2px 14px; }
+.cv-rule { width: 160px; height: 7px; margin: 18px 0 14px; background: none; border-top: 1.5px solid var(--gold); border-bottom: 1.5px solid var(--gold); position: relative; overflow: visible; }
+.cv-rule::after { content: ""; position: absolute; left: 50%; top: -5px; width: 10px; height: 10px; margin-left: -5px; background: var(--haw); transform: rotate(45deg); box-shadow: 0 0 0 2px var(--bg); }
+.sec-label { color: var(--acc-text); font-weight: 700; letter-spacing: .08em; }
+.card .sec-label { background: var(--acc); color: #FFF3E4; border-radius: 999px; box-shadow: 0 0 0 2px var(--bg), 0 0 0 3.5px var(--gold); }
+/* Figure cards: checkerboard trim along the top */
+.fig-card, .c-fig-card { background: var(--check) 0 0 / 12px 12px repeat-x, var(--fig-bg); background-size: 12px 12px, auto; border: 1.5px solid var(--burgundy); padding-top: 18px; }
+.fig-card { padding-top: 20px; }
+.c-fig-card { background-repeat: repeat-x, no-repeat; background-position: 0 0, 0 0; }
+.fig-card { background-repeat: repeat-x, no-repeat; }
+/* Panels: striped awning along the top */
+.panel { background: var(--awning) 0 0 / 100% 8px no-repeat, var(--panel-bg); padding-top: 20px; border: 1.5px solid color-mix(in srgb, var(--acc) 30%, transparent); }
+.box { border-width: 1.5px; border-radius: 8px; }
+.hb-bar { border-radius: 99px; }
+.ss-val { font-family: 'DM Serif Display', 'Noto Serif SC', serif; font-weight: 400; }
+/* Joy-pink takeaways with a dotted gold border */
+.c-take, .sec-take { background: color-mix(in srgb, var(--joy) 55%, var(--bg)); color: var(--burgundy); border: 2px dotted var(--gold); border-left: 2px dotted var(--gold); border-radius: 14px; font-weight: 900; }
+.c-take b, .sec-take b { color: var(--haw); }
+.c-take { padding: 10px 16px; }
+.sec-take { display: inline-block; padding: 8px 16px; }
+.c-bullets li::before, .sec-bullets li::before { border-radius: 0; transform: rotate(45deg); background: var(--gold); }
+/* Checklists */
+.cl-card { border-top: 0; background: var(--check) 0 0 / 10px 10px repeat-x, var(--card); padding-top: 10px; }
+.c-stage { border-left: 6px solid var(--acc); }
+.c-guard, .cl-guard { box-shadow: inset 0 0 0 3px var(--burgundy), inset 0 0 0 4.5px var(--gold); }
+.end-cta { background: var(--burgundy); color: #F3D9A0; letter-spacing: .12em; border-radius: 999px; box-shadow: 0 0 0 2px var(--bg), 0 0 0 3.5px var(--gold); }
+.pg-closing { border-top: 3px double var(--gold); border-bottom: 3px double var(--gold); font-family: 'Noto Serif SC', serif; font-weight: 900; color: var(--burgundy); }
+.pg-closing b { color: var(--haw); }
+.pg-brand-name { color: var(--burgundy); font-family: 'DM Serif Display', 'Noto Serif SC', serif; font-weight: 400; }

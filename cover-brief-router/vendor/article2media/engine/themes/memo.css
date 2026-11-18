@@ -1,0 +1,81 @@
+/* memo | 备忘录：仿手机备忘录，白底黑字、苹方粗标题、黄色导航与圆形勾选框、荧光标记重点，像一条随手存下的干货笔记；适合实用技巧合集：职场技巧、效率方法、生活小技巧、经验清单 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;900&display=block');
+:root {
+  --font-head: -apple-system, 'SF Pro Display', 'PingFang SC', 'Noto Sans SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --font-body: -apple-system, 'SF Pro Text', 'PingFang SC', 'Noto Sans SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --bg: #FFFFFF;
+  --ink: #1C1C1E;
+  --muted: #8A8A8E;
+  --rule: #E5E5EA;
+  --rule-soft: #EFEFF4;
+  --fig-bg: #F5F5F7;
+  --card: #FFFFFF;
+  --on-acc: #1C1C1E;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --panel-mix: 0%;
+  --w-title: 700;
+  --w-h2: 700;
+  --sec-rule: 1px solid #E5E5EA;
+  --h2-ink: #1C1C1E;
+  --card-shadow: 0 0 0 1px #E5E5EA;
+  --guard-bg: #F5F5F7;
+  --guard-ink: #1C1C1E;
+  --guard-muted: #8A8A8E;
+  --guard-x: #FF3B30;
+  --memo-tint: #E3A600;
+  --memo-mark: rgba(255, 204, 0, .38);
+  /* Notes yellow is a fill color; text stays ink */
+  --acc-text-override: #1C1C1E;
+  --accent-1: #FFC400;
+  --accent-2: #FF9F0A;
+  --accent-3: #34C759;
+  --accent-4: #0A84FF;
+  --accent-5: #FF453A;
+  --accent-6: #BF5AF2;
+}
+/* Navigation bar: "‹ <folder>" on the left, page number on the right */
+.c-top, .pg-top { color: var(--memo-tint); font-weight: 600; font-size: 15px; letter-spacing: 0; }
+.pg-top { font-size: 17px; }
+.c-top span:first-child::before, .pg-top span:first-child::before { content: "‹"; font-size: 1.7em; font-weight: 400; line-height: 0; vertical-align: -.12em; margin-right: 8px; }
+.c-top { padding-bottom: 10px; border-bottom: .5px solid var(--rule); margin: 0 -30px; padding-left: 22px; padding-right: 22px; }
+.pg-top { padding-bottom: 14px; border-bottom: .5px solid var(--rule); margin: 0 -64px; padding-left: 48px; padding-right: 48px; }
+/* Big bold note title, gray timestamp-style kicker */
+.cv-kicker { color: var(--muted); font-weight: 500; font-size: 13px; letter-spacing: .02em; text-align: center; }
+.cv-title, .pg-title { letter-spacing: -.01em; }
+.cv-title b, .pg-title b, .end-h b { color: inherit; background: var(--memo-mark); border-radius: 4px; padding: 0 .08em; }
+.cv-rule { display: none; }
+.cv-title { margin-bottom: 18px; }
+.pg-part { color: var(--muted); font-weight: 600; }
+/* Section label as a Notes "heading" chip */
+.sec-label { color: var(--muted); font-weight: 600; }
+.card .sec-label { background: var(--fig-bg); color: var(--ink); border-radius: 6px; }
+.card .sec-label::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--acc); margin-right: 7px; vertical-align: 1px; }
+/* Highlighter on bold words (Notes text highlight) */
+p b, li b, .q b, .c-text b, .pg-intro b, .pg-closing b, .c-take b {
+  background: var(--memo-mark); border-radius: 3px; padding: 0 .1em; color: var(--ink);
+}
+/* Block quote */
+.c-take, .sec-take { background: transparent; border-left: 3px solid var(--acc); border-radius: 0; color: var(--ink); font-weight: 600; }
+.sec-take { padding-left: 14px; }
+.c-take { padding: 4px 0 4px 14px; }
+/* Bullets and round checkboxes */
+.c-bullets li::before, .sec-bullets li::before { background: var(--ink); }
+.c-box, .cl-box { border-radius: 50%; border: 1.6px solid #C7C7CC; flex-basis: 17px; height: 17px; margin-top: .22em; }
+.cl-box { flex-basis: 18px; height: 18px; margin-top: .2em; }
+.c-stage, .cl-card { box-shadow: none; border: 0; border-radius: var(--radius); background: var(--fig-bg); }
+.c-stage { border-left: 0; }
+.c-stage-h small, .cl-label { color: var(--memo-tint); }
+.cl-card { border-top: 0; }
+.cl-done { background: transparent; border-top: .5px solid var(--rule); }
+.c-guard, .cl-guard { border: 1.5px solid #FFD5D1; background: #FFF5F4; color: var(--ink); }
+.cl-guard { border-top: 1.5px solid #FFD5D1; }
+/* Figures sit like attachments */
+.fig-card, .c-fig-card { border-radius: 14px; }
+.box { border-radius: 8px; }
+.hb-bar { border-radius: 99px; }
+.panel { background: var(--fig-bg); }
+.p-card, .p-quote .q { box-shadow: 0 0 0 .5px #E5E5EA; }
+.pg-closing { border-top: .5px solid var(--rule); border-bottom: .5px solid var(--rule); font-weight: 600; }
+.end-cta { background: var(--fig-bg); color: var(--memo-tint); font-weight: 600; border-radius: 12px; }
+.pg-brand-name { font-weight: 700; }

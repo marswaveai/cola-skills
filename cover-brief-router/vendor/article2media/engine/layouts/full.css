@@ -1,0 +1,47 @@
+/* Layout: full (-f) — the original text, verbatim, as a long reading image. 540 CSS px wide → 1080 px at 2x.
+   Reading contract (at 1080 px): body ≥ 40 px / 1.9, ~896 px measure, white paper and deep neutral ink by default;
+   headings 80 / 54 / 44 px; tables 34, code 32, captions 30. Typography only — never decoration. */
+@import url('https://cdn.jsdelivr.net/npm/@chinese-fonts/jhlst@3.0.0/dist/%E4%BA%AC%E8%8F%AF%E8%80%81%E5%AE%8B%E4%BD%93v2_002/result.css');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 540px; background: #fff; }
+.full-page {
+  --paper: #FFFFFF; --ink: #171717; --muted: #525252; --faint: #7A7A7A; --rule: #E5E5E3; --accent: #A74432;
+  --body: 'KingHwa_OldSong', 'Songti SC', 'STSong', 'Noto Serif CJK SC', 'Noto Serif SC', serif;
+  --display: 'KingHwa_OldSong', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  width: 540px; background: var(--paper); color: var(--ink); padding: 52px 46px 34px;
+  font-family: var(--body); font-size: 20px; line-height: 1.9; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+}
+.full-document > * + * { margin-top: 18px; }
+.full-document h1 { font-family: var(--display); font-size: 40px; line-height: 1.3; font-weight: 700; letter-spacing: .01em; margin-bottom: 30px; padding-bottom: 22px; border-bottom: 1.5px solid var(--rule); }
+.full-document h2 { font-family: var(--display); font-size: 27px; line-height: 1.45; font-weight: 700; margin-top: 46px; padding-top: 20px; border-top: 2px solid var(--accent); width: fit-content; max-width: 100%; }
+.full-document h3 { font-family: var(--display); font-size: 22px; line-height: 1.6; font-weight: 700; margin-top: 34px; }
+.full-document h4 { font-family: var(--display); font-size: 20px; line-height: 1.6; font-weight: 700; margin-top: 26px; color: var(--muted); }
+.full-document h2 + *, .full-document h3 + *, .full-document h4 + * { margin-top: 14px; }
+.full-document p, .full-document li, .full-document blockquote, .full-document td, .full-document th { white-space: pre-line; }
+.full-document p { text-wrap: pretty; text-align: justify; }
+.full-document p.opening { font-size: 22px; line-height: 1.9; }
+.full-document strong { font-weight: 700; color: var(--ink); box-shadow: inset 0 -.32em 0 color-mix(in srgb, var(--accent) 14%, transparent); }
+.full-document em { font-style: italic; }
+.full-document code { font-family: Menlo, 'SF Mono', Consolas, monospace; font-size: .8em; background: color-mix(in srgb, var(--ink) 6%, var(--paper)); padding: 1px 5px; border-radius: 3px; }
+.full-document .link { color: var(--accent); }
+.full-document blockquote { border-left: 2px solid var(--accent); padding: 4px 0 4px 16px; color: var(--muted); line-height: 2; }
+.full-document ul, .full-document ol { padding-left: 24px; }
+.full-document li { padding-left: 4px; }
+.full-document li + li { margin-top: 10px; }
+.full-document li::marker { color: var(--accent); font-family: var(--display); }
+.full-document pre { font-family: Menlo, 'SF Mono', Consolas, monospace; font-size: 16px; line-height: 1.7; white-space: pre-wrap; overflow-wrap: anywhere; background: color-mix(in srgb, var(--ink) 5%, var(--paper)); padding: 14px 16px; border-radius: 6px; }
+.full-table { overflow: hidden; }
+.full-document table { width: 100%; border-collapse: collapse; font-size: 17px; line-height: 1.7; }
+.full-document th, .full-document td { border-bottom: 1px solid var(--rule); padding: 8px 6px; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+.full-document th { font-family: var(--display); font-weight: 700; border-bottom: 1.5px solid var(--ink); }
+.source-figure img { display: block; width: 100%; height: auto; border-radius: 4px; }
+.source-figure figcaption, .full-document .caption { font-size: 15px; line-height: 1.7; color: var(--faint); margin-top: 8px; text-align: center; }
+.section-break { border: 0; height: 0; margin: 36px auto !important; width: 60px; border-top: 2px solid var(--accent); }
+.full-foot { margin-top: 46px; padding-top: 16px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; gap: 16px; font-family: Menlo, 'SF Mono', Consolas, monospace; font-size: 11px; line-height: 1.6; color: var(--faint); }
+.full-brand { font-family: var(--display); font-size: 13px; color: var(--muted); white-space: nowrap; }
+
+/* Mostly-Latin source: Latin serif first (CJK still falls back to the old-style Song), ragged right with hyphenation. */
+.full-latin { --body: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, 'Noto Serif', 'KingHwa_OldSong', serif; --display: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, 'Noto Serif', 'KingHwa_OldSong', serif; }
+.full-latin .full-document p { text-align: left; hyphens: auto; }
+

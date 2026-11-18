@@ -1,0 +1,26 @@
+/* earth | 暖色大地：奶咖米色纸面、陶土/焦糖/橄榄主色、衬线标题配黑体正文，温暖可信；适合个人经历与复盘、职场故事、旅行游记与攻略，健康养生 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@400;500;700&display=block');
+:root {
+  --font-head: 'Noto Serif SC', 'Songti SC', 'STSong', serif;
+  --font-body: 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --bg: #F3EADF;
+  --ink: #3A2A21;
+  --muted: #8B7566;
+  --rule: #DCCBB8;
+  --rule-soft: #E8DCCD;
+  --fig-bg: #EADCCB;
+  --card: #FBF6EF;
+  --on-acc: #FFF8EE;
+  --radius: 8px;
+  --radius-sm: 5px;
+  --panel-mix: 13%;
+  --guard-bg: #3A2A21;
+  --guard-ink: #F3EADF;
+  --guard-muted: #BBA491;
+  --accent-1: #B2532A;
+  --accent-2: #6A7838;
+  --accent-3: #B07B2C;
+  --accent-4: #865D48;
+  --accent-5: #9A3C2A;
+  --accent-6: #5E7360;
+}

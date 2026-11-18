@@ -1,0 +1,95 @@
+/* pixel | 像素复古：淡紫桌面网点底、缝合像素字体标题、直角窗口与硬投影、标题栏式图卡、分段进度条，像一台 Y2K 老电脑；适合游戏、互联网文化与怀旧、极客玩法 */
+@import url('https://cdn.jsdelivr.net/npm/@fontsource/fusion-pixel-12px-proportional-sc@5.3.0/index.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=block');
+:root {
+  --font-pixel: 'Fusion Pixel 12px Proportional SC', 'Noto Sans SC', 'PingFang SC', monospace;
+  --font-head: var(--font-pixel);
+  --font-body: 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --font-label: var(--font-pixel);
+  --bg: #ECE9FA;
+  --ink: #1E1B3A;
+  --muted: #5F5A82;
+  --rule: #1E1B3A;
+  --rule-soft: #D5D0EE;
+  --fig-bg: #FFFFFF;
+  --card: #FFFFFF;
+  --on-acc: #FFFFFF;
+  --radius: 0px;
+  --radius-sm: 0px;
+  --panel-mix: 14%;
+  --w-title: 400;
+  --w-h2: 400;
+  --fs-title: 60px;
+  --fs-h2: 36px;
+  --sec-rule: 2px dashed #1E1B3A;
+  --h2-ink: #1E1B3A;
+  --fig-border: 2px solid #1E1B3A;
+  --panel-border: 2px solid #1E1B3A;
+  --card-border: 2px solid #1E1B3A;
+  --card-shadow: 4px 4px 0 #1E1B3A;
+  --guard-bg: #1E1B3A;
+  --guard-ink: #F4F2FF;
+  --guard-muted: #A9A3D6;
+  --guard-x: #FF5C93;
+  --dot: rgba(30, 27, 58, .13);
+  --accent-1: #4B3BFF;
+  --accent-2: #F0287A;
+  --accent-3: #00936A;
+  --accent-4: #C75A00;
+  --accent-5: #0080C0;
+  --accent-6: #8A3FFC;
+}
+/* Desktop dots */
+.page, .card { background-image: radial-gradient(var(--dot) 1px, transparent 1.4px); background-size: 8px 8px; }
+/* Pixel sizes snap to the 12px grid so the glyphs stay crisp */
+.pg-title, .cv-title { text-shadow: 4px 4px 0 #FF8FB8; letter-spacing: 0; line-height: 1.2; }
+.cv-title { --cv-size: 60px; line-height: 1.12; }
+.r-1x1 .cv-title { --cv-size: 48px; }
+.r-9x16 .cv-title { --cv-size: 66px; }
+.card .sec-h { font-size: 30px; line-height: 1.22; }
+.card .sec-h.cont { font-size: 24px; }
+.r-1x1 .card .sec-h, .r-4x5 .card .sec-h { font-size: 27px; }
+.sec-h, .card .sec-h { text-shadow: 3px 3px 0 color-mix(in srgb, var(--acc) 35%, transparent); }
+.pg-part { font-size: 18px; font-weight: 400; display: inline-block; background: var(--ink); color: #FFFFFF; padding: 2px 12px; margin-top: 14px; }
+.pg-top, .c-top, .c-foot { font-family: var(--font-pixel); font-size: 12px; letter-spacing: 0; }
+.c-top span:first-child::before, .pg-top span:first-child::before { content: "■ "; color: var(--accent-2); }
+.cv-kicker { font-family: var(--font-pixel); font-size: 12px; font-weight: 400; display: inline-block; align-self: flex-start; background: var(--acc); color: #FFFFFF; padding: 3px 10px; box-shadow: 3px 3px 0 #1E1B3A; }
+.cv-rule { height: 8px; width: 160px; margin: 18px 0 14px; background: repeating-linear-gradient(90deg, var(--acc) 0 8px, transparent 8px 12px); }
+.cv-title b, .pg-title b { color: var(--acc-text); }
+.sec-label { font-size: 12px; }
+.card .sec-label { font-family: var(--font-pixel); font-weight: 400; background: var(--acc); color: #FFFFFF; border-radius: 0; box-shadow: 3px 3px 0 #1E1B3A; }
+/* Windows: title bar on every figure card */
+.fig-card, .c-fig-card { box-shadow: 4px 4px 0 #1E1B3A; }
+.fig-id {
+  margin: -10px -14px 8px; padding: 2px 10px; background: var(--acc); color: #FFFFFF; font-size: 12px; position: relative;
+}
+.fig-id::after { content: "_ □ ×"; position: absolute; right: 10px; top: 2px; letter-spacing: .2em; }
+.c-fig-card { position: relative; border-top: 20px solid var(--acc); }
+.c-fig-card::before { content: "_ □ ×"; position: absolute; right: 8px; top: -18px; font: 12px/1.3 var(--font-pixel); color: #FFFFFF; letter-spacing: .2em; }
+.panel { box-shadow: 4px 4px 0 #1E1B3A; }
+.box { border-width: 2px; }
+.box.hl { box-shadow: 2px 2px 0 #1E1B3A; }
+/* Segmented progress bars */
+.hb-bar { background: repeating-linear-gradient(90deg, var(--acc) 0 7px, color-mix(in srgb, var(--acc) 55%, #FFFFFF) 7px 9px); }
+.ss-val { font-family: var(--font-pixel); font-weight: 400; }
+/* Dialog-box takeaways */
+.c-take, .sec-take { background: #FFFFFF; border: 2px solid #1E1B3A; border-radius: 0; box-shadow: 4px 4px 0 var(--acc); font-weight: 700; }
+.c-take { padding: 10px 14px; }
+.sec-take { display: block; padding: 8px 14px; margin-right: 6px; }
+.c-take::before, .sec-take::before { content: "▶ "; color: var(--acc-text); font-family: var(--font-pixel); }
+/* Checklists */
+.cl-card { border: 2px solid #1E1B3A; border-top: 10px solid var(--acc); box-shadow: 4px 4px 0 #1E1B3A; }
+.cl-title, .c-stage-h b, .c-guard-h, .end-h { font-weight: 400; }
+.cl-title { font-size: 24px; }
+.c-stage-h b { font-size: 18px; }
+.end-h { font-size: 24px; }
+.c-guard-h { font-size: 18px; }
+.c-stage { border: 2px solid #1E1B3A; border-left: 8px solid var(--acc); box-shadow: 3px 3px 0 #1E1B3A; }
+.c-box, .cl-box { border: 2px solid #1E1B3A; border-radius: 0; }
+.c-guard, .cl-guard { box-shadow: 4px 4px 0 var(--accent-2); }
+.c-bullets li::before, .sec-bullets li::before { border-radius: 0; background: var(--acc); }
+.end-cta { font-family: var(--font-pixel); font-size: 18px; font-weight: 400; border: 2px solid #1E1B3A; box-shadow: 4px 4px 0 #1E1B3A; }
+.end-cta::before { content: "▶ "; }
+.pg-closing { font-family: var(--font-body); font-weight: 700; border-top: 2px dashed #1E1B3A; border-bottom: 2px dashed #1E1B3A; }
+.cv-toc { border: 2px solid #1E1B3A; }
+.qt-text { font-family: var(--font-body); font-weight: 700; }

@@ -1,0 +1,101 @@
+/* Layout: wechat — 公众号 article. Loaded after components.css and BEFORE the theme:
+   bare selectors (colors, fonts, borders) can be restyled by themes; ".wx …" selectors fix sizes and spacing
+   for a phone column and win over the theme's bare rules. Only static ::before/::after survive (as spans). */
+
+body { width: 375px; background: #fff; }
+.wx { background: var(--bg); color: var(--ink); font-family: var(--font-body); }
+.wx { font-size: 16px; line-height: 1.85; letter-spacing: .03em; padding: 22px 16px 26px; word-break: break-word; }
+
+.wx-meta { color: var(--muted); }
+.wx .wx-meta { font-size: 12.5px; line-height: 1.6; margin: 0 0 14px; }
+.wx-lead { border-left: 3px solid var(--acc-line); color: var(--ink); }
+.wx .wx-lead { font-size: 16px; line-height: 1.85; padding: 2px 0 2px 12px; margin: 0 0 18px; }
+
+.wx .wx-toc { margin: 0 0 8px; padding: 12px 16px 10px; }
+.wx-toc-n { color: var(--acc-text); font-weight: 700; font-family: var(--font-label, var(--font-head)); }
+.wx .wx-toc-n { display: inline-block; width: 2.1em; }
+.wx .wx-toc-i { font-size: 15px; line-height: 1.7; margin: 4px 0; }
+
+/* Optional AI cover illustration at the top (captured as an image) */
+.wx .wx-hero { height: 250px; margin: -8px 0 10px; }
+
+/* Part banner */
+.wx-part-t { background: var(--acc); color: var(--on-acc); font-family: var(--font-head); font-weight: 700; border-radius: var(--radius-sm); }
+.wx .wx-part { text-align: center; margin: 34px 0 6px; }
+.wx .wx-part-t { display: inline-block; font-size: 16px; line-height: 1.5; padding: 5px 16px; letter-spacing: .06em; }
+.wx .wx-intro { font-size: 15.5px; color: var(--ink); margin: 12px 0 4px; }
+
+/* Section */
+.wx-sec { border-top: var(--sec-rule, 1px solid var(--rule)); }
+.wx .wx-sec { padding: 26px 0 8px; margin-top: 18px; }
+.wx-part + .wx-sec, .wx-intro + .wx-sec { border-top: 0; }
+.sec-label { color: var(--muted); font-family: var(--font-label, var(--font-body)); }
+.wx .sec-label { font-size: 12.5px; line-height: 1.5; letter-spacing: .06em; margin: 0; }
+.sec-h { font-family: var(--font-head); font-weight: var(--w-h2, 900); color: var(--h2-ink, var(--acc-text)); }
+.wx .sec-h { font-size: 22px; line-height: 1.42; margin: 6px 0 14px; letter-spacing: .02em; }
+.wx .wx-p { margin: 0 0 14px; }
+.wx .wx-li { margin: 0 0 8px; padding-left: 1.15em; text-indent: -1.15em; }
+.wx-dot { color: var(--acc); }
+.wx .wx-dot { font-size: 9px; vertical-align: 2px; margin-right: 7px; text-indent: 0; }
+.sec-take { color: var(--acc-text); font-weight: 700; }
+.wx .sec-take { font-size: 16.5px; line-height: 1.7; margin: 18px 0 6px; padding: 10px 14px; }
+.wx-take { background: var(--panel-bg); border-radius: var(--radius-sm); }
+
+/* Figures (screenshotted to images) */
+.wx .wx-fig { margin: 18px 0 16px; }
+/* Figures are captured with a margin so soft or offset shadows fade into the page color. */
+.fig-card { background: var(--fig-bg); border-radius: var(--radius); border: var(--fig-border, 0); }
+.wx .fig-card { padding: 10px 14px 12px; }
+.fig-id { color: var(--muted); font-family: var(--font-label, var(--font-body)); }
+.wx .fig-id { font-size: 10.5px; margin-bottom: 4px; letter-spacing: .04em; line-height: 1.4; }
+.wx .fig-canvas { height: 200px; }
+.fig-cap { color: var(--muted); text-align: center; }
+.wx .fig-cap { font-size: 13.5px; line-height: 1.6; margin: 12px 0 0; padding: 0 6px; }
+
+/* Panels */
+.wx .wx-panel { margin: 16px 0 10px; padding: 12px 14px 12px; }
+.wx .p-title { font-size: 12.5px; line-height: 1.5; margin: 0 0 6px; }
+.wx .wx-table { width: 100%; border-collapse: collapse; }
+.wx-table td { border-top: 1px solid var(--panel-rule); vertical-align: top; }
+.wx .wx-table td { padding: 8px 6px 8px 0; font-size: 14px; line-height: 1.6; }
+.wx-k { font-weight: 700; --wx-w: 30%; }
+.wx .wx-k { width: 30%; }
+.wx .p-card { margin: 8px 0 0; padding: 10px 12px; font-size: 14px; line-height: 1.6; }
+.wx .p-card .t { font-size: 14.5px; margin: 0 0 2px; }
+.wx .p-card .x { margin: 0; }
+.wx .p-quote .q { font-size: 15px; line-height: 1.8; padding: 12px 14px; }
+.wx .p-quote .n { font-size: 12.5px; margin: 8px 0 0; }
+
+/* Checklist */
+.wx-cl { background: var(--card); border-top: 4px solid var(--acc); border-radius: 0 0 var(--radius) var(--radius); box-shadow: var(--card-shadow, 0 0 0 1px var(--rule-soft)); }
+.wx .wx-cl { margin: 14px 0; padding: 12px 14px 10px; }
+.cl-label { color: var(--acc-text); font-weight: 700; }
+.wx .cl-label { font-size: 12px; line-height: 1.5; margin: 0; letter-spacing: .04em; }
+.cl-title { font-family: var(--font-head); font-weight: 900; }
+.wx .cl-title { font-size: 18px; line-height: 1.4; margin: 2px 0 6px; }
+.wx-check { border-bottom: 1px solid var(--rule-soft); }
+.wx .wx-check { font-size: 14.5px; line-height: 1.65; padding: 6px 0; margin: 0; }
+.wx-box { color: var(--acc-line); }
+.wx .wx-box { margin-right: 8px; }
+.cl-x { color: var(--guard-x, #e2725b); font-weight: 700; font-style: normal; }
+.wx .cl-x { margin-right: 8px; }
+.cl-done { background: var(--panel-bg); }
+.wx .cl-done { font-size: 13.5px; line-height: 1.6; padding: 8px 10px; margin: 8px 0 2px; }
+.cl-done b { color: var(--acc-text); }
+.cl-guard { background: var(--guard-bg); color: var(--guard-ink); border-top-color: var(--guard-bg); box-shadow: none; }
+.cl-guard .cl-label { color: var(--guard-muted); }
+.cl-guard b { color: var(--guard-ink); }
+.cl-guard .wx-check { border-bottom-color: color-mix(in srgb, var(--guard-ink) 14%, transparent); }
+.cl-guard-note { color: var(--guard-muted); }
+.wx .cl-guard-note { font-size: 12.5px; margin: 8px 0 0; }
+.cl-note { color: var(--muted); }
+.wx .cl-note { font-size: 12.5px; margin: 8px 0 0; }
+
+/* Closing + end */
+.pg-closing { font-family: var(--font-head); text-align: center; border-top: var(--sec-rule, 1px solid var(--rule)); border-bottom: 1px solid var(--rule); }
+.wx .pg-closing { font-size: 17px; line-height: 1.75; padding: 18px 6px; margin: 24px 0 0; }
+.wx-foot { color: var(--muted); }
+.wx .wx-end { margin-top: 22px; }
+.wx .wx-foot { font-size: 12px; line-height: 1.7; margin: 0 0 6px; letter-spacing: .02em; }
+.wx-brand { font-family: var(--font-head); font-weight: 900; }
+.wx .wx-brand { font-size: 16px; margin: 10px 0 0; }

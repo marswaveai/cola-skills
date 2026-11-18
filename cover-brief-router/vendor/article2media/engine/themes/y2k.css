@@ -1,0 +1,111 @@
+/* y2k | 千禧 Y2K / Y3K 液态铬：长春花蓝底上的镭射彩光、得意黑斜体标题、液态铬渐变字、镭射描边卡片、四芒星与果冻按钮，甜酷网感；适合美妆、明星娱乐、追星、二次元 */
+@import url('https://cdn.jsdelivr.net/npm/@chinese-fonts/dyh@3.0.0/dist/SmileySans-Oblique/result.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=block');
+:root {
+  --font-head: 'Smiley Sans Oblique', 'Noto Sans SC', 'PingFang SC', sans-serif;
+  --font-body: 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --bg: #EEF0FF;
+  --ink: #1C1442;
+  --muted: #6A6496;
+  --rule: #C9C6F0;
+  --rule-soft: #DFDDF7;
+  --fig-bg: #FFFFFF;
+  --card: #FFFFFF;
+  --on-acc: #FFFFFF;
+  --radius: 20px;
+  --radius-sm: 12px;
+  --panel-mix: 10%;
+  --w-title: 400;
+  --w-h2: 400;
+  --sec-rule: 2px dotted #B8B3EC;
+  --holo: linear-gradient(120deg, #FF9DE6, #A9B8FF 30%, #8FF0E0 55%, #FFE7A0 78%, #FF9DE6);
+  --card-shadow: 0 8px 20px -12px rgba(76, 60, 200, .35);
+  --guard-bg: #1C1442;
+  --guard-ink: #F3F1FF;
+  --guard-muted: #ABA5DA;
+  --guard-x: #FF7AD9;
+  --y2k-star: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 0C53 35 65 47 100 50C65 53 53 65 50 100C47 65 35 53 0 50C35 47 47 35 50 0Z' fill='%23FF4FC1'/%3E%3C/svg%3E");
+  --y2k-star2: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 0C53 35 65 47 100 50C65 53 53 65 50 100C47 65 35 53 0 50C35 47 47 35 50 0Z' fill='%237B5CFF'/%3E%3C/svg%3E");
+  --accent-1: #7B5CFF;
+  --accent-2: #E8259E;
+  --accent-3: #0091C2;
+  --accent-4: #23955A;
+  --accent-5: #E0602A;
+  --accent-6: #9D4EDD;
+}
+/* Holographic light and sparkles */
+.page, .card {
+  isolation: isolate;
+  background-image:
+    radial-gradient(38% 26% at 92% 4%, rgba(255, 157, 230, .55), transparent 70%),
+    radial-gradient(34% 24% at 4% 22%, rgba(143, 240, 224, .5), transparent 72%),
+    radial-gradient(40% 24% at 96% 70%, rgba(169, 184, 255, .55), transparent 72%),
+    radial-gradient(34% 22% at 6% 96%, rgba(255, 231, 160, .5), transparent 72%);
+}
+.page { background-size: 100% 2200px; background-repeat: repeat-y; }
+.page::before, .card::before {
+  content: ""; position: absolute; z-index: -1; right: 26px; top: 64px; width: 120px; height: 90px; pointer-events: none;
+  background: var(--y2k-star) 70px 0 / 44px 44px no-repeat, var(--y2k-star2) 30px 46px / 24px 24px no-repeat, var(--y2k-star) 100px 64px / 16px 16px no-repeat;
+}
+.card::before { right: 12px; top: 40px; transform: scale(.8); transform-origin: right top; }
+.c-sec::before, .c-stages::before { display: none; }
+/* Chrome titles */
+.pg-title, .cv-title, .end-h {
+  background: linear-gradient(180deg, #2A1E6E 0%, #5B4BD6 46%, #24185E 54%, #8E7BFF 100%); -webkit-background-clip: text; background-clip: text; color: transparent;
+  filter: drop-shadow(2px 2px 0 #FFFFFF) drop-shadow(2px 2px 0 rgba(255, 79, 193, .55));
+}
+.pg-title b, .cv-title b, .end-h b { background: linear-gradient(180deg, #FF4FC1 0%, #E8259E 50%, #B4127A 52%, #FF8AD8 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.sec-h, .card .sec-h { letter-spacing: .01em; }
+.pg-part, .cv-kicker { display: inline-block; align-self: flex-start; padding: 3px 14px; border-radius: 999px; background: var(--holo); color: var(--ink); font-weight: 700; margin-top: 12px; }
+.cv-kicker { margin-top: 0; padding: 2px 14px; }
+.cv-rule { width: 120px; height: 8px; margin: 18px 0 14px; border-radius: 8px; background: var(--holo); }
+.card .sec-label { background: var(--holo); color: var(--ink); border-radius: 999px; }
+.sec-label { color: var(--acc-text); font-weight: 700; }
+/* Holographic outlines */
+.fig-card, .c-fig-card, .cv-toc {
+  border: 2px solid transparent;
+  background: linear-gradient(#FFFFFF, #FFFFFF) padding-box, var(--holo) border-box;
+  box-shadow: 0 10px 24px -14px rgba(76, 60, 200, .45);
+}
+.panel { border: 1.5px solid color-mix(in srgb, var(--acc) 25%, transparent); }
+.box { border-radius: 10px; border-width: 1.5px; }
+.box.hl, .hb-bar { background: linear-gradient(180deg, color-mix(in srgb, var(--acc) 55%, #FFFFFF) 0%, var(--acc) 52%, color-mix(in srgb, var(--acc) 85%, #000000) 100%); }
+.hb-bar { border-radius: 99px; }
+.ss-val { background: linear-gradient(180deg, color-mix(in srgb, var(--acc) 70%, #FFFFFF), var(--acc) 50%, color-mix(in srgb, var(--acc) 70%, #000000) 52%, color-mix(in srgb, var(--acc) 60%, #FFFFFF)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+/* Jelly-button takeaways */
+.c-take, .sec-take {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--acc) 50%, #FFFFFF) 0%, var(--acc) 55%, color-mix(in srgb, var(--acc) 85%, #000000) 100%);
+  color: #FFFFFF; border-left: 0; border-radius: 18px; font-weight: 700;
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, .55), inset 0 -3px 6px rgba(0, 0, 0, .12), 0 8px 16px -8px color-mix(in srgb, var(--acc) 70%, transparent);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .18);
+}
+.c-take b, .sec-take b { color: #FFFFFF; }
+.c-take { padding: 11px 16px; }
+.sec-take { display: inline-block; padding: 7px 16px; }
+/* Checklists */
+.cl-card { border-top: 0; box-shadow: inset 0 6px 0 var(--acc), 0 10px 24px -14px rgba(76, 60, 200, .45); border-radius: var(--radius-sm); }
+.cl-done { border-radius: 0 0 var(--radius-sm) var(--radius-sm); }
+.c-stage { border-left: 0; border-radius: var(--radius-sm); box-shadow: inset 6px 0 0 var(--acc), 0 8px 18px -12px rgba(76, 60, 200, .4); }
+.c-box, .cl-box { border-radius: 50%; }
+.end-cta {
+  background: linear-gradient(180deg, #8FE3FF 0%, #2FA8E8 50%, #1C7FC4 52%, #5CC8FF 100%); border-radius: 999px; color: #FFFFFF;
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, .6), 0 10px 20px -10px rgba(28, 127, 196, .7); text-shadow: 0 1px 1px rgba(0, 0, 0, .25);
+}
+.pg-closing { border-top: 2px dotted #B8B3EC; border-bottom: 2px dotted #B8B3EC; }
+/* The display face is for headlines; sentences and small titles use the body face */
+.pg-closing, .qt-text, .p-quote .q, .end-h { font-family: var(--font-body); font-weight: 900; }
+.p-quote .q { font-weight: 400; }
+.end-h { filter: none; }
+
+/* Cover: holographic band; the sparkles and chrome headline carry the rest */
+.cv-deco { right: -90px; top: -90px; width: 280px; height: 280px; }
+.cv-deco i:nth-child(1) { display: none; }
+.cv-deco i:nth-child(2) { inset: 0; border: 14px solid transparent; opacity: .8; background: var(--holo) border-box; -webkit-mask: linear-gradient(#000 0 0) padding-box exclude, linear-gradient(#000 0 0); mask: linear-gradient(#000 0 0) padding-box exclude, linear-gradient(#000 0 0); }
+.cv-deco i:nth-child(3) { display: none; }
+.cv-band, .cv-hook .c-foot { background: var(--holo); color: var(--ink); }
+.cv-band { border-radius: 30px 30px 0 0; box-shadow: inset 0 2px 0 rgba(255, 255, 255, .7); }
+.cv-chips span { border: 0; background: rgba(255, 255, 255, .6); }
+.card.c-quote { background: linear-gradient(180deg, color-mix(in srgb, var(--acc) 60%, #FFFFFF) 0%, var(--acc) 55%, color-mix(in srgb, var(--acc) 80%, #000000) 100%); }
+.card.c-quote::before { display: none; }
+.cq-text { font-weight: 400; text-shadow: 0 2px 2px rgba(0, 0, 0, .18); }
+.cn-num b, .cv-num b { filter: drop-shadow(3px 3px 0 #FFFFFF) drop-shadow(3px 3px 0 rgba(255, 79, 193, .55)); }

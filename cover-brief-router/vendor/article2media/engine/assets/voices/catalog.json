@@ -1,0 +1,156 @@
+{
+  "_comment": "随 skill 公开分发的音色。只收两类：VoxCPM2 仅凭文字描述设计、不对应任何具体的人（rights: designed）；本人或取得授权、明确同意公开的声音（rights: self-public / authorized-public）。用国民音色、平台 TTS、网上片段等作参考克隆的声音一律放本机个人音色库（~/.local/share/article2media/voices/），不进这里。",
+  "default": "news-man",
+  "voices": [
+    {
+      "id": "sweet-woman",
+      "name": "甜美知性女声",
+      "fits": "生活方式、情感成长、知识分享",
+      "rights": "designed",
+      "source": "VoxCPM2 文字设计（不对应任何具体的人）：二十八到三十岁的成熟女性，声音甜美柔和、温润知性，沉稳大方，语气亲切，语速舒缓从容",
+      "reference_audio": "sweet-woman.wav",
+      "reference_text": "sweet-woman.txt",
+      "ref_f0": 246,
+      "rate": 4.42,
+      "steps": 16,
+      "cfg": 2,
+      "seconds": 9.72,
+      "sha256": "b1dfe4775ba65e54a3c853ebb05058f483f392c98e6645db3888eafef91e17ea",
+      "original": {
+        "file": "sweet-woman-945980-88.wav",
+        "sample_rate": 48000,
+        "kbps": 768,
+        "segment": [
+          0,
+          9.76
+        ]
+      },
+      "imported": "2026-11-08"
+    },
+    {
+      "id": "lively-promo",
+      "name": "活力种草女声",
+      "fits": "好物种草、美食探店、带货",
+      "rights": "designed",
+      "source": "VoxCPM2 文字设计（不对应任何具体的人）：活泼开朗的年轻女性，声音清脆饱满、热情有感染力；语速放慢，从容自然，不急不赶，热情但不浮躁",
+      "reference_audio": "lively-promo.wav",
+      "reference_text": "lively-promo.txt",
+      "ref_f0": 281,
+      "rate": 4.66,
+      "steps": 16,
+      "cfg": 2,
+      "seconds": 9.22,
+      "sha256": "6f71ecce15b62ca6cac54db860fd8edec9f052be2d0bf503a1ceaf4ada321896",
+      "original": {
+        "file": "lively-promo-from-lively-promo-c47d4a-66.wav",
+        "sample_rate": 48000,
+        "kbps": 768,
+        "segment": [
+          0,
+          9.28
+        ]
+      },
+      "imported": "2026-11-08"
+    },
+    {
+      "id": "news-man",
+      "name": "资讯播报男声",
+      "fits": "资讯、财经、行业观察",
+      "rights": "designed",
+      "source": "VoxCPM2 文字设计（不对应任何具体的人）：三十岁左右的男性，声音沉稳干练、专业清晰，播报感强",
+      "reference_audio": "news-man.wav",
+      "reference_text": "news-man.txt",
+      "ref_f0": 162,
+      "steps": 16,
+      "cfg": 2,
+      "seconds": 9.48,
+      "sha256": "9b348329ba03ae64be8c6ce6c88789ef6f9dde8d3d9bb771b1fb1247ad96348b",
+      "original": {
+        "file": "news-man-33.wav",
+        "sample_rate": 48000,
+        "kbps": 768,
+        "segment": [
+          0,
+          9.76
+        ]
+      },
+      "imported": "2026-11-07",
+      "rate": 4.57
+    },
+    {
+      "id": "documentary-man",
+      "name": "纪录片旁白男声",
+      "fits": "历史人文、深度解读、纪录片式叙事",
+      "rights": "designed",
+      "source": "VoxCPM2 文字设计（不对应任何具体的人）：中年男性，嗓音低沉浑厚、富有磁性，语速缓慢从容",
+      "reference_audio": "documentary-man.wav",
+      "reference_text": "documentary-man.txt",
+      "ref_f0": 121,
+      "steps": 16,
+      "cfg": 2,
+      "seconds": 8.92,
+      "sha256": "4074f7cf3accf2e4cf73b4debfe65017d460bfe8432bb38ab8e969251324b69a",
+      "original": {
+        "file": "documentary-man-11.wav",
+        "sample_rate": 48000,
+        "kbps": 768,
+        "segment": [
+          0,
+          8.96
+        ]
+      },
+      "imported": "2026-11-07",
+      "rate": 4.82
+    },
+    {
+      "id": "northeast-guy",
+      "name": "东北热情大哥",
+      "fits": "搞笑、接地气、生活吐槽",
+      "rights": "designed",
+      "source": "VoxCPM2 文字设计（不对应任何具体的人）：三四十岁的东北男性，带浓重东北口音，嗓门敞亮，热情豪爽；语速放慢，从容唠嗑，不急不躁",
+      "reference_audio": "northeast-guy.wav",
+      "reference_text": "northeast-guy.txt",
+      "ref_f0": 190,
+      "rate": 4.94,
+      "steps": 16,
+      "cfg": 2,
+      "seconds": 8.7,
+      "sha256": "9f735c0ec89a0f4fd5312e5c54b5ca73833b496eda59aaf768ce6aa4aa28dce8",
+      "original": {
+        "file": "northeast-guy-from-northeast-guy-cc2460-33.wav",
+        "sample_rate": 48000,
+        "kbps": 768,
+        "segment": [
+          0,
+          8.8
+        ]
+      },
+      "imported": "2026-11-08"
+    },
+    {
+      "id": "gentle-tw-accent",
+      "name": "台湾口音温柔女声",
+      "fits": "情感、生活、轻松闲聊",
+      "rights": "designed",
+      "source": "VoxCPM2 文字设计（不对应任何具体的人）：二十多岁的年轻女性，带台湾口音，声音软糯温柔，语调轻轻上扬",
+      "reference_audio": "gentle-tw-accent.wav",
+      "reference_text": "gentle-tw-accent.txt",
+      "ref_f0": 258,
+      "steps": 16,
+      "cfg": 2,
+      "seconds": 10.51,
+      "sha256": "f8c1814d680a2991c424ce33b428ca0effab84bc02879d6098b03a716893323d",
+      "original": {
+        "file": "gentle-tw-accent-33.wav",
+        "sample_rate": 48000,
+        "kbps": 768,
+        "segment": [
+          0,
+          10.88
+        ]
+      },
+      "imported": "2026-11-07",
+      "rate": 4.17
+    }
+  ]
+}

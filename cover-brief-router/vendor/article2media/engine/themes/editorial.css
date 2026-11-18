@@ -1,0 +1,43 @@
+/* editorial | 商业杂志：暖白纸面、思源宋体、每节一个沉稳主色、米色图卡，接近 FT / 经济学人，严谨可信（默认）；适合商业分析、方法论长文、行业观察、人物观点 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700;900&display=block');
+:root {
+  --font-head: 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', 'STSong', serif;
+  --font-body: var(--font-head);
+  --bg: #fbfaf7;
+  --ink: #1f1e1b;
+  --muted: #7a766d;
+  --rule: #dcd8cf;
+  --rule-soft: #ebe8e1;
+  --fig-bg: #efebe3;
+  --card: #ffffff;
+  --on-acc: #ffffff;
+  --radius: 2px;
+  --radius-sm: 2px;
+  --panel-mix: 13%;
+  --guard-bg: #2d2b27;
+  --guard-ink: #f1ede4;
+  --guard-muted: #b3ab9c;
+  --accent-1: #2f5e4e;
+  --accent-2: #2c4a8a;
+  --accent-3: #23625e;
+  --accent-4: #9a3b2b;
+  --accent-5: #5b4290;
+  --accent-6: #8a6514;
+  --accent-7: #2f4f87;
+  --accent-8: #8e2f2b;
+  --accent-9: #2a6a86;
+  --accent-10: #566423;
+  --accent-11: #7b2d5b;
+}
+
+/* Cover: a magazine front — masthead bar, ruled deck instead of a color band */
+.cv-deco { inset: 0; width: auto; height: auto; }
+.cv-deco i:nth-child(1) { inset: 0 0 auto 0; height: 8px; border-radius: 0; opacity: 1; }
+.cv-deco i:nth-child(2) { inset: auto; right: 30px; top: 58px; width: 54px; height: 54px; border: 0; border-radius: 0; opacity: .9; background: linear-gradient(var(--acc), var(--acc)) 0 0 / 100% 3px no-repeat, linear-gradient(var(--acc), var(--acc)) 100% 0 / 3px 100% no-repeat; }
+.cv-deco i:nth-child(3) { display: none; }
+.cv-band, .cv-hook .c-foot { background: transparent; color: var(--ink); }
+.cv-band { border-top: 3px double var(--ink); margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
+.cv-band .cv-sub { font-family: var(--font-head); font-size: 18px; }
+.cv-chips span { border-radius: 0; border-width: 0 0 0 3px; border-color: var(--acc); padding: 0 0 0 9px; font-weight: 500; }
+.cv-hook .c-foot { color: var(--muted); }
+.wx-cover.wide .cv-deco i:nth-child(2) { right: 56px; top: 44px; width: 120px; height: 120px; }

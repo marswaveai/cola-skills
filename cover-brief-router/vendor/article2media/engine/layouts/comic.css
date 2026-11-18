@@ -1,0 +1,59 @@
+/* Layout: comic (-c) — black-and-white panels with HTML lettering. 540 CSS px wide → 1080 px at 2x.
+   Loaded before the theme: themes only tint the title font and the accent (narration box rule). */
+@import url('https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/lxgwwenkai-bold.css');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 540px; background: #fff; }
+body.cards { width: max-content; background: #8f8f8a; }
+.comic-page { width: 540px; background: #FBFAF7; color: #1C1B19; padding: 40px 22px 26px; font-family: 'PingFang SC', 'Hiragino Sans GB', sans-serif; }
+.comic-kicker { font-size: 12px; font-weight: 700; letter-spacing: .12em; color: var(--acc); }
+.comic-title { font-family: var(--font-head, 'LXGW WenKai'), 'LXGW WenKai', 'PingFang SC', sans-serif; font-weight: 900; font-size: 34px; line-height: 1.3; margin-top: 6px; color: #1C1B19; }
+.comic-title b { color: var(--acc); }
+.comic-sub { margin-top: 8px; font-size: 15px; line-height: 1.6; color: #5D5A55; }
+.comic-head { padding: 0 6px 18px; }
+
+.comic-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.panel { position: relative; background: #fff; border: 3px solid #1C1B19; }
+.panel-wide { grid-column: span 2; }
+.panel-art { position: relative; overflow: hidden; }
+.panel-wide .panel-art { aspect-ratio: 3 / 2; }
+.panel-half .panel-art { aspect-ratio: 1 / 1; }
+.panel-tall .panel-art { aspect-ratio: 2 / 3; }
+.panel-art img { width: 100%; height: 100%; object-fit: cover; display: block; filter: grayscale(1) contrast(1.05); }
+.panel-missing { position: absolute; inset: 0; display: grid; place-items: center; color: #999; font-size: 13px; background: repeating-linear-gradient(45deg, #f4f4f2 0 8px, #fff 8px 16px); }
+.panel figcaption { font-size: 11px; color: #6B6862; padding: 4px 8px; border-top: 1.5px solid #1C1B19; background: #fff; }
+
+.narration { position: absolute; left: 0; top: 0; max-width: 72%; background: #FFFDF5; border: 2px solid #1C1B19; border-left: 6px solid var(--acc); border-top: 0; padding: 6px 10px 7px; font-size: 13.5px; line-height: 1.5; font-weight: 600; box-shadow: 2px 2px 0 rgba(0,0,0,.12); }
+.panel-half .narration { max-width: 92%; font-size: 12.5px; }
+.bubble { position: absolute; transform: translate(-50%, 0); width: max-content; max-width: 62%; text-wrap: balance; background: #fff; border: 2px solid #1C1B19; border-radius: 18px; padding: 6px 12px; font-family: 'LXGW WenKai', 'PingFang SC', sans-serif; font-weight: 700; font-size: 14.5px; line-height: 1.35; text-align: center; }
+.panel-half .bubble { max-width: 86%; font-size: 13px; }
+.bubble.short { white-space: nowrap; max-width: none; }
+.bubble::after { content: ''; position: absolute; bottom: -11px; width: 14px; height: 12px; background: #fff; border-right: 2px solid #1C1B19; border-bottom: 2px solid #1C1B19; transform: skewX(-25deg) rotate(30deg); }
+.bubble.tail-left::after { left: 18px; }
+.bubble.tail-right::after { right: 18px; transform: skewX(25deg) rotate(-30deg); }
+.bubble.tail-none::after { display: none; }
+.sfx { position: absolute; transform: translate(-50%, -50%) rotate(-8deg); font-family: 'LXGW WenKai', sans-serif; font-weight: 900; font-size: 30px; color: #fff; -webkit-text-stroke: 2px #1C1B19; paint-order: stroke fill; letter-spacing: .04em; white-space: nowrap; }
+
+.comic-closing { margin: 18px 6px 0; font-family: 'LXGW WenKai', 'PingFang SC', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.55; }
+.comic-foot { display: flex; justify-content: space-between; gap: 12px; margin: 20px 6px 0; padding-top: 10px; border-top: 1.5px solid #1C1B19; font-size: 10.5px; color: #6B6862; }
+
+/* 3:4 carousel */
+.ccards { display: grid; grid-template-columns: repeat(3, 540px); gap: 24px; padding: 24px; }
+.ccard { width: 540px; height: 720px; overflow: hidden; position: relative; display: flex; flex-direction: column; background: #FBFAF7; color: #1C1B19; padding: 24px 26px 20px; font-family: 'PingFang SC', 'Hiragino Sans GB', sans-serif; }
+.cc-top { display: flex; justify-content: space-between; font-size: 11.5px; color: #6B6862; letter-spacing: .06em; }
+.cc-panel { margin-top: 16px; }
+.cc-panel .panel { border-width: 3px; }
+.cc-text { margin-top: 16px; font-size: 21px; line-height: 1.6; font-weight: 600; }
+.ccard-cover .comic-title { font-size: 44px; margin-top: 40px; }
+.ccard-cover .comic-sub { font-size: 17px; }
+.cc-cover-art { margin-top: auto; border: 3px solid #1C1B19; }
+.cc-cover-art img { width: 100%; display: block; aspect-ratio: 3 / 2; object-fit: cover; filter: grayscale(1); }
+.cc-foot { margin-top: 14px; font-size: 10.5px; color: #6B6862; }
+.ccard-end .cc-foot { margin-top: auto; }
+.cc-end-h { font-family: 'LXGW WenKai', 'PingFang SC', sans-serif; font-size: 34px; margin-top: 40px; }
+.cc-recap { margin: 18px 0 0 26px; font-size: 22px; line-height: 1.6; font-weight: 700; }
+.cc-recap li { margin-bottom: 8px; }
+.cc-recap li::marker { color: var(--acc); }
+/* On 3:4 cards a wide panel is shown taller (5:4) so the card isn't half empty; key subjects sit near the center. */
+.cc-panel .panel-wide .panel-art { aspect-ratio: 5 / 4; }
+.ccard .cc-text { font-size: 23px; line-height: 1.6; }

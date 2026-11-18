@@ -1,0 +1,3474 @@
+{
+  "schema_version": 1,
+  "generated": "2026-11-18",
+  "layout": "cola-skills-bundle/deps/<folder>/...",
+  "folders": [
+    "article2media",
+    "baoyu-cover-image",
+    "baoyu-image-gen",
+    "baoyu-xhs-images",
+    "gbro-cover-design",
+    "guizang-social-card-skill",
+    "heytea-style",
+    "ip-illustration-for-yourself",
+    "punk-avatar",
+    "punk-cover"
+  ],
+  "file_count": 690,
+  "size_bytes": 21822459,
+  "files": [
+    {
+      "path": "cola-skills-bundle/deps/article2media/LICENSE",
+      "size": 1063,
+      "sha256": "b8e04d9f0e32641a4ad6daefb25d2f75bea22a90ef56689967514362d4b82d24"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/SKILL.md",
+      "size": 12302,
+      "sha256": "5a61d70069edf85c20b41e8cc8c0be1b26a0941cac32d0108b33876039d5efda"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/agents/openai.yaml",
+      "size": 320,
+      "sha256": "6873f2bdc9655b12aa382e0aaf61b8713c7b1533ef723255a93b9d82d3453f53"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/assets/voices/catalog.json",
+      "size": 5452,
+      "sha256": "df53429773eaee49bd5d185705c1c1f7d057996cb5a721ced038685b9efbec60"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/assets/voices/documentary-man.txt",
+      "size": 145,
+      "sha256": "8e3ee738d18a3f1f54470f5e326da9c81af7737816a432727285bb43ce7c3c4e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/assets/voices/documentary-man.wav",
+      "size": 856396,
+      "sha256": "4074f7cf3accf2e4cf73b4debfe65017d460bfe8432bb38ab8e969251324b69a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/assets/voices/gentle-tw-accent.txt",
+      "size": 145,
+      "sha256": "8e3ee738d18a3f1f54470f5e326da9c81af7737816a432727285bb43ce7c3c4e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/assets/voices/gentle-tw-accent.wav",
+      "size": 1009036,
+      "sha256": "f8c1814d680a2991c424ce33b428ca0effab84bc02879d6098b03a716893323d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/assets/voices/lively-promo.txt",
+      "size": 145,
+      "sha256": "8e3ee738d18a3f1f54470f5e326da9c81af7737816a432727285bb43ce7c3c4e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/assets/voices/lively-promo.wav",
+      "size": 885196,
+      "sha256": "6f71ecce15b62ca6cac54db860fd8edec9f052be2d0bf503a1ceaf4ada321896"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/assets/voices/news-man.txt",
+      "size": 145,
+      "sha256": "8e3ee738d18a3f1f54470f5e326da9c81af7737816a432727285bb43ce7c3c4e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/assets/voices/news-man.wav",
+      "size": 910156,
+      "sha256": "9b348329ba03ae64be8c6ce6c88789ef6f9dde8d3d9bb771b1fb1247ad96348b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/assets/voices/northeast-guy.txt",
+      "size": 145,
+      "sha256": "8e3ee738d18a3f1f54470f5e326da9c81af7737816a432727285bb43ce7c3c4e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/assets/voices/northeast-guy.wav",
+      "size": 835276,
+      "sha256": "9f735c0ec89a0f4fd5312e5c54b5ca73833b496eda59aaf768ce6aa4aa28dce8"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/assets/voices/sweet-woman.txt",
+      "size": 145,
+      "sha256": "8e3ee738d18a3f1f54470f5e326da9c81af7737816a432727285bb43ce7c3c4e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/assets/voices/sweet-woman.wav",
+      "size": 933196,
+      "sha256": "b1dfe4775ba65e54a3c853ebb05058f483f392c98e6645db3888eafef91e17ea"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/layouts/card.css",
+      "size": 18678,
+      "sha256": "3a8616418947c26bc51dedb442957cdfb9eaa6de4a8b4fefeff8d9219eb97dfe"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/layouts/cards-article.css",
+      "size": 3235,
+      "sha256": "981c42569e5218350beb5963825a9f5dc1b2797d6dfe075081f4c450143d0aa9"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/layouts/comic.css",
+      "size": 5173,
+      "sha256": "3400c23be4f61476144c2cdc289c90f3932d4828520a9c59b54ae7a1c6fd10c2"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/layouts/components.css",
+      "size": 11244,
+      "sha256": "bb5eefc23e7559eecce9a2c421a64f0a139274db0683e47a4f22a2c745fc919f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/layouts/full.css",
+      "size": 4775,
+      "sha256": "e4a05a27caad2f4d7d81f677a4f73f10deeffe018523df2f97fabd5249764cdd"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/layouts/long-mobile.css",
+      "size": 2591,
+      "sha256": "ac4c5e8ee080ac685ae318b9f480c09b3eaa560016a82e3d2a6fb47ef5ad361f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/layouts/long.css",
+      "size": 5693,
+      "sha256": "d744d115cbf19a1c6d531179ae09502e88e20afe99960d378d558ebcae11a04d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/layouts/video.css",
+      "size": 17076,
+      "sha256": "27243ae84ec51e1ebb867f23cd4966a7307e4b4e4641f5629bb88c17bb7554af"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/layouts/wechat-article.css",
+      "size": 4508,
+      "sha256": "b0bf4303da8ef0ae7c522f4313428179d6c340a1eced125aea70fdafb034952e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/layouts/wechat.css",
+      "size": 6169,
+      "sha256": "65e16fcce50583065164e50c0f942375df7f4be64a7dd1ae240806c94f58452e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/layouts/whiteboard.css",
+      "size": 6808,
+      "sha256": "90ed37a74b55f01cb7469383e7252036e644949e0e37baadd628166eb0e2170a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/batch.mjs",
+      "size": 29055,
+      "sha256": "99524e65129a92a36f87c5e13501ec4637b3fa2761b9479249b22d4988657579"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/comic.mjs",
+      "size": 10948,
+      "sha256": "377f79d5bdae4731c8ce9478048ac64335942ed2696362f1bba78088575629d6"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/doctor.mjs",
+      "size": 5227,
+      "sha256": "8c327ff9b7e4d72712ff5125d1d96b19b0a08e47e799e9040f77b6fa5eb30efe"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/export.mjs",
+      "size": 6407,
+      "sha256": "22ef316efb5dc6326a64ae9a1fd67fb70366e8888fb692f0963a7d28dbd6e408"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/fetch.mjs",
+      "size": 21030,
+      "sha256": "256670c697efb0a45d1fd021e5262f2a2e753aaee5f6febb85aa5aa24e35a910"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/fonts.mjs",
+      "size": 6893,
+      "sha256": "a499ec9f4f52e5e0ba3555771aec25b065f5e4f8da0e8f63311c36b3c9aad0cb"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/illustrate.mjs",
+      "size": 7741,
+      "sha256": "f4a4e6bf619b8d71e4834de178bed607e96c0445021c29fed752b9eadd07a8e2"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/brand.mjs",
+      "size": 2578,
+      "sha256": "930210cbd12608f1fdcde2caee0fffe347afd23dbb25143e60553eb817000ac7"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/chrome.mjs",
+      "size": 12460,
+      "sha256": "ac586122bd07f8c384872d13e493ab012af428dccfb4a50a1bd442bbbe48a9ab"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/figures.mjs",
+      "size": 14270,
+      "sha256": "369a6aad0d0d54870a9c896d2c896081af64e06b3f66f74a2fadbcbae9687fa3"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/fonts.mjs",
+      "size": 10503,
+      "sha256": "25a9a597333bb297fbd8ca77286a7680c57b10c35323385f1998f7398f927b19"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/illustrations.mjs",
+      "size": 6463,
+      "sha256": "d3121a2326ed4a9e9b74f3743c2760c0188f3e7c1e995aaeeba33274181f8a90"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/imagegen.mjs",
+      "size": 24818,
+      "sha256": "b0d10602e72fe18d1c883fd526fa90e43f0306e8806557047acc8747e4712fea"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/layout-card.mjs",
+      "size": 37711,
+      "sha256": "9410fc8292037f624dfbede8a915ecffc090dd569752455b0138e064de0dbcdf"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/layout-cards-article.mjs",
+      "size": 11162,
+      "sha256": "d5c85781d046617d2a129d2513705648d84b71cdb79c764a4b3fa2c4541669a4"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/layout-comic.mjs",
+      "size": 7216,
+      "sha256": "c3dac4c0341b23dbadd208bee6db22a6b02fd54e651ce5a5da4e89b2e177048c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/layout-full.mjs",
+      "size": 19745,
+      "sha256": "0d561a49252283c486012f66b49195eaee6f124ec3b5e392d349cc7273eaf09c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/layout-long.mjs",
+      "size": 9687,
+      "sha256": "fee7e7f323c4836b6ff856aabb9233702f62ba420a6e89f52f5c0b95a8b30a77"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/layout-wechat-article.mjs",
+      "size": 7155,
+      "sha256": "5d7c695fdb4ad9c37b495f84b358f476a03488c9d349aba7078fd80fc75a33fe"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/layout-wechat.mjs",
+      "size": 24784,
+      "sha256": "1c4c0382025fe05b87c0574d50c564e02b15fe36ed4aec69a38d3179753b0f62"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/layout-whiteboard.mjs",
+      "size": 12644,
+      "sha256": "2eedb5b87e67e2694bb0aa5fa8891952c7532fbd14ea303f46b16bbb57e1a0d2"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/markup.mjs",
+      "size": 762,
+      "sha256": "1c92884aa7f623d1dc1a1067952dde879e67fccbfc85fa3e984b9c3c71aaa0e4"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/media/source.mjs",
+      "size": 17183,
+      "sha256": "aa0251bc6316dca1d8fff8848eb8acb68e7d9bfc1edaa21ef966df4e20e24d02"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/media/transcript.mjs",
+      "size": 11922,
+      "sha256": "770e61d66d20876174b059065037733bb98180d16bdc09b953bcd5e496dce0d3"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/media/zh-t2s.mjs",
+      "size": 33989,
+      "sha256": "72a5ae2a09a909fdcacd78184f51bcbc4d14c18d16c282fe450bf991660b0e6a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/qa.mjs",
+      "size": 11891,
+      "sha256": "449e7116b1fad23adf69d9addc5881f4be2f99ec1db3dc9bc0905601de542c75"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/render-cards-article.mjs",
+      "size": 7116,
+      "sha256": "5dc550529c456592a9711179f837ea16e1fc63f538e4582ee597b5e01fddb89e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/render-full.mjs",
+      "size": 7784,
+      "sha256": "7c932de737e29c7089f21ce3bbe1652430fea8a6ef9ca64564fd0f6ccc8c4828"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/render-wechat-article.mjs",
+      "size": 12662,
+      "sha256": "41802bfd1fa8c6aac8b4a63c03ef65c9b4f47c1b7d88ab96b2bd1e629d916b5d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/render-whiteboard.mjs",
+      "size": 6866,
+      "sha256": "1591511312547b0d5f716f506fb22c1c56d0845d1ef3ae71e7801fe47ac63cf4"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/rewrite-md.mjs",
+      "size": 4394,
+      "sha256": "9b03fdb84fc18dba2f7540ab0eaf1620f5b9bed77fc299ff7dda85da2e99c32c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/source-check.mjs",
+      "size": 14852,
+      "sha256": "63024820322d794042815df06afd2a6ab616cda3662fab15644865e309bc5afc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/validate.mjs",
+      "size": 22167,
+      "sha256": "725994319248b3485b77643b38ce763a43de65c6085741865abd483d2422ec93"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/video/media.mjs",
+      "size": 16195,
+      "sha256": "e04a64d1f2fa2cf60f7462c3a1d377bd1139d6aef0d3c3cc26835fd59e2c9d2d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/video/pitch.mjs",
+      "size": 1559,
+      "sha256": "cf2256cca2723f3f193bfc73b2436bdd50a02940db8e72c90eb7440d196f2d1d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/video/py/asr_words.py",
+      "size": 946,
+      "sha256": "7fc440bb67d594921102787b5cce96191777fada45b50a4d4dfcfa199200b08f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/video/py/transcribe.py",
+      "size": 1120,
+      "sha256": "c264d131cc4df642d40d52753bea3090679ef2bf5bc30f25dd9910754a430239"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/video/py/voxcpm_batch.py",
+      "size": 2694,
+      "sha256": "f6749919ea73076eafa102f5d8539be7031c3b2931d28b358ad6fa901c1a4e96"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/video/render.mjs",
+      "size": 31797,
+      "sha256": "0c2730ef59336d926bb2d6adcd39de7cbf7610940285b34a9e744a9ef27f468f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/video/scenes.mjs",
+      "size": 13197,
+      "sha256": "85821341539f738f4b04c938e3cbe7a23fb9c07766b3f7f559f1fd7fd8425b87"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/video/sfx.mjs",
+      "size": 2461,
+      "sha256": "c81ecf9f6234844f1173791fc9b11d3507099b8f6b0895482b0edb08341277a6"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/video/text.mjs",
+      "size": 9218,
+      "sha256": "1b9fae154ad5e820e4e5b32501c6be107934241084c210e26f935a305863d7e3"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/video/voice.mjs",
+      "size": 28607,
+      "sha256": "82548b3441419eb74f2e399ff4ecd6179232e294859f0bc4c53b61fcc35b467f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/video/voicelib.mjs",
+      "size": 18334,
+      "sha256": "442c90aa9fc86f5ca9e6e2b59c7184a618aa81d0276866a64d42073905fe28f4"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/video/wav.mjs",
+      "size": 4094,
+      "sha256": "f3daa4e1b84735b9a0212ba61893b2a24298690499976fdd61f35a769d4aaa09"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/workdir.mjs",
+      "size": 22856,
+      "sha256": "719277f8bdabb7062f1e620c09da8e207d06378b2d0e47f928ab24438f890829"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/lib/x-post.mjs",
+      "size": 2189,
+      "sha256": "f863954531e3362ddf3a421e11ba606417b5beb5d17040c4130724654d9a099d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/render.mjs",
+      "size": 21208,
+      "sha256": "0581a5875a1aa1baa5875060eccca1f521eb8dab21cae3351d993f09db8ffec8"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/stats.mjs",
+      "size": 18802,
+      "sha256": "c607840a8fc6556b83e038efbbe04e0ebe2b1fb720a7e248ff956556efab6fc9"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/translate.mjs",
+      "size": 6290,
+      "sha256": "77df9373b0d685b99a56d452d288d25a53c47eed461ad82a6d5c01a91ef89c8c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/scripts/video.mjs",
+      "size": 23652,
+      "sha256": "a5ede66f29a8cbe0f2534381285d4fc1bbbed42f6c8e2065ab1883392e9c5dea"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/bento.css",
+      "size": 2978,
+      "sha256": "05df801dd03089ef073b19a8afc5eb8b2978d0e6e30d2b0d0770ebacb050cbb2"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/brutal.css",
+      "size": 3979,
+      "sha256": "93bb26a76fbe3bfd09de673a5c409e4e15faccfd5888247e1c2c0f7e54dbb31d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/caption-styles.json",
+      "size": 4541,
+      "sha256": "1c1cb6be5d3625e1b8aff7c581d4f36160b7a67a58ba0f2d9395569be66b05ef"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/catalog.json",
+      "size": 565,
+      "sha256": "8f0825f58fd5d8f966c726a87c60a3cda3f8432846160ae7c84f52cf526c267f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/cloud.css",
+      "size": 1161,
+      "sha256": "13fe230875cf88cd616399976d26f8636af09da75cf890d92bd476e1eeb3fb4d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/collage.css",
+      "size": 5031,
+      "sha256": "ef17aad4d9b7185844e47f0450923649a683d3c2dce4c265cd90b5db60dd5a86"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/dopamine.css",
+      "size": 4817,
+      "sha256": "c4a677402334b5dd028a8637d9bdd5cb15fb3a430a0f91215a9d7aa977803301"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/earth.css",
+      "size": 941,
+      "sha256": "c04125a8d4f21d4dc84747b1a5c8d706ac198d0231b1b4eb0f71d9c07418169f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/editorial.css",
+      "size": 2076,
+      "sha256": "50e4d4f726aba4d1ed77804714f0dd3f8d17af471c064bdeb544b4b85062a182"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/film.css",
+      "size": 6188,
+      "sha256": "df316fc42dabeb3be96d92299b1eaff36ac243e4d7d7376b754d751d4c3e2d49"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/glass.css",
+      "size": 5294,
+      "sha256": "f81cfa86b9a943a082b0cae654f9a72af984129e59c1d5ea9334178aa1aac827"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/guochao.css",
+      "size": 6649,
+      "sha256": "36d8f3a9f347d4f2fcd44e5c547ed601aaf3e4f22ea41d6ba6d557d67f4dafe9"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/illustration-styles.json",
+      "size": 3031,
+      "sha256": "f9ad1dff4eaa438bf21774b6423ed425c48521301399add5c0131d5d94aff77c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/memo.css",
+      "size": 4477,
+      "sha256": "9e2c4a083c29881523293e18c7c22cb8fa40455003a1c95ce7051f1db0235997"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/midnight.css",
+      "size": 2398,
+      "sha256": "775c897f9aa2f416962d31d963db66c58100c3ded3b1ff1e6b5a67d21fb2930f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/notebook.css",
+      "size": 2987,
+      "sha256": "b79fd08a846836246fa49757c64288aec24f5bb4baf3295a092992ec8daa82de"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/pixel.css",
+      "size": 5436,
+      "sha256": "029245e10e8cf5f8c1266c1d351cd80ea453187985f31aeee242686eed6eabfd"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/pop.css",
+      "size": 4449,
+      "sha256": "896f3d3b599cb187a17df993ef264675f0fa74b42e8f0d4bf6ff4c51efd9f5e1"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/prosperity.css",
+      "size": 5940,
+      "sha256": "dc83af3fd90b144618c4d77e5c6ad85d6a76de395b8c36efa390bb65550da477"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/quiet.css",
+      "size": 3018,
+      "sha256": "1a522ffdc2c8f6889889a3b82c318283de53f672ffa0f3b81c6704c1ad29dfc1"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/riso.css",
+      "size": 5439,
+      "sha256": "aaf93e2b324b9cd12a70da925e250257f7b4cc342b146af0d8c9e2b56211e678"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/shanshui.css",
+      "size": 6894,
+      "sha256": "9b06acbea27bb1fea8dd9a9235b828af7a45dc08feee82f1096605bf2849550d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/swiss.css",
+      "size": 2149,
+      "sha256": "eb109ba4dc810f94ca2acb41ce8ce5ac2077c7d4c23d20aa846c63d03acf1901"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/engine/themes/y2k.css",
+      "size": 7388,
+      "sha256": "a3ab3b6d5f3765d492d9e048aea4125edc3c5b5282dd7326a407e692b13a8549"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/references/pipeline.md",
+      "size": 7379,
+      "sha256": "b6ab86f249d7e140ea56e7b2416785d12f4bac72ffe98ad951ce2a820af45d61"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/references/styles.md",
+      "size": 14468,
+      "sha256": "3b3e687668a39e9115abcdd0d09b07fbf9d56561156d5c96f7e4fe62010e4b17"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/references/verbatim.md",
+      "size": 2334,
+      "sha256": "ed29b3fc3aa793aafd0778603bc1fe022622c163bc40a3bd890cb1f131fafe0f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/scripts/batch.mjs",
+      "size": 740,
+      "sha256": "5637604cc057b5db90e8d35e11edd441f187d4b516e246cba69dd4f0c2b1fac5"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/scripts/fonts.mjs",
+      "size": 724,
+      "sha256": "c2445d6f8213242c1f68da0a4ca5c56eccca9753eec51a507692aef06523703b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/article2media/scripts/stats.mjs",
+      "size": 744,
+      "sha256": "36b5dbaffd1f64ba666f743b8ee2febcf8385d0ed4aa115f08cfa182773479e7"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/LICENSE",
+      "size": 1064,
+      "sha256": "601839401f6ce68b7a8aec0f7ba247ab8ef0848113378220bec4b2615cc84ee7"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/SKILL.md",
+      "size": 12743,
+      "sha256": "440c753f28545766b0f8c17087bb403ac24ab71669e504c81171872097d87ddf"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/auto-selection.md",
+      "size": 2837,
+      "sha256": "c15c3434c30f6e47bbfb78a983f1cd96f525234280b547dcc7ffa87a2a81c400"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/base-prompt.md",
+      "size": 5452,
+      "sha256": "04bfa168192dc77efc13009694297bd1d9e80867d24dae0f1d5a1c5277216364"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/codex-imagegen.md",
+      "size": 3715,
+      "sha256": "64dae2b803186bcc8c66aa3457fbd0ddd434758c1b1962b63755cd07a3e90d9a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/compatibility.md",
+      "size": 2421,
+      "sha256": "6c2f5ac24a6ce91f1a6508e5bbeb99cbade38f9397b174d7c8660abb587634ab"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/config/first-time-setup.md",
+      "size": 5170,
+      "sha256": "8e63eba980e0df2deb4feb4e5aa34f73aad04a576b34569ca414a412f8aca47c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/config/preferences-schema.md",
+      "size": 6776,
+      "sha256": "f808fa824c54970323da455e1f57a626636a207fe756b717b08c8a1821d96366"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/config/watermark-guide.md",
+      "size": 1734,
+      "sha256": "a804a48fd22d6ab84ab9b9518855dc4b44ee5c52b5fcb365527f48b4f7627e6a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/dimensions/font.md",
+      "size": 3956,
+      "sha256": "7c586f22671f47b008ce72c332c251112afe94523d7e47a3e80857d9429d9058"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/dimensions/mood.md",
+      "size": 3709,
+      "sha256": "e64f0bd0324f1029046fcd1ab5bceae080c7298c2c4be98c27a5753067abfbc1"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/dimensions/text.md",
+      "size": 2202,
+      "sha256": "05fdea09afa2453eafc6715216e42d59528b935cfa72271861de9986ffccf10b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/palettes/cool.md",
+      "size": 743,
+      "sha256": "51454e56fc2ce07e5122bd8ecb9f58b6dc82cc423e19d2aeaba0a604e6bcda08"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/palettes/dark.md",
+      "size": 753,
+      "sha256": "51e887eb17897c71e2b6ceed85e96543c11e7c4d26aaa7cd04304b1b961bcb4f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/palettes/duotone.md",
+      "size": 1407,
+      "sha256": "5ce4cfcaeadedb0a32ae62c41a4c684f315e28cbc1cce4465a230b92a52b037c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/palettes/earth.md",
+      "size": 734,
+      "sha256": "9b9fa379d537f379f425ca6af8a1be3284cf78dc51b931b02f531e0d0d8150b4"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/palettes/elegant.md",
+      "size": 729,
+      "sha256": "4f50232d1174597a4168b4bdd7fce48b8d65851a6a8ed0b10735f7d87bbf1256"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/palettes/macaron.md",
+      "size": 769,
+      "sha256": "23022d4aae936a3da1a495b1a4c5dccef7085e6e00e1747291bbe7cb4a71701d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/palettes/mono.md",
+      "size": 716,
+      "sha256": "16823b0d882ec3e6e87cc0236429ca5a33faa282e5ebea377344a707914d7e59"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/palettes/pastel.md",
+      "size": 715,
+      "sha256": "14fc4e0e416c957980d4ee7cee3c97a956b82723b8303d946791e654fa7edf39"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/palettes/retro.md",
+      "size": 933,
+      "sha256": "da56ffe48a5f31b3b70f9cef7bb406da99c9d1d733fddcd6dd762bea5cb09132"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/palettes/vivid.md",
+      "size": 751,
+      "sha256": "7a459d73c3aef3006729d8b9438be2832e73b89455fc77e9f03f5a58442e7e8c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/palettes/warm.md",
+      "size": 721,
+      "sha256": "a9bbcd59baa5a1c5a8bc201804c902805cb4f993cfcc174b2e02596c13d2092b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/renderings/chalk.md",
+      "size": 1086,
+      "sha256": "3ecd1eda4a76405c1d69c97fe6ba7d2aa61910f85b0032be434c50c8501f7eab"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/renderings/digital.md",
+      "size": 1080,
+      "sha256": "ad24896fd8bf37cffb43fcb05c176283df01fad11b6f58b1959b1ef797d4e51f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/renderings/flat-vector.md",
+      "size": 1241,
+      "sha256": "c7806bde5cd8b3ecd7d81b7f7e30d13ca90eba83e7ca5fa716689e383c61fc34"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/renderings/hand-drawn.md",
+      "size": 1036,
+      "sha256": "36750c1139b68724896ca3729a7386be138c525665956cd0cdff41827fd95603"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/renderings/painterly.md",
+      "size": 1045,
+      "sha256": "28be96451ea70d4727ec2a9b145f923dc5dfc02eddd51b817f352bb2b2e0f840"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/renderings/pixel.md",
+      "size": 961,
+      "sha256": "2ee8b1f8240abb9f3755b8594ef7237c3270b8767a87c357a81008e5999cf484"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/renderings/screen-print.md",
+      "size": 1502,
+      "sha256": "da04e3ff84a70c065df0e8fb9024abf6de3796a1151f268827b4f40b0800c1ec"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/style-presets.md",
+      "size": 1415,
+      "sha256": "d2cce0e9d0c061e9f591c753a3d1f4881e18e3620f30bd64d950e7dbdffa4e1c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/types.md",
+      "size": 1376,
+      "sha256": "21d19366eeee7b3157c806d631ea3633c451b9ad39c66c8bb285917d0503cb32"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/visual-elements.md",
+      "size": 3274,
+      "sha256": "664df88d191175a98a2a78d4f4e2c25a5f141a8cd8553fd5ac7feeb751eff315"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/workflow/confirm-options.md",
+      "size": 5101,
+      "sha256": "1511e2794939770e11c809fd67b8668e69157a1921566aeb2f256f525d4fa755"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/workflow/prompt-template.md",
+      "size": 8421,
+      "sha256": "c865f9af291b62af1de5f20bfdac742cd2e5b089f727d64a38efc49557134873"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-cover-image/references/workflow/reference-images.md",
+      "size": 4719,
+      "sha256": "1bb781495e7b226669a746a944c5c58b9afef13dbc3d27a8eae2962b216d09fa"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/LICENSE",
+      "size": 1064,
+      "sha256": "601839401f6ce68b7a8aec0f7ba247ab8ef0848113378220bec4b2615cc84ee7"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/SKILL.md",
+      "size": 16622,
+      "sha256": "c92cc35968807c179015f5f5751bb060bd6d64624dd4631bcaeb1f3378d33e8e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/references/codex-image2-fallback.md",
+      "size": 1680,
+      "sha256": "70c8951f0d6e8d448a5cac3fd84296e5570c08c93786bf34aae728a130235092"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/references/codex-oauth-vs-openai-api-key.md",
+      "size": 1433,
+      "sha256": "f836ade57918570faec8aed9a640e5c6528ea9b4389db36a9fd7575ec09329e1"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/references/config/first-time-setup.md",
+      "size": 9012,
+      "sha256": "31752a4bdb7d106bca9eb91f158e8c6caaf42303671ad65373575d255ce5f91e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/references/config/preferences-schema.md",
+      "size": 2579,
+      "sha256": "6908208e10152923d8a73b651e66a189e1958a96c249c0f88dc80b4ba3e79069"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/references/providers/agnes.md",
+      "size": 1991,
+      "sha256": "9560a175d27c63254c623e6e027c54ab5a39f1683cee231aa8e72191f0d2116c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/references/providers/codex-cli.md",
+      "size": 5152,
+      "sha256": "f48670bfc1bfc5f0b9444f47c3c220c6bdd0bf29608643c9887d4f43a8a8568b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/references/providers/dashscope.md",
+      "size": 4309,
+      "sha256": "91f45f7c8a43fd25fa3e191c63722880386172657e1302fd7c8c021b38999973"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/references/providers/minimax.md",
+      "size": 1115,
+      "sha256": "9cfc7edf68fe24a854e2bdaef13d6faac20305dc6b27bc6c4cfd49b2dd50443e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/references/providers/openrouter.md",
+      "size": 707,
+      "sha256": "a386a3c90c05b668dd79a978f87bac861d544f68e496c3f048d24349b60e3e72"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/references/providers/replicate.md",
+      "size": 1476,
+      "sha256": "aa9ea85f6105b6f4de6d10954cf54508c8e93466ab97781593a3f38f596e84b5"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/references/providers/zai.md",
+      "size": 953,
+      "sha256": "93dc2d5bf7f21bd634c1e4539b210bd9b2cdaf2dc7d989575f909fbc19101052"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/references/usage-examples.md",
+      "size": 4994,
+      "sha256": "7e1fbfd6c22d4f625f14fd917061a6b60634f234b0c2d90e9ce9de25023a1b4c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/build-batch.test.ts",
+      "size": 4575,
+      "sha256": "75211b7279b714ff5cfff3d4e1479a820569a6e4b1fec4662cbe15ca3e288f2a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/build-batch.ts",
+      "size": 7593,
+      "sha256": "862adec8c58f3f1d63b7034558f0a32ca2ddc9e122b78e484f527f0067e81590"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/codex-imagegen/cache.ts",
+      "size": 2300,
+      "sha256": "f742faae1d97dabeeb99509774c32a7b990fac67a31264e1bb619451228c9e82"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/codex-imagegen/logger.ts",
+      "size": 1356,
+      "sha256": "b14a85eda394c93d3821016cb0429a97b41b1989ee51309972095f5667587274"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/codex-imagegen/main.ts",
+      "size": 12193,
+      "sha256": "dc13e0856b7545e46ef3b75cd9d72c0e1fedfdc57090b32e0c526e91805aaa98"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/codex-imagegen/parser.ts",
+      "size": 2072,
+      "sha256": "b81cd7b9e720e4f2a19c35a9694c9da03ff942bd3e6c475d8ac15de77c62ba9f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/codex-imagegen/spawn.ts",
+      "size": 6659,
+      "sha256": "8cea6986038bc7d1c928ba4153ae05d7c7134701450d8a3bdd173e51347ca4c0"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/codex-imagegen/types.ts",
+      "size": 1632,
+      "sha256": "9972556623578074f0525eb6e7318879023229dfaba77d4c938638fd137accc3"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/codex-imagegen/validator.ts",
+      "size": 2353,
+      "sha256": "13ac88957471aff97ea654e9d971eaa10f395a1e664b9b76651cdea852399bba"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/main.test.ts",
+      "size": 18799,
+      "sha256": "6c9678969494b985a1b51b5b53f86d52f6a8ea809228b845de0a3e5cc0501ecf"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/main.ts",
+      "size": 46560,
+      "sha256": "0493e0b5f64e12e8cd87779688de1e065a31caddd64dc368a8db328f15a2b1db"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/agnes.test.ts",
+      "size": 6810,
+      "sha256": "767b014160fb4fe2fb7b77b1077e4a63fb4c32d3259fe15e2688eb9be393c115"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/agnes.ts",
+      "size": 5002,
+      "sha256": "8db55e143ce5f4945382c601c2184b93cd0168e3d741ae79cc5ea0a8f7a5086e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/azure.test.ts",
+      "size": 5425,
+      "sha256": "b937f510635dbe0bc1d960a584c9b06891b97d08b1c67612968071b3d48a34a0"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/azure.ts",
+      "size": 5828,
+      "sha256": "6fc71f21c510f364463ae53e304ab0266bc554b7406394b4ae38eeaeed25873c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/codex-cli.test.ts",
+      "size": 1674,
+      "sha256": "86707f2ea8f3baad200cb07eb385da4bff2e221bedd0bf0ed7c6964a3376e4ba"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/codex-cli.ts",
+      "size": 5892,
+      "sha256": "a15684ad788e4059183365fe9c9c7a15bbcceced5cf80f32050a62b342353201"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/dashscope.test.ts",
+      "size": 11671,
+      "sha256": "8f87ca451faad41b6be456c059f015c512d8607ee156fe8d9204a0b7c07169cb"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/dashscope.ts",
+      "size": 18543,
+      "sha256": "2b352e485039ffc96ad712f0d35205ec2a127cc3577196174779d04b451c99a6"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/google.test.ts",
+      "size": 4212,
+      "sha256": "e6356926fb3e4964e09269704db548699b51e3b4210f45f3184b1f14243c61fc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/google.ts",
+      "size": 10754,
+      "sha256": "cf820bb0411df3254f0dc70ff97c4f8079bc5a6336013cb2809b076ce117d106"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/jimeng.test.ts",
+      "size": 2737,
+      "sha256": "57096cb253613028df47e3c58efccf3f50dfdae865c534aabd8a540236b17b14"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/jimeng.ts",
+      "size": 12845,
+      "sha256": "3c1eb52daa42a4dc7099c8c28c31119742e3cdad8fabee9f8ef8ece4a3627a4c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/minimax.test.ts",
+      "size": 5254,
+      "sha256": "f628f30d4a08f8df5c5f8d70c194586bceb0aac74a7f5def78bd04287b870a67"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/minimax.ts",
+      "size": 6331,
+      "sha256": "733adc9d5a70a68b12e149e3d442f43cda3a5171e09ade14e61678b0893fa817"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/openai.test.ts",
+      "size": 6179,
+      "sha256": "c2ebbc6f2b683206ec4ed081b422f1405fe036c8565c8a4a72d344b864bc5c9a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/openai.ts",
+      "size": 12687,
+      "sha256": "a9f2ffff57fd4f83e56b593fd92a3cf6affd3b5e708f93ca2fe31ec5da66a855"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/openrouter.test.ts",
+      "size": 5450,
+      "sha256": "5abab6981180df2f5246d587c98127edbd275431d2303ecc579ad25d5e69336b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/openrouter.ts",
+      "size": 9957,
+      "sha256": "b951904b3e8dda81ae4248944a48efce3c0fc9b42796f77ca05f4edc3ffd702b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/replicate.test.ts",
+      "size": 7190,
+      "sha256": "7b3632d09b5e87c2b58c5e750b9230e1a9fafe2caa3ff252269017d6e06f101b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/replicate.ts",
+      "size": 17822,
+      "sha256": "f4b90d2a71b4fa285e1e9fe1df84a15a4c50414d2d59a96c0ea6ac88a9459dd0"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/seedream.test.ts",
+      "size": 6544,
+      "sha256": "adddc7b78937567bbd4431babbac2757240dab0fbe1cb84ca439f77007a0faf8"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/seedream.ts",
+      "size": 9855,
+      "sha256": "447379622c49cf4a2f3e1f00962d18a235e1b5027c0c90c33679eead092b5695"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/zai.test.ts",
+      "size": 5274,
+      "sha256": "1dc4b67e95264841eff079dee86eb62c8859a2655c4750a896db708ea5032014"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/providers/zai.ts",
+      "size": 8950,
+      "sha256": "4a09f66f88306cede17c0ba95c5679e414568d7bc69bf318d5cb6b3f945a31c3"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-image-gen/scripts/types.ts",
+      "size": 2337,
+      "sha256": "29e4b89e5308fe6a68b1e0a7d11ebb0f56964531c357e7954e74139ca076d7b0"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/LICENSE",
+      "size": 1064,
+      "sha256": "601839401f6ce68b7a8aec0f7ba247ab8ef0848113378220bec4b2615cc84ee7"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/SKILL.md",
+      "size": 23370,
+      "sha256": "03cf6ace98316c8d2caaaa6209b4ec8e5c6656f2f8075cdf1367dce891c5202f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/codex-imagegen.md",
+      "size": 3717,
+      "sha256": "d9e5f79d403c306f4f9741248c69530996b4852bcb0c2597d99019c09a3cf167"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/config/first-time-setup.md",
+      "size": 3456,
+      "sha256": "97489ca1f8751060179b6534f4b0f0b8407cc219573f97793dc49dcde7f7b98d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/config/preferences-schema.md",
+      "size": 4017,
+      "sha256": "2b6b1e6390e3cd569ab509867fcb283b6ed2bfc7709cb261d07f10f0c2f281cc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/config/watermark-guide.md",
+      "size": 1977,
+      "sha256": "39ee36b5ed07bd7431bcd82495ed9cb84b386923c630c850e96e58d751c13223"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/confirmation.md",
+      "size": 3929,
+      "sha256": "90e2b649043d8671402075b1b8754f7d1e035e84550a44aa8c087b1343d9d24b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/elements/canvas.md",
+      "size": 3727,
+      "sha256": "4af085d36797c2943b59d7747fbf1d3c2c18102995fcd67b9a5a853e5b9f04d7"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/elements/decorations.md",
+      "size": 5049,
+      "sha256": "f85ba1914a9113f0ec81f920a7cf39307ba322b1458d3eda786c6c29d3c42efb"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/elements/image-effects.md",
+      "size": 2990,
+      "sha256": "27833f3c7415f152dd50578a7ce7e2b0bcce98afe216e9967b993a1e04da9174"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/elements/typography.md",
+      "size": 3258,
+      "sha256": "7b7fd06c6efd635ba017a1495f73b094b1abdf4a7d9635b35f964f596b60b3d2"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/image-modification.md",
+      "size": 888,
+      "sha256": "9c2ddf899e0ec8d62dd503794d91a5a0945faa13566615f3587b387ba48c60c8"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/palettes/macaron.md",
+      "size": 1437,
+      "sha256": "726a80ff95d041e3e6e2e7004d809dd022255dbc5afeb686d20d45a558ee2160"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/palettes/neon.md",
+      "size": 1271,
+      "sha256": "4f2a16b75f10043bcec3d5f224e63d9aa77811dbb0b991cb3c13b0958006b3fc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/palettes/warm.md",
+      "size": 1225,
+      "sha256": "67fb83fa04ddad24538d6ae4a30f63269b40a52da546b286aa9abf1c7d443045"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/presets/bold.md",
+      "size": 1577,
+      "sha256": "90a90e0f1d1da54c2725052fc7a9f4a4be35ee0c8e7b15c44aed280012409596"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/presets/chalkboard.md",
+      "size": 2324,
+      "sha256": "267859fa9aee5f58a959c683ba2bca503cd91394cf9d2daefa6a57ab4f1ad6ca"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/presets/cute.md",
+      "size": 1565,
+      "sha256": "1a561208c3a5118af9409060840f9fbda00cd525a56c6dc246b1151f1ba9d896"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/presets/fresh.md",
+      "size": 1496,
+      "sha256": "13d48276abf8d489f8fdc9dd07a6f2a8603e37d66193fe0a955af1e26c66de5f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/presets/minimal.md",
+      "size": 1418,
+      "sha256": "9213d97718596a601ca74fda7b0ebc4cebaa87bf1581a089adabb7cd871f02f0"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/presets/notion.md",
+      "size": 1591,
+      "sha256": "83a83078d76567677827d647e8516bde48ff8efa30aaa61a8a45db970d83798e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/presets/pop.md",
+      "size": 1528,
+      "sha256": "1e33d6e49e810f24e6958f883ec918a7f37de995d717b087bd29b411264edae8"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/presets/retro.md",
+      "size": 1483,
+      "sha256": "7c10c253ed0230356fd2ce2679e2c6fc973e995c568348a976491df560b5e817"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/presets/screen-print.md",
+      "size": 2680,
+      "sha256": "1ae6a570e16aa2cf7720525660c4d14f7dcef9c4da2a638dc216352189c25a91"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/presets/sketch-notes.md",
+      "size": 3216,
+      "sha256": "b9577eb6053ebd381e287adf889988ecacdfec2727512cf73bd2754fcf29dd01"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/presets/study-notes.md",
+      "size": 2977,
+      "sha256": "777e50d3c7be5be0d3a70350abb76fe19e147f44d3c5b54e329c1efb0fd627e0"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/presets/warm.md",
+      "size": 1476,
+      "sha256": "e8f7499c1873f85e71a4ae25a0fa8988f2698e80e8d8cfc3d72b083526def0ef"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/reference-images.md",
+      "size": 1176,
+      "sha256": "6fc1f1e8e1a6f85c76e05c46dc71626fd0a2b29893a65595dc250174a6b75956"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/style-layout-matrix.md",
+      "size": 1315,
+      "sha256": "285a6e14ad8aa4cda90e962de360743aa44affe3d86821328e8aa1a3c3307bad"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/style-presets.md",
+      "size": 4185,
+      "sha256": "a27274cd87c1e72ffe82bda9406b74c70abf0dbfbcbb7ff741a3d33d2769ced6"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/workflows/analysis-framework.md",
+      "size": 7235,
+      "sha256": "c06a57e69b917f8f5c4563da61b0aedb11cfbc6a68b2c599407128d13a014432"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/workflows/outline-template.md",
+      "size": 6101,
+      "sha256": "ad140ce299bf611d074a67cab4bc0e82f350b21d4c9b7d880605926b3ad6a020"
+    },
+    {
+      "path": "cola-skills-bundle/deps/baoyu-xhs-images/references/workflows/prompt-assembly.md",
+      "size": 10328,
+      "sha256": "c2a8f59650f132f0cee440b3efc7e5868051725283613441fffa82bf6e88d371"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/.gitignore",
+      "size": 37,
+      "sha256": "fc6aef30c006e38d69f894958c7d418b073730a396b6ae6fe3a990b9b9d3050f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/LICENSE",
+      "size": 1148,
+      "sha256": "89fe5ae8d5faeda939e392638d21ef1ab5084b3ecb8df96c8bbcb38416291958"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/README.md",
+      "size": 3723,
+      "sha256": "141de1c65d23322dd22d44bf52e8af84f5a51eb5cf81e40ff33b51ca0dc45bcc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/SKILL.md",
+      "size": 8226,
+      "sha256": "f7bb698bd5ca3386a0fe7bb12947b25158e196708b41396bcc8311aaef66d793"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/assets/.gitkeep",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/assets/examples/01-让AI做我老板.webp",
+      "size": 247394,
+      "sha256": "95d6851bbca0b418fc9787ccb2b0b85f9acc4670502fdd19b46bb4d171eb268f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/assets/examples/02-下一代Agent来了.webp",
+      "size": 195656,
+      "sha256": "ec35f8b9391aeeed57e1835fb041a529a2c55cc20cf929feda660ea0680d0fd6"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/assets/examples/03-3个Skills一个运营部.webp",
+      "size": 244034,
+      "sha256": "9dd7d7f63faa2868d2e61b61757064ce56a886b692fb362a02be07e3fb27ac2a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/assets/examples/04-别再自己操作电脑了.webp",
+      "size": 254232,
+      "sha256": "216335ad5236c3d550a42be471785aba65b2bbb91b780a5b39a33690de5d74aa"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/assets/examples/05-我真不该做这期视频.webp",
+      "size": 312586,
+      "sha256": "a5426dd8b40e27d868afdb55c7e286ba6a75f93dc4e35857bd2791ae7a873f0f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/assets/examples/06-一键制作拼贴动画.webp",
+      "size": 427298,
+      "sha256": "d864d6616bfa3df726a44234212518e9f394ba3f7fdc4ab1fa1cd6ded3e6e928"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/assets/examples/07-养Agent晚了还有救吗.webp",
+      "size": 212876,
+      "sha256": "780eaaa196fe1aa008587d28670d1a761b50c1017a1b5ca8240d4ee0f650c8b2"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/assets/examples/08-AI生视频不是模型.webp",
+      "size": 255814,
+      "sha256": "94377c51d3cfaa6a0f0ba69e567dc529caf0311db6c5fe2a4a6552b8241cab29"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/references/examples.md",
+      "size": 9910,
+      "sha256": "0723c654a12a649cdabd9261ab3fd1e8dc3a1c68a9e26182a0f435ec5e088d94"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/references/style-01-深色渐变风.md",
+      "size": 1581,
+      "sha256": "b242d750c6da817aa0d707b36fe448e8772660b20d7fddce1f776e0d9be6c57f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/references/style-02-纯色扁平风.md",
+      "size": 1446,
+      "sha256": "e15019a8464a85bd8afabd73bb2c72b6646ff073c865ad797ea22468937acbee"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/references/style-03-产品主视觉风.md",
+      "size": 1610,
+      "sha256": "5ca156eca901486d2a19ac57f161e1a65691a6801e7ef61f7bc01b3d3ae532e1"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/references/style-04-对比卡片风.md",
+      "size": 1658,
+      "sha256": "dcb63dd8274e7f217a50c1224cb23e506a9c73d370ac09997974e42c69955653"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/references/style-05-极简留白风.md",
+      "size": 1375,
+      "sha256": "4f44a106809e6ad88897be1195aa555eda673b37ef4998108339318c62547cbe"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/references/style-06-海报拼贴风.md",
+      "size": 1588,
+      "sha256": "fe55875deae901c9c9c36fd22cacc4d77957a8836a85b7fe9cb2c9ab2d0b368e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/references/style-07-人物侧置留白风.md",
+      "size": 1335,
+      "sha256": "44b5c3a80f2c96bbf278b18d922b0029e134df2cdd343b915ee2736a5d7681c1"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/references/style-08-背影构图风.md",
+      "size": 1366,
+      "sha256": "3e33e7fd3dc9baa4c08be82d6afa34c6eb2a4849c284c7c29cc37b8902565ebd"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/references/style-09-局部出镜风.md",
+      "size": 1425,
+      "sha256": "939dc0394ed6e1625254384c0405eddf2be0a2d8f7904090bd9aab4324ac61fb"
+    },
+    {
+      "path": "cola-skills-bundle/deps/gbro-cover-design/references/style-10-正面对视风.md",
+      "size": 1562,
+      "sha256": "5ff95f0aac0a065637e2f6f5ac9c8d64159a981145e8d3e941443d6208293e3b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/.gitignore",
+      "size": 545,
+      "sha256": "050b06c7d5b235bd853e88a9572177d931e63e1332452cada904f5c821088c9f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/AGENT.md",
+      "size": 2117,
+      "sha256": "fdfead31df3631ee2cda23d9b814628d28a68ed9c14e1c6d1cefc01fa2a2ecbd"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/COMMERCIAL_LICENSING.md",
+      "size": 9379,
+      "sha256": "11c293d391689b6eafa30cb9f83cd7cb16f081885e333c5cd99625a3e773c608"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/HANDOFF.md",
+      "size": 39825,
+      "sha256": "3489f2389ac9c1a6169735e0396c6bf100c28f7706fd59898da2f7a09c0be7bc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/LICENSE",
+      "size": 34524,
+      "sha256": "8d56b405468aad11f87ab5763f901e276e08d9646ff5c8481b1762b6b789e9ed"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/PRODUCT.md",
+      "size": 21587,
+      "sha256": "dec675cb4b79d6f4407577842aceb7c90a113d471e2a21dea6f9053b11293353"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/README.en.md",
+      "size": 25829,
+      "sha256": "19fe40b216fc5b68d9f9bd2f773fcc9d445bfb72f32f8557357b1494eb39f3cb"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/README.md",
+      "size": 24109,
+      "sha256": "6f8c232f63bbbce4dfff57d83d84d31fd32ed43b80c4c76453e681575ddefd2c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/SKILL.md",
+      "size": 33469,
+      "sha256": "cb23d959fb7fd4ab44db9ea6da5e2696e21271db92e91b7fc8e63fc7ebc0b4f5"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/agents/openai.yaml",
+      "size": 352,
+      "sha256": "d29aa98dab2e9c3329dc3fc4cec6d8af4562279dbad79fae1b496a5805434676"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/assets/magazine-bg-webgl.js",
+      "size": 6200,
+      "sha256": "bd446bda0ce32e3e420499ba017631eedd1c226bac39e498b1c49ac40090fe17"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/assets/screenshot-backgrounds/style-a/dune.webp",
+      "size": 160742,
+      "sha256": "6456386ea5b98bdd43fbef7e3c80b2527131f5580c3972aaff3d9a7a596031c0"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/assets/screenshot-backgrounds/style-a/forest-ink.webp",
+      "size": 237774,
+      "sha256": "e6f9df859806344533b7425c64aed82e3dfbe1450ccb5fccbecdca9be0e3cfd2"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/assets/screenshot-backgrounds/style-a/indigo-porcelain.webp",
+      "size": 130840,
+      "sha256": "bb935571900303ae9d5febd04e1598e091bdf5bbdabd8766f8b108baaa5638f8"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/assets/screenshot-backgrounds/style-a/kraft-paper.webp",
+      "size": 256352,
+      "sha256": "0637a027068c2f14facbfca802efe98ed9bd35fd15bdfc47b65cddd53a054d9a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/assets/screenshot-backgrounds/style-a/monocle-classic.webp",
+      "size": 184520,
+      "sha256": "96c4edc98c1facb6c5f4d636f2c80d2bfd073f8b510075a4a4959f3c55accdf0"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/assets/screenshot-backgrounds/style-b/ikb-dot-gradient.webp",
+      "size": 385692,
+      "sha256": "d0c43b937f1e61031fb5ff9daf5e91fd5032eba3cc72f40abd93b0d93c2fd092"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/assets/screenshot-backgrounds/style-b/lemon-green-dot-shadow.webp",
+      "size": 145062,
+      "sha256": "629eb0b45381d22bbc6a581d37cfc6c4a0e371570b8f8896619562a1420ab81c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/assets/screenshot-backgrounds/style-b/lemon-grid.webp",
+      "size": 65512,
+      "sha256": "41391448c19c5d52c7f35e953f0a9172d3272f1934e1c597987014bba2e50cef"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/assets/screenshot-backgrounds/style-b/safety-orange-halftone.webp",
+      "size": 255056,
+      "sha256": "324df63073f53b58a6424f8a56beecc66cfa28aa4831315d7f19e135780579a6"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/assets/template-editorial-card.html",
+      "size": 73472,
+      "sha256": "d2acbd9350e8ef6d2ff5be64ba5dbdd5186aad1d3fd047e13a5a3e1de7442d6a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/assets/template-swiss-card.html",
+      "size": 59028,
+      "sha256": "88ad0d8cb82693446a68a49b01b822e32b49fe41f969bc56bbcbd5fa3530df92"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/package-lock.json",
+      "size": 5122,
+      "sha256": "91f5b6c595c6b066886bf5d29c0c92d949080fb0f77be957185b91ef686c2126"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/package.json",
+      "size": 499,
+      "sha256": "456558dc2d206df7ee2563848eb0d515b20978cab6062ab8d554d6ec1cb49d10"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/references/background-systems.md",
+      "size": 3905,
+      "sha256": "4ccb1e949f23c1e31d5df9d0a60a5fefd53acdbe74cedb36cb9e8e277eddb99b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/references/category-cookbook.md",
+      "size": 18621,
+      "sha256": "e49546bd49215c6e397bec414e6d280ab358a2df775c8ec9cf65411fff943cf3"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/references/components.md",
+      "size": 20106,
+      "sha256": "ff6cc72a7a4367155fe95c51714442c7148ac15eca07e757f089baf4ebec8ced"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/references/content-planning.md",
+      "size": 5279,
+      "sha256": "62777f4c23d169bec8b0ae36b75f5ec9826e2845725b9d39556488102d26ecd4"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/references/gz-components.md",
+      "size": 9627,
+      "sha256": "a62604ad0df3d27d2603564910f16a1235ae9e1a5685044d64fa6817bd7f20c3"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/references/image-overlay.md",
+      "size": 9595,
+      "sha256": "324afb30185eec3b09d6310a220311624172474714f40faaad52a0ddd8802593"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/references/layout-recipes.md",
+      "size": 35436,
+      "sha256": "8d0b7cd1764fe1d22fdec11da3c68731528f9beb32a525d80d81774c64b14102"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/references/live-photo-production.md",
+      "size": 36026,
+      "sha256": "b94ca734a2162e34e75e102fbfaeef4d528d10c608735710b3c56b2e752c60ca"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/references/map-component.md",
+      "size": 7680,
+      "sha256": "91416f46ea5ee35dc20daa230aa20979618addb8e9bdc8f50ebb19c7eeb1b521"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/references/platform-specs.md",
+      "size": 4588,
+      "sha256": "9cda153f377facb2ceed5c5353881912d84570a9c270dcb382becf30a0cc5b7c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/references/portrait-fill.md",
+      "size": 2618,
+      "sha256": "7710a1fd3b0ed09f62ad9962ddc195c28fc1b66c042d7083ac0c2f5ba60a18db"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/references/production-workflow.md",
+      "size": 6217,
+      "sha256": "4adc0e185a4f3c29b24c4ddf99ba4814ce1e9549740a7f5e03127b8a4a48bcaf"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/references/qa-checklist.md",
+      "size": 6437,
+      "sha256": "b7e5be78c46370c72cbf0cc073763c441ae5f3ff3a6d4bc9d82e8906b9e35309"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/references/screenshot-treatment.md",
+      "size": 10106,
+      "sha256": "6c6f12167736bf7d1004d732dad1dcffdb75dbb6aa5b43e1df70ccdb030d013e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/references/style-system.md",
+      "size": 11690,
+      "sha256": "71728c9ef1c8e0eaa7b825754f0c15e272ebd96cb2833bcb2d451ab1492eae3a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/references/theme-presets.md",
+      "size": 7157,
+      "sha256": "81d448cc4b02fbd835fcb3788f45cdecda6cc47728087b623150331a7cf089b1"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/references/title-shortener.md",
+      "size": 6994,
+      "sha256": "c164b746a4a9e093586a005cf746bdf8a3a4bcd1f9bff2f37f5dddeb4eb47d65"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/scripts/add-livephoto-maker-note.swift",
+      "size": 1514,
+      "sha256": "7f65454ddcf4d2aeca7e8ec7232bc82e84a1c604cd25170397786829a6f5769e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/scripts/add-livephoto-mov-metadata.swift",
+      "size": 5849,
+      "sha256": "7cea426e47410d4ff4cb8f9b6a8c3e1853011191f2f1d25d96164b96b6a83be7"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/scripts/check-skill-docs.mjs",
+      "size": 4728,
+      "sha256": "c8ece4df9bf18ecb5fe8def92a91ebbb4e77b2eb442639924f33e819719bcac0"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/scripts/gz-fonts.mjs",
+      "size": 27588,
+      "sha256": "81e7c83089bb82fe36abff29033484dd4159428881166e01d95666a487d004d1"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/scripts/gz-theme.mjs",
+      "size": 21089,
+      "sha256": "aad8987eed9813f7a239bbe00f08632ec942e830a89f12dd7b5a250e1804b586"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/scripts/make-video-contact-sheet.py",
+      "size": 2979,
+      "sha256": "4f5d3c9176594529d478f65c41f12cb4fe391db7f1d4eedd4dc76a65ed8c4651"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/scripts/package-live-photo.py",
+      "size": 1105,
+      "sha256": "645ba7c416a64088bbc5df4cd68d2ccd0b9b9066f2f1d1d3d9075a103b5f2472"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/scripts/render.mjs",
+      "size": 5264,
+      "sha256": "3d9d5de16d05e8367a0039664e81d2cdeb5d0c9741e865d89a5b4a1be71464d6"
+    },
+    {
+      "path": "cola-skills-bundle/deps/guizang-social-card-skill/validate-social-deck.mjs",
+      "size": 23881,
+      "sha256": "1ff808bcbc0fa03c3602a1602e0f7ab081cf897e7659e6c20b282cf3552e7f96"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/.github/workflows/ci.yml",
+      "size": 2052,
+      "sha256": "77ef5d370ade945adb545728439f4ab6eb54aa9e8a7256de814983ded293c50c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/.gitignore",
+      "size": 377,
+      "sha256": "16c2fb8a1b0cc9eedcc7d03b644ec761849fbb9c99711dceca4a9c2dd2125c20"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/ASSET-NOTICE.md",
+      "size": 994,
+      "sha256": "3012540e7c506b0da9805a1ca7f35d13d07daab4af2dc2d956d8edf37a18fc19"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/LICENSE",
+      "size": 1082,
+      "sha256": "d83ab8f95fba890d9f50e257597155fa327197a615c6ba215821b3b089528a30"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/README.md",
+      "size": 8480,
+      "sha256": "88584574295dd6ec17cb649d7abfb897ed169ec6440c3ebeaeaa552fb2b205f6"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/SKILL.md",
+      "size": 8043,
+      "sha256": "97c636682af31c4a4fc4aede6ddf893f903412d0a9c5a14380ee81f557670258"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/package-lock.json",
+      "size": 127973,
+      "sha256": "9987656ef2b50bda7762f20c42b162a5e8cde40d148baeaede07097d17c4a203"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/package.json",
+      "size": 1141,
+      "sha256": "838fc4632c2909abe9717d2119af790de98054bfb4cedc35b14584da50d40f6d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/scripts/after-pack.js",
+      "size": 2682,
+      "sha256": "2cdab42bec9b8b67dc601adc0c05aa178ee5751ab5dda1d796d3f64ea1764d59"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/scripts/run-packaged-self-test.js",
+      "size": 2286,
+      "sha256": "837d20d76c633682d5d8500e9f1fb72b25ed5a016b97d42751cc31bebfd86ac1"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/src/core/command-line.js",
+      "size": 718,
+      "sha256": "aaf2825e4927a4f27a3ef16642a6d63fcc8dcecdeb9d02186e1dcdb8bdd61fd7"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/src/core/command-queue.js",
+      "size": 613,
+      "sha256": "6a28f81dc483ad9b079576c2f71d1de120930b121d621438573a1b3b9bf35cfa"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/src/core/episode-player.js",
+      "size": 2197,
+      "sha256": "35c6e41df4401fe337331be16f85645b60adbd11fa8ea3f280642876efae86aa"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/src/core/floor-policy.js",
+      "size": 360,
+      "sha256": "5b5430b7b7dc4249904abd3abfbb76b49be77c95dca30f1e82967b64b7bb70ef"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/src/core/frame-grounding.js",
+      "size": 711,
+      "sha256": "bd21577af7722af7c9c3b8ddc5f9fd811e77501981ca18b52324cce6ffc2206e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/src/core/gesture-state.js",
+      "size": 1366,
+      "sha256": "ec3e17d5556c9ccbaf158fd0a8d351fad92cfb69908d244b23d707e8d1502a53"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/src/core/manifest.js",
+      "size": 11561,
+      "sha256": "fd4abe87dfdbde5f5073352bf598623f38af76c60956fb25743bbd8fc1da8f9b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/src/core/motion-planner.js",
+      "size": 1117,
+      "sha256": "ce10aac2f9c93fa77e65c0cd558cc42440dfda8207aa9cdde7ad4fcf51416ca9"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/src/core/runtime-model.js",
+      "size": 4634,
+      "sha256": "96a52f7e2b084d6c34ee1bce0e3350d97cf97452c50818e437e53624810634bc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/src/core/trigger-controller.js",
+      "size": 7023,
+      "sha256": "596539aceccabbdcef8ccd9eba9b7a202ccf0d9d3cef5e395a01cd3c5e6f0c9f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/src/core/walk-planner.js",
+      "size": 765,
+      "sha256": "b01ea136f231c1c413b98770706b209b58efadf5afbb88751561014dac165b50"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/src/main.js",
+      "size": 29146,
+      "sha256": "2585b4a96fa8dfc361c24a35ccfe73af002db5160c55d95b55a9c450fad18862"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/src/preload.js",
+      "size": 2029,
+      "sha256": "94a9cbb349855766789e3e628d7c000d3159d5117534f76ad2199e0ea84204b6"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/src/renderer/index.html",
+      "size": 730,
+      "sha256": "9ec01b95147687fe0defa1049ee11efea8278e651e105f4ec980ec45adf2ab1e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/src/renderer/pet.js",
+      "size": 14105,
+      "sha256": "2af99e1af9d9f004298562869c12035e2c0dddf7f7cc00fca48194df9c14d5da"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/src/renderer/style.css",
+      "size": 969,
+      "sha256": "b44b9e17166fc55cebb5e63b2fb9d46e57345bed79923674ba5954c1b13017a9"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/tests/after-pack.test.js",
+      "size": 4123,
+      "sha256": "4688527b8cd9f343dd1237eb749e0bd5008452483f0d1fc732bb9d209c104179"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/tests/command-line.test.js",
+      "size": 843,
+      "sha256": "c9bb6797eac57ade714e23c7a66935a77f9c3343ce4752ca09351d5566011880"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/tests/command-queue.test.js",
+      "size": 935,
+      "sha256": "c443b20f1a9be44c0a8a5f740d1f6537dbd7d7a1598b4eeb3f1511aef8770b09"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/tests/episode-player.test.js",
+      "size": 1894,
+      "sha256": "c26776ac8d614f8a2ed8986b20ad719f021271e9579564c2661ef7e182b33c4b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/tests/floor-policy.test.js",
+      "size": 601,
+      "sha256": "1b0d5ef3b3a4c9cf358c485a1a40061ae1a0d1658d9dd308d97d2c0a2005ec4e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/tests/frame-grounding.test.js",
+      "size": 579,
+      "sha256": "26ab25ac0359df35b4a42ac22139e10ddd16bbd8d9be5b9c01dc6ecf1ff6a1e0"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/tests/gesture-state.test.js",
+      "size": 2077,
+      "sha256": "be1a678a74dd15cfbfcc01422edc7405f20df214621c15c527796fa76bfaa6a6"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/tests/manifest.test.js",
+      "size": 7674,
+      "sha256": "09fbb6d388d741bfa4c061c877a7e38dfc805a76990b807757bb993181b34948"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/tests/motion-planner.test.js",
+      "size": 956,
+      "sha256": "d95a51aa501dfadbac1ab90a99ebdc55ed7071e4455b9823a367437eac0e54fc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/tests/run-packaged-self-test.test.js",
+      "size": 752,
+      "sha256": "1ddf98a8774713476e0b408f7f78b7044980845113409bf1dcd13b7d1adeb106"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/tests/trigger-controller.test.js",
+      "size": 7563,
+      "sha256": "b291615f5028358c607429b42e90595cd017ed66675cfb54858edf8cad2f235f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/desktop-pet-runtime/tests/walk-planner.test.js",
+      "size": 601,
+      "sha256": "f6410d3b9247b187a7ce12fb83cfdb5442904d75268a1ff6c30ab6bb36445c9a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/examples/desktop-pet/canonical-pet.webp",
+      "size": 23064,
+      "sha256": "9aec3ff35b9a2b485158c9a36d92b659cee0880a5ac40d3857f8a0f3f1034c2d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/examples/desktop-pet/contact-sheet.webp",
+      "size": 67290,
+      "sha256": "d240c167fecc4bf69219220253470c327c3d3e2c6b53dae0411e5b085f96fdde"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/examples/desktop-pet/motion-preview.webp",
+      "size": 320028,
+      "sha256": "674eda8e68ce95c6240d6b4d590f2d44beca8881582fa82d1049ccbee7ef7dc5"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/examples/desktop-pet/runtime-screenshot.webp",
+      "size": 19422,
+      "sha256": "fbef287f4ca986fd4daab05515a36b570d7c052964c9b396bf2a19846ff47950"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/examples/desktop-pet/source-drink.webp",
+      "size": 90878,
+      "sha256": "2a583db084b62de4e9144f89a858dc2749fdcc4e4beb960b3b4915d5d8e86c9a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/examples/monster-poster/pink-green-monster-product-interaction.webp",
+      "size": 61716,
+      "sha256": "a55293879cd1e7ba3a6f8902ea2318875f764161322780d6fc951160950a14e8"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/examples/poster/doodle-poster.webp",
+      "size": 80266,
+      "sha256": "f529a5ec9ec777856cb11106979baab65e82a52f0f794af497f2922c63b3bd03"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/examples/poster/source-food.webp",
+      "size": 182712,
+      "sha256": "2bf1b431f82a90dd83cd13abeb0a2db15edc6f5cf40b39c2ef7dda46ad8770aa"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/assets/examples/poster/typography-poster.webp",
+      "size": 78436,
+      "sha256": "f68122d39c77ed78ad3fe08222508ed3d2ff57e793981047ad26b3db6e50a1c9"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/evals/evals.json",
+      "size": 63713,
+      "sha256": "64232c0350dbbc852b52ecc18611edcddece60c2f1648de88e4664867e7a82b3"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-drink/animations/curious.webp",
+      "size": 132688,
+      "sha256": "38b8201e566e4825489a80472d3e67eac0d094281689076da6c3d2b4c7b4f378"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-drink/animations/drag.webp",
+      "size": 64848,
+      "sha256": "6358ea9a517afcae79e1bec92e2523b05be31bbca1cf70b20754d0dd5dc5660f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-drink/animations/fall.webp",
+      "size": 143240,
+      "sha256": "5ca07a71ee03c5e466de518c330d055eaa3a6baab69ee8c032537057815e98c9"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-drink/animations/happy.webp",
+      "size": 131030,
+      "sha256": "b10c298a51d85d6d261ecfe743f2523406f45c218ad6a55cc09901184db60107"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-drink/animations/idle.webp",
+      "size": 125254,
+      "sha256": "6f0f876f49fc8284e5b17bcde4146712efe91a6b1b836b3140a5282c80b231dc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-drink/animations/land.webp",
+      "size": 129228,
+      "sha256": "9fdb4675a2d268443217e61eb789397f02c21089e016ea27f3466f3856497abf"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-drink/animations/play.webp",
+      "size": 206526,
+      "sha256": "0561736d3796db0d1458b1310d510499c670449a3087995d4d6db19c7547802e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-drink/animations/rest.webp",
+      "size": 118172,
+      "sha256": "37d988c78bbdd73f5d5b012d9a368dd639630cfcb14a9df6bd74b6f75c4255e6"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-drink/animations/signature.webp",
+      "size": 186130,
+      "sha256": "12cb371c852b9fed55bf359c59c6a2fad51830be915dc66e1a84c5f20ee54473"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-drink/animations/stretch.webp",
+      "size": 143804,
+      "sha256": "d92f90a7464be3b40c97c974bbf4846c254c7b2e01c21e750825674a85ded4e9"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-drink/animations/tiptoe.webp",
+      "size": 132508,
+      "sha256": "1583bd5eb5027c46923b5c6760d4346e0c512aa9d7d4690803aef7a6bc7a6db6"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-drink/animations/touch.webp",
+      "size": 154862,
+      "sha256": "dfe7a987a48d50f8d302e194f56598c11c1c09f6090d5121460166ccb817a2fe"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-drink/animations/walk.webp",
+      "size": 181264,
+      "sha256": "43e1774590f21487b43b400ae65a625fd23b8a64bc0a06269d3ab5b59c8747f4"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-drink/animations/wave.webp",
+      "size": 117140,
+      "sha256": "b8fc056cc57098c135bc7538f8b991af9c56e493b284b5c7ba9f8686f2848559"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-drink/pet.json",
+      "size": 2431,
+      "sha256": "c4a3302cb9b8a5e10136feed5b358c1142f567b952a0259481f482801fe9dac5"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-drink/preview.webp",
+      "size": 23064,
+      "sha256": "9aec3ff35b9a2b485158c9a36d92b659cee0880a5ac40d3857f8a0f3f1034c2d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-flavor-monster-v3/animations/affection-click/response.webp",
+      "size": 383608,
+      "sha256": "2f5cce7ddb876d6c420d0dd5bbd4bef12b42c488fa47c2d5edd1c95ee1fb76c3"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-flavor-monster-v3/animations/awake-story/story.webp",
+      "size": 421254,
+      "sha256": "fe73eb68d27e86a167f3314742c08e58ea679c40786f446dcff2d8a0d088a82c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-flavor-monster-v3/animations/cursor-encounter/approach.webp",
+      "size": 94290,
+      "sha256": "fef2d96d82fb24b62c5fe088860cdc73bb347fff11825c5b6024e93b110fca42"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-flavor-monster-v3/animations/cursor-encounter/notice.webp",
+      "size": 136488,
+      "sha256": "16624bfc0557e6b3966c6ca7d57ae4da79cc54377f5aef36cb0189d9100a561f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-flavor-monster-v3/animations/cursor-encounter/retreat.webp",
+      "size": 44450,
+      "sha256": "cc62e71477684fb526ae4befeae69b3ffb1cb8109385f225b90ba3a0e7b80514"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-flavor-monster-v3/animations/cursor-encounter/settle.webp",
+      "size": 47760,
+      "sha256": "0778004926b92dd005b3f2420c22b809a6de561cebecc1e52e15b4cda878dc51"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-flavor-monster-v3/animations/cursor-encounter/touch.webp",
+      "size": 44314,
+      "sha256": "32984510daf2030927f351dc8429d16aa74d98bbb7ba5cdf5f9d03ce27c294dd"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-flavor-monster-v3/animations/drop-recover/fall-loop.webp",
+      "size": 135972,
+      "sha256": "1c9fca0bc45f6d7d3370482e7ba316dd5465a48b7043b95ec62d34c66f333709"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-flavor-monster-v3/animations/drop-recover/impact.webp",
+      "size": 35892,
+      "sha256": "9b34746c4e5b4037377ead002547a64cb16d46cbf6ab8d8efd2de0c41d871a91"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-flavor-monster-v3/animations/drop-recover/rebound.webp",
+      "size": 46572,
+      "sha256": "64a7874cf89389f25ff39f3fe90d2e7c163e08d2fe0a2ac443f697383b3c1f59"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-flavor-monster-v3/animations/drop-recover/settle.webp",
+      "size": 92154,
+      "sha256": "4891cd7dadd298ef51e5ed9fae14fe798507416128766459ebd3d89f23504932"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-flavor-monster-v3/animations/explore-walk/start.webp",
+      "size": 89008,
+      "sha256": "26fcc9c061b3ea97f73a0aa6ea70b417bb9912eed6da29c2d492f91818b1173b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-flavor-monster-v3/animations/explore-walk/stop.webp",
+      "size": 158838,
+      "sha256": "326d608a12404f34deb0eff39248d3afee1ebdb4a8d414ace53aa007358b1da3"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-flavor-monster-v3/animations/explore-walk/walk-loop.webp",
+      "size": 138390,
+      "sha256": "51f088191701a258bc2526700240610a4887662a8a998de019a595877560fbd8"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-flavor-monster-v3/animations/fruit-hiccup/hiccup.webp",
+      "size": 371052,
+      "sha256": "1ac0a8d940bd165eb2af335383374938950ce0012174bbe1efee898597ad2d7f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-flavor-monster-v3/animations/held/grab-enter.webp",
+      "size": 169134,
+      "sha256": "56548b8a788025bae7aa4dd7bb6262f7ced235dfe3438a14bcb2e3ed281299be"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-flavor-monster-v3/animations/held/held-loop.webp",
+      "size": 90522,
+      "sha256": "e798211b89ea5dfeecd3d720e9367850a3739c49fc4bd6ee5584893dc8518072"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-flavor-monster-v3/animations/sleep-cycle/sleep-enter.webp",
+      "size": 166020,
+      "sha256": "cda4580a1764c1b656962df55588fcd5bfd613d5b43ef6689155f6e2859469be"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-flavor-monster-v3/animations/sleep-cycle/sleeping-loop.webp",
+      "size": 66050,
+      "sha256": "c650e9163246c69bc7a2630d83035a0c800d36f9d95e6fb53300407c0d51b971"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-flavor-monster-v3/animations/sleep-cycle/wake-exit.webp",
+      "size": 153626,
+      "sha256": "cb54d7ce214e4286fea2052c5537325e7ca1b84b6a1c3716090a7ea48fccf9a9"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-flavor-monster-v3/pet.json",
+      "size": 6030,
+      "sha256": "aefc38268dba3cf5348c44b12a35ceb9124bcea27d29131274fd6aed04a727ee"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/examples/desktop-pet/pink-green-flavor-monster-v3/preview.webp",
+      "size": 67038,
+      "sha256": "a7007b583e8913e84e03b62cfa6b525c7f00fc6454dc9f7fcee0fe96c42c7f1b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/asset-index.json",
+      "size": 23914,
+      "sha256": "2563fa2825f665cee753625caa86e5cdd4f294ef158d92410a3cccacaa4de5b9"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/contact_sheet_action_parts.webp",
+      "size": 29034,
+      "sha256": "4318c199f8839af55d31e9c183c98308c9693e3200cb078f422e8903396d24ad"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/contact_sheet_all.webp",
+      "size": 146626,
+      "sha256": "641ad7e3c4bb6872a2cc1a70d8ce02fd2f4d8784eab8640033a08c127591dd6c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/contact_sheet_figures.webp",
+      "size": 51074,
+      "sha256": "d8cc9fb63518a09fe3acbcddcdf7c5419ab82c3cf4fa83a943bfeb07ca687744"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/contact_sheet_lettering.webp",
+      "size": 67052,
+      "sha256": "47e8201ca8b292bc06bb131ab1344308a55e33e527178d6fd698b3c157d867d9"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/desktop-pet-style/contact_sheet_crayon_layer_v1.webp",
+      "size": 71004,
+      "sha256": "b414e4748f15677ed777a4e6a62ef42cd1d4ae1ee81d178f921b5b56a16e52e9"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/desktop-pet-style/contact_sheet_dry_media_wavy_line_v4.webp",
+      "size": 112314,
+      "sha256": "cf8b5852c8a98818e31333334796fc76126e4f3ce64cb2bbc6d6f66dcd0228e4"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/desktop-pet-style/contact_sheet_figure_actions_v2.webp",
+      "size": 35806,
+      "sha256": "5c703f36e8baaabe147d3c94e8037419670b71ca89a12e583c3081af5738dab1"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/desktop-pet-style/contact_sheet_mixed_media_objects_v2.webp",
+      "size": 52118,
+      "sha256": "963c2e832cdc45add91f09b9ce09b99551ff9cd91435c9550833597013fbc7bf"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/desktop-pet-style/contact_sheet_single_pass_rough_line_v1.webp",
+      "size": 8290,
+      "sha256": "4e40e07515e4551914563aa7bfb5f81d9b2f74859ec1db7719963af5cc5dbf5e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/desktop-pet-style/contact_sheet_smudged_paint_structure_v3.webp",
+      "size": 38760,
+      "sha256": "ca8ac28d7f137a9a0694b89af3fe99d438d5ab7799fbfb288d1f4550c5e20481"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/desktop-pet-style/contact_sheet_thin_stroke_anatomy_v2.webp",
+      "size": 36910,
+      "sha256": "f84397dfe364baf788faaf61687ff291b8559b833e25b3b8baf1467cfe0ca2d3"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/figures/action-parts/action_liquid_arc_pour.webp",
+      "size": 714,
+      "sha256": "83a46889d4165e54a4d105e813518c3810c9315a554edf50864351b51104f485"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/figures/action-parts/action_thought_bubbles.webp",
+      "size": 2060,
+      "sha256": "7d05297f1bd2843122c1df0241760ebe1608760fb58d8d36a2d266771e4dfe35"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/figures/action-parts/action_throw_arc.webp",
+      "size": 1014,
+      "sha256": "750150b784c9a846a8c248f05fedfa54ac2a63a4f2112465ff64e000e641132f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/figures/action-parts/cocoa_throw_arc.webp",
+      "size": 842,
+      "sha256": "3dd2dc992171c49b80832ed8fe6096a53f536c2ec9566cffc80604e16b144b0b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/figures/action-parts/ground_line_large_eater.webp",
+      "size": 612,
+      "sha256": "06bb8afa6f2dc20f10f0ecd119d337323fd563d01351cda02532b6ef2cda7a41"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/figures/action-parts/ladder_bucket_props.webp",
+      "size": 1384,
+      "sha256": "b8c02f10e03c9386f12441958bb85b122f61e0ad94678b2fc3df5ea7700a07a1"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/figures/action-parts/rough_arrow.webp",
+      "size": 426,
+      "sha256": "e5fa629dd52b1310222d55fc6566e5ac46017c79e530f25e28ce96ebeaddb399"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/figures/full-poses/logo_like_drinking_head.webp",
+      "size": 372,
+      "sha256": "46c457a4687d0dbaa11ed55ac51319af0b3b03e52d13095873fd847fc9869b55"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/figures/full-poses/worker_cacao_push.webp",
+      "size": 334,
+      "sha256": "133f429ec0509057f954eab7f4471d1b7ae9a5efa48e26e5a1c71f198893592f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/figures/full-poses/worker_carry_basket.webp",
+      "size": 704,
+      "sha256": "f77cdf32cb1af42817c27deaa35bb53d6fb6a2e11bfee80af55e85c7d6ceaf0c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/figures/full-poses/worker_cleaning_bucket.webp",
+      "size": 662,
+      "sha256": "d808452583fa8e00f4eb2448b4fc314700eff557ce1efbe254b84756c9d39941"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/figures/full-poses/worker_cocoa_thrower.webp",
+      "size": 656,
+      "sha256": "86e814f319402a62ce88c5ec9603d0400943c04674e3096860735eba3dfe359e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/figures/full-poses/worker_dessert_chef.webp",
+      "size": 464,
+      "sha256": "1945b6f504631df00f07848d1715d3441c27267c328841fad57faa08c452c560"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/figures/full-poses/worker_kettle_pour.webp",
+      "size": 1742,
+      "sha256": "51d388a3a1dbb13dc1e4abf89972a42b2f6a50b5ac69b68cb0bcee9f118efc73"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/figures/full-poses/worker_large_reading.webp",
+      "size": 2888,
+      "sha256": "2b4d27d1d3f7bbde5dec7cf2bd5a69b6a217f0d4387f8dd741debc8a8533bcb9"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/figures/full-poses/worker_pull_cheese.webp",
+      "size": 446,
+      "sha256": "e233c5b44f1c0d63465ce7b829a6b03ab939db46cc9393fb6b7cdcce02343fb9"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/figures/full-poses/worker_seed_push.webp",
+      "size": 400,
+      "sha256": "1ac09eddc33776fe69cae93ec3f5dd71571332361311ccdf7442983a695fe4c1"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/figures/full-poses/worker_thinking_bubbles.webp",
+      "size": 3262,
+      "sha256": "29362ca8cf8c875279f451612526d95b1eb398012e1cf381aaebbd40a34d9390"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/figures/full-poses/worker_throw_cube.webp",
+      "size": 1322,
+      "sha256": "9ee66adc867d3ce06f3646344f028c3f5e3f81b1c831994356ccd93acaa3821d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/lettering/glyphs/glyph_la_heavy.webp",
+      "size": 444,
+      "sha256": "ca141137ef19d5da61906c8230e34710917aeba3d7ae028e16ce0e959dad27fd"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/lettering/glyphs/glyph_lao_crooked.webp",
+      "size": 592,
+      "sha256": "2defce9db27fc6c9131e8a6d03089cab6057cbd577805719d967762cb58c8338"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/lettering/glyphs/glyph_su_heavy.webp",
+      "size": 408,
+      "sha256": "60ec9a4a541813410db02f3aa94675b3ecefb0a97889f784838784471d78ae91"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/lettering/glyphs/glyph_tea_thin_pen.webp",
+      "size": 406,
+      "sha256": "1d6c9be4eda528f05023ca5ddb966d82413dcb16e91ebaff76708a3ed4c4a93f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/lettering/glyphs/glyph_thick_thin_pen.webp",
+      "size": 310,
+      "sha256": "59b50cd3d05bf818251b6be23f65f7780fa183cf651a3f0c0cbcd41e09a68f90"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/lettering/glyphs/glyph_ti_heavy.webp",
+      "size": 522,
+      "sha256": "ccc5de34a3ab12d92f5e00191339873132bc4cc3ac89cd54ec02a684b7c47943"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/lettering/glyphs/glyph_xi_heavy.webp",
+      "size": 436,
+      "sha256": "9b648892d86a8807e436a7f579388e39d89b5a645307853a70f2e4ab7d83d272"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/lettering/glyphs/glyph_yin_crooked.webp",
+      "size": 570,
+      "sha256": "406d48f78100b065d3829d8e398eed01097c498b05ef2ea3624fc4a516a55380"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/lettering/notes/product_note_cocoa.webp",
+      "size": 896,
+      "sha256": "6cbfced67027e629ae44a0df785821de5e2090c960eabc9ad36cb5640480551e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/lettering/notes/product_note_tea_bag.webp",
+      "size": 1388,
+      "sha256": "6f3de62088550ccc0d6fe7a58a3803596c02f4c69296ce79b787fa506d9074f4"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/lettering/notes/small_note_cheese.webp",
+      "size": 784,
+      "sha256": "1928a3de78253f014df5a41d28933a3ef78228aab5175d37a726be995e2d44dc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/lettering/strokes/radical_box_open_medium.webp",
+      "size": 448,
+      "sha256": "54b47758cf560b5eff73edb453befbe0a22827fad80eb7a0e40fc2a724cbf96d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/lettering/strokes/stroke_heavy_long_horizontal.webp",
+      "size": 204,
+      "sha256": "33e1485e68d4be0fe2bc8febc53d8928bd4b1140282fd6c76cd63a3dc9f6e607"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/lettering/strokes/stroke_heavy_vertical_hook.webp",
+      "size": 302,
+      "sha256": "4bab299d4fca7bf0113750d91950f73dd800135d6610300b1acf240d665c9e02"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/lettering/strokes/stroke_thin_long_slash.webp",
+      "size": 166,
+      "sha256": "4fe2f88f7584484c8ae573e32d9d94c5c2a1d2f2917ce1477d898c750ae80594"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/lettering/title-blocks/title_matcha_crisp_thin.webp",
+      "size": 1006,
+      "sha256": "9db0a1bc0a17dd75bd299d1830d79ab908adb03dc07eea0f5cd3d4f17db0934d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/lettering/title-blocks/title_salty_cheese_crooked.webp",
+      "size": 1300,
+      "sha256": "abcff58c3d8771ea26cd5c244282e46fedaa5f22f081c4078a64d66f0fde842f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/lettering/title-blocks/title_tiramisu_heavy_black.webp",
+      "size": 2334,
+      "sha256": "ac5e367ff08731fb03ef70ab11b1aec04cd7c5a860fd473f7a43cb4688ab7ac5"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/title_reference_sheet_taixiang.webp",
+      "size": 70278,
+      "sha256": "682c2dc6a866f70e893b86b2f6c218cb2ee59eddcdf6d1d7d89f70ed1006cbbc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/private-assets/reference-cutouts/title_reference_sheet_taixiang_v2.webp",
+      "size": 24040,
+      "sha256": "5ef238e2b11284e96db950e686e0932c3681616352e29734a2ff274eda322efb"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/references/desktop-pet-character-modes.md",
+      "size": 16064,
+      "sha256": "3b8491a2a8be85a46ce5f769c71cf37661d153a156caaf6150df1915eb8e39ad"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/references/desktop-pet-environment.md",
+      "size": 9157,
+      "sha256": "047e8b25021755636e81248550220baf01c58913eb5f9005c2d3b3338b39bd8e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/references/desktop-pet-pack.md",
+      "size": 8000,
+      "sha256": "f6949cd136393a23faa19c26d37897fa38b1cf07574243f20bd6fc2359005fcc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/references/desktop-pet-workflow.md",
+      "size": 23594,
+      "sha256": "b153cd2385077f4dd7cd2615a0f3b58c71aeb5aa0f9a05babb50888134dc4e0c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/references/evaluation.md",
+      "size": 25785,
+      "sha256": "a3efc9bcb326ecb9e9e4e4187c642905e68a8fb311490cc44fd8deb15fbe3017"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/references/flavor-monster-v3-phase-recipe.json",
+      "size": 1415,
+      "sha256": "98afeb80d6f6bb8d63bccd9b553e73619ee59c5c3c3966125c17add9d705dafd"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/references/lettering-guide.md",
+      "size": 11685,
+      "sha256": "3589c728a400c1b77713471d17c81a4472755fd9381d83f802d0cbdb36251113"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/references/mixed-media-style-guide.md",
+      "size": 12666,
+      "sha256": "a86ff4f3fd833bab98398f769488990d8dec7804e56882e733ea489261612cdb"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/references/monster-poster-workflow.md",
+      "size": 3925,
+      "sha256": "2f2d727c86884b8144f05f14069bf68ba1f377b20a610a37761582ce09f9b402"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/references/style-guide.md",
+      "size": 25221,
+      "sha256": "1839414e03f7eac385726884c36f8d37767c8dc3cfa66c707073ba533ae06bca"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/requirements-dev.txt",
+      "size": 33,
+      "sha256": "6b193ed79ce812f82e1f6fcc87618ef40a9e3b393b82525d47a305602cd028da"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/requirements.txt",
+      "size": 17,
+      "sha256": "1c803ca04270f3acd340ace239b1e86931871344e0070b4f6db9a59ae56336cb"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/scripts/build_desktop_pet_delivery.py",
+      "size": 7865,
+      "sha256": "94665f854149e18373be3ff564b612fbdc3d597a79ae3897dd78fec8b81e73ab"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/scripts/build_desktop_pet_pack.py",
+      "size": 9667,
+      "sha256": "173c750a40e283ccac6fc9256cca86afb34154f6d268b6cf27db2c3e64af1957"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/scripts/build_title_reference_sheet.py",
+      "size": 8590,
+      "sha256": "610a88cdbe4c2ed3b884e7755d95de558bc1cbbc29eca481f4708f84a476f33e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/scripts/check_desktop_pet_environment.py",
+      "size": 18678,
+      "sha256": "44c0f6d21147cfc88d32321ca89b9a2170720a7164e3d1b9d24a196c7a3a6988"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/scripts/composite_title_layer.py",
+      "size": 2447,
+      "sha256": "be978269b2f40f9df4371c9bba5fcab01977ece6a354c3f61c7cf1540eb67f20"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/scripts/desktop_pet.py",
+      "size": 9683,
+      "sha256": "0ebd53d2159c7d820f721ec18bd51ec677132eb321791348394dadde0f88b022"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/scripts/install_desktop_pet_runtime.py",
+      "size": 24814,
+      "sha256": "aa53548c75db14a8d834e2bc4648d8a21218477903d80ff76aae732ad0fd048e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/scripts/prepare_generated_animation_strips.py",
+      "size": 9213,
+      "sha256": "30ee27f2e305b5a94e3b4a2d58d6b1f79f0aa3b02ee9e181ec6ced6935f9109c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/scripts/validate_desktop_pet_pack.py",
+      "size": 22483,
+      "sha256": "36fbdd9fe99ceb06c7c78e5b733e404c08efc501bc7d2c34432192cf1d0586ef"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/tests/test_desktop_pet_cli.py",
+      "size": 4866,
+      "sha256": "3879c4952c761fece9d5dcb3eec6e99b8b64aaf03f12e0d2244cacbbed296220"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/tests/test_desktop_pet_delivery.py",
+      "size": 3721,
+      "sha256": "f27da78413772b9046f6441393e0fbb8aa3c2754a8cf897b597f3c4f72d390c5"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/tests/test_desktop_pet_environment.py",
+      "size": 35661,
+      "sha256": "ae0ba00eb5205df1229121f38a4fb94c56a09d68f79660683150535252b1a5da"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/tests/test_pet_pack.py",
+      "size": 9086,
+      "sha256": "fef142c300e8111ed621f73a08237ce17a228787cb71966ae6729d6beb1985c7"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/tests/test_pet_pack_v3.py",
+      "size": 4849,
+      "sha256": "415da7e376ab528b3175045f17edd24654bf5cc2df34666ce29f7e00090be03f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/tests/test_prepare_animation_strips.py",
+      "size": 2829,
+      "sha256": "a7e54ffd2c343c9236dd32ed5b3a09e80de7b701905a53a3bc73d1624a22cb8e"
+    },
+    {
+      "path": "cola-skills-bundle/deps/heytea-style/tests/test_reference_assets.py",
+      "size": 9257,
+      "sha256": "eba92248cc1b27f5416b770891a4a8a3705fc1749d53e5e54340004dc5bd5d1b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/README.md",
+      "size": 13077,
+      "sha256": "2c2c0ff96273f4eed2f670c9e6e5835a745b8a81c0cdad223733a7f3ad53ebc2"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/README_EN.md",
+      "size": 19707,
+      "sha256": "ff3e69f4cae6105638b40bb61e6e2c48e069a1ff4e993f1e42676dca78048421"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/REFERENCE_URLS.md",
+      "size": 4394,
+      "sha256": "291264a0434145389c0f8063a6006af35744c6a984925390b9ac4c04c20f7d48"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/SKILL.md",
+      "size": 9222,
+      "sha256": "3979d1f0b53148d554813864d0d48b9230bdfceef99ebffac438d44227286f27"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/agents/openai.yaml",
+      "size": 305,
+      "sha256": "d9e4632e93976c11dca428f792829d860deb0a2b241c3cb33b72540b04df6533"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/img2show/banner.webp",
+      "size": 36824,
+      "sha256": "a575bfd05268869f2d1f6640cb1915334c1cf8e63d57ab033bedfd09de965a95"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/img2show/null",
+      "size": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/img2show/showcase.webp",
+      "size": 201360,
+      "sha256": "af0884666cbdacd7248548cf532fd92634be8b1d969c6384f70e73f1adc9b1f0"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/img2show/title.webp",
+      "size": 63818,
+      "sha256": "eb14b4dfb3b384296cf755cf3679aecdd3e977a41c211ad65526e07620ac5848"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/article-illustrations.md",
+      "size": 3196,
+      "sha256": "71eeddcd73535284b0763b56dfeef4d3bc3f9d2d1b25201bde4cc50d93daa945"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/core-style-and-identity.md",
+      "size": 5682,
+      "sha256": "4a481eebdc509888d86e9ac85c0f510d7990b7e5053a0ed6cae51f98349ee5f0"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/expression-packs.md",
+      "size": 4621,
+      "sha256": "3f357935a2be33157779eef25569f02458883d6723d552c46fba699c6cc88676"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/expression-possession/default-01-hush-stop.webp",
+      "size": 3446,
+      "sha256": "41709d34142db44593e82fd8d00cb484958b85236f5913e6a0b5e22d717a89fc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/expression-possession/default-02-chubby-taunt.webp",
+      "size": 3534,
+      "sha256": "fbe1c4e89ed04482c452fb6aecd8b678fc22c54443fa89a0d1ca74b22e991f11"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/expression-possession/default-03-ok-stop.webp",
+      "size": 5776,
+      "sha256": "77f5296031c25f7c9cabdf128f58fcb6c4ed8af895d31e485c208f2cd3e3a753"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/expression-possession.md",
+      "size": 11765,
+      "sha256": "750c3b4f05fb6b1299c3c82817a889659c92244f39be6dbd92a76bfd403bfe33"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/folder-icon/folder_icon_ref_01_character-folders.webp",
+      "size": 35716,
+      "sha256": "56e7a06478c6e460de28cf2ccafd987878610094d6c7310e21578160f4da6f33"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/folder-icon/folder_icon_ref_02_desktop-icons.webp",
+      "size": 34332,
+      "sha256": "473cc6c26a48d3886d1d316a43fd1e353ef1fc261aad0d156fdfc8206b1103de"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/folder-icon/folder_icon_ref_03_clean-shape.webp",
+      "size": 1694,
+      "sha256": "ee175b3f94cae83ab93e1072c3983e880f4c4630e7bec04e19adaacd3a0006a8"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/folder-icons.md",
+      "size": 4700,
+      "sha256": "ecb2f37ed966ef4e5db1b6ad42975a125626066a6f58a0a549e89495b5ae156c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/infographic-layout/layout_ref_01_annotated_evidence.webp",
+      "size": 129094,
+      "sha256": "5941788d662d49520f9ea146a24c2de3ffee7f3c37b5e2456f275410d6af0bd4"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/infographic-layout/layout_ref_02_timeline_dashboard.webp",
+      "size": 215148,
+      "sha256": "79794976951d8f4f4682bb82b9d8c8ccd95aa9068f64bc9efb29c6d95afa2fe4"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/infographic-layout/layout_ref_03_data_story.webp",
+      "size": 170860,
+      "sha256": "dd86384e3c7fbf3b9fca8d9f78b63646f0a561d934774001f9e6e23c2bd4ed1f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/infographics.md",
+      "size": 4576,
+      "sha256": "b3b4bd3666bcf9a5f26c8d43f1a3291b5816986703769096b9c3691b169d57fb"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/letter-paper/letter_ref_01_chinese-new-year.webp",
+      "size": 134662,
+      "sha256": "cfa42c4755115762383b3fbce1bd7551231f0f0d7f42758fa32bb6d0e896838b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/letter-paper/letter_ref_02_spring.webp",
+      "size": 122618,
+      "sha256": "0ee6dc6732b59ad225c5a79af1c2922c6fadd318749dc34961e7a359f95b9fbb"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/letter-paper/letter_ref_03_love-clouds.webp",
+      "size": 55518,
+      "sha256": "5475a2426a03403ef5cc620b2b99f40713d41041d62d00e5fdb014a050874d33"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/letter-paper/letter_ref_04_love-airplane.webp",
+      "size": 89164,
+      "sha256": "e8cabc6c6c52574beef5227bea528b9066280155c29f8bc9b57415a0948cbd05"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/letter-paper.md",
+      "size": 5106,
+      "sha256": "f4d874989e39f3dbda9aaefd16880cffd1fb3dffa02a5013061b964f2ab0cd47"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/photo-fusion/photo_fusion_ref_01_store-display.webp",
+      "size": 178168,
+      "sha256": "6de76c24e7dc068f957ad877b5cbcce0a321a15756e040f8fb84f77ebd03fa85"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/photo-fusion/photo_fusion_ref_02_blackboard.webp",
+      "size": 143340,
+      "sha256": "74968f73764af35e91205b647cae5f3bf9caf6dc50fe2fa78cae4fce55a23f16"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/photo-fusion/photo_fusion_ref_03_corridor.webp",
+      "size": 118170,
+      "sha256": "6e1df8e6a8f77b88f2714c60eab6c59d60c44cc0562fbf5dba93f0e1e8a3140a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/photo-fusion.md",
+      "size": 8739,
+      "sha256": "a37616c0c440d01ae68e26b614aa9d24d0e208fa1f72db907e4949e4d7037b70"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/polaroid-frame/polaroid_ref_01_chinese-new-year.webp",
+      "size": 104322,
+      "sha256": "b84fba04a1ba24b916144df07af43b358c590e6f2a2f4bf3099bd6122fe516b4"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/polaroid-frame/polaroid_ref_02_night-tech.webp",
+      "size": 63696,
+      "sha256": "83112531fe5b156757a9b12be4bd5df7e44aa005383524c3ba5b8ef6a7321f21"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/polaroid-frame/polaroid_ref_03_winter.webp",
+      "size": 92720,
+      "sha256": "046fde44dab3740ca222e2b97747c657ac700f9e828e545cdcb0d251528e939d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/polaroid-frame/polaroid_ref_04_love.webp",
+      "size": 65290,
+      "sha256": "292b2b328be3cabab377e73fa483d1bcf5ef8c05b8762e5b2affb8fc84d3682f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/polaroid-frames.md",
+      "size": 3381,
+      "sha256": "17c082803863afe892a4d91df15438ea41aea5f92d8eacb944cfab0c6448c20a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/scene-avatars.md",
+      "size": 2256,
+      "sha256": "8fe8603e5e069ea378a0f19237665a18698d9ad0550049d020c3b6a54db765e4"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/sticker-sheets.md",
+      "size": 8196,
+      "sha256": "5fd9265707de4edbe33c6bd3ed3f7dc095f1e08a924efecbfac0039a1e6f56cc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/style/style_ref_01_user_docs_reader.webp",
+      "size": 24824,
+      "sha256": "8dbbf8b3f38f0cad703015abeed37fdcf2ae4ebddc834da19bd264881d1ec2ce"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/style/style_ref_02_user_searcher.webp",
+      "size": 28886,
+      "sha256": "b5189fb1537e3c603e104145b440553650ea61be6a2870e65942dbad0bbb5638"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/references/style/style_ref_03_user_catgirl_anchor.webp",
+      "size": 25694,
+      "sha256": "79ea2a0970c70f26ef92066e3d81132acf5fc03103fff8affdec23230b14a8b8"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/scripts/clear_rect_alpha.py",
+      "size": 1678,
+      "sha256": "ceb367bcf943f25a684f0dfef6b54eb859bcc37c0936aaf04b27b0cc33f171de"
+    },
+    {
+      "path": "cola-skills-bundle/deps/ip-illustration-for-yourself/scripts/make_windows_icon.py",
+      "size": 2160,
+      "sha256": "4a606caa74edb540d7592bb1adf53a643475c1621a6f68b6fe9d0885e8b79291"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/LICENSE",
+      "size": 1294,
+      "sha256": "eabec4d6e3a87f07e0b4bde70d8441a0143d6a37684ec8b3389de4e7d19781c8"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/SKILL.md",
+      "size": 13198,
+      "sha256": "97f54b51e468446552499bee5337235be3b473fe013ccd1be4fb26c2d1471405"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/agents/openai.yaml",
+      "size": 225,
+      "sha256": "1520b3ff74eb6f070073dc9477265ec413ab6adc5a327f0932feaf4e3c537010"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/references/avatar-prompt-blueprint.md",
+      "size": 6110,
+      "sha256": "b4e72220df78f632f58069c00bb693fd64b81c73ee7313948fb1ed2a781ff5be"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/references/style-catalog.md",
+      "size": 3883,
+      "sha256": "c46dfab5190932c2169aa7e47ffb8000843e34e9a4f1ced34a83e80bc09196eb"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/anthropic-research-style/META.md",
+      "size": 2775,
+      "sha256": "44123be63c4781f61cb589e3647a9355153950696c049d009061026ed0baefef"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/anthropic-research-style/STYLE.md",
+      "size": 4538,
+      "sha256": "3838bc44e6c678fb9454379e3e748dfd7e28cd3e3c15c04d33187e4b082b640d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/avant-retro-architecture-poster/META.md",
+      "size": 2980,
+      "sha256": "bd035afdde8a2c997c0b25fd8eed0566b0dbb3ceb3640817db5cd7be06061161"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/avant-retro-architecture-poster/STYLE.md",
+      "size": 6358,
+      "sha256": "09f24068dbb3dcc097c91df9e1b2019fa87037bcc4a5d09d187275712b21b8e4"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/black-midcentury-modernist-cover/META.md",
+      "size": 3348,
+      "sha256": "aee1694ffbcbeebc05476d48c1f24db5bbdcf15f8d70ce83b6d45ae45d8e7ce2"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/black-midcentury-modernist-cover/STYLE.md",
+      "size": 4078,
+      "sha256": "2d4924f2b550e35302719d7d3f83e4ddb7b29de6de7a2f888a4c8d2c2d718050"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/black-red-silhouette/META.md",
+      "size": 2508,
+      "sha256": "2bbb9012a193fd63934cac92b2ca5e22676e70890a2fb81fdb71c9adea710227"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/black-red-silhouette/STYLE.md",
+      "size": 3478,
+      "sha256": "7b9a6f7b91b9d33dbbaa74353989a17912f588b013f77814966f4e01355e756c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/black-white-etching-editorial-cover/META.md",
+      "size": 7887,
+      "sha256": "f3b792ebf570fbf71339f60a6a21f4942267ad732567f69761e43a36a8e94adf"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/black-white-etching-editorial-cover/STYLE.md",
+      "size": 6758,
+      "sha256": "60c6f20c02840f70721b0f8e1ed1958032ea496b4bd6aa5b7151467bffe46f94"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/black-white-gray-avant-geometry/META.md",
+      "size": 1953,
+      "sha256": "7374f269d493b2bbfe47574ed13eae29e263f1117ee2e258be58a2debbefceaa"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/black-white-gray-avant-geometry/STYLE.md",
+      "size": 1990,
+      "sha256": "11e76bcd41a71563895acb96598461748775bae70fddb9fddf2c2af19c8acf90"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/black-white-minimal-concept/META.md",
+      "size": 1865,
+      "sha256": "a42f02cd9e4a208ae1fc59f9914c5bbe81e84d12fd57eba92318b36ed81c05c3"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/black-white-minimal-concept/STYLE.md",
+      "size": 1806,
+      "sha256": "182ef23a7a34e6c9a88cf41baa51ea41c610b076456d791b6ef466226b3a6d3a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/block-world/META.md",
+      "size": 2080,
+      "sha256": "41812b50e59bef28f741fa61951d7bb73ab8b4a5fa8cfde100e05aa338fc9771"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/block-world/STYLE.md",
+      "size": 1652,
+      "sha256": "2458aa63c9dc1c0346de2a91e5e0d029431bce1dc0af859340086741db76fb60"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/brand-collaboration-connection/META.md",
+      "size": 3016,
+      "sha256": "5f3bf10fdddc793a9a8beee3a084bd4973ad596ceb627cdec2be295ebf56a6c6"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/brand-collaboration-connection/STYLE.md",
+      "size": 4405,
+      "sha256": "79979eeaf038e4e9afe6a0795e6246d94c25024088b9ea0c5c3f94d1a59421e8"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/brick-world/META.md",
+      "size": 1853,
+      "sha256": "a96dafa549aa474631c1e2e175f0ddafcfbe8468acffbe33ddda863250efced5"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/brick-world/STYLE.md",
+      "size": 1686,
+      "sha256": "5fe21d68b6f0bfd1d04f2c63a2053f135208363bf5731a238c7874da07b2d65c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/business-magazine-front-page/META.md",
+      "size": 2033,
+      "sha256": "4be2df201dcceb7992ca3551e1f7a8260171fe63586c3b53de00a10b4e79f690"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/business-magazine-front-page/STYLE.md",
+      "size": 1885,
+      "sha256": "45b4e53533be53fc72d9563837c18f2ec5eace97bf885ddb686a377b9b2885b5"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/classical-oil-minimal-metaphor/META.md",
+      "size": 2770,
+      "sha256": "b294919ee225ba50f39eb8f64633a67454f1154544224a81776858d9600e4fde"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/classical-oil-minimal-metaphor/STYLE.md",
+      "size": 3709,
+      "sha256": "5c279e0d6450a7b4e647e6955874faea2122caac8a9b6b12f548fd8992a07246"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/color-neo-constructivist-megastructure-poster/META.md",
+      "size": 2741,
+      "sha256": "fc612db630d09c236e2935f63ffa8eb48ef4154720f841a3dde33a3de004c2af"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/color-neo-constructivist-megastructure-poster/STYLE.md",
+      "size": 3991,
+      "sha256": "4aa47abe058c13de2119b49502c5ef6708aae001dc333e92130e954b0fa0140d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/consulting-report-visual/META.md",
+      "size": 4837,
+      "sha256": "a972b023c55c1329f4c7b303692645dd705bb577180a8ae33ec48e242c656b73"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/consulting-report-visual/STYLE.md",
+      "size": 7366,
+      "sha256": "ca4b95016ff81f7c073b2155dbfe2df58e642b5fc8a501ec439626f51e569abc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/fashion-sketch-observation/META.md",
+      "size": 926,
+      "sha256": "a5a6849e6aa30e30e20145483136d6b5c26152c3ae13ff6d753550e4badc3699"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/fashion-sketch-observation/STYLE.md",
+      "size": 10250,
+      "sha256": "f6fce9d86c44a885b3058f38413c02d290d0a3233a01b6d5029301f0ccaa322a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/french-minimal-ink-poster/META.md",
+      "size": 3367,
+      "sha256": "43a1777f96017d5ae4cb2896f345980735ebd40345ab05b61a2b5cfc57d810f6"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/french-minimal-ink-poster/STYLE.md",
+      "size": 5418,
+      "sha256": "2663310777661c70505e8d81a375cf4c96b0d2a6badf8ef810aeb484e64993f0"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/giant-perspective-chinese-title/META.md",
+      "size": 1929,
+      "sha256": "c3429a4398e7b5473d1b0067d6ee7d9d3ae1dba1f96708b2949e1951e99e55ad"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/giant-perspective-chinese-title/STYLE.md",
+      "size": 1608,
+      "sha256": "ecdeb888c68cbf1e46fd6e6e7bd936835f1de6673cf16d4a93c0461ae023dc2f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/godot-2d-pixel-metaphor-poster/META.md",
+      "size": 3710,
+      "sha256": "dad573bb70105bd8401b5753d0dd2a63016e088aebe25829a9c98ef127972e87"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/godot-2d-pixel-metaphor-poster/STYLE.md",
+      "size": 6814,
+      "sha256": "f7ff6f0d60c95eb9f86f86a5dd8d0bd68c7eda4ebe20cbef719f45db7191a1ab"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/grotesque-soul-sketch/META.md",
+      "size": 913,
+      "sha256": "7b08c1d7d9a152b09e1acf1749b525f438539a6657ff53bc79231cf590c98714"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/grotesque-soul-sketch/STYLE.md",
+      "size": 3333,
+      "sha256": "7a7b48536f7ec3ba128fef322fb82df4e061881b7ca4fe31c2a4a2a9c7804042"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/interleaved-title-editorial-poster/META.md",
+      "size": 3764,
+      "sha256": "5bf00c506fd743944be5b545f0917a5e48f16b67bec7db1a1142a479145f7dbf"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/interleaved-title-editorial-poster/STYLE.md",
+      "size": 8085,
+      "sha256": "cb2f6b35e5efd0e346d211af44d580160e4c6ec1306ef258dfc528e90951e3ab"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/kimi-stlye/META.md",
+      "size": 2875,
+      "sha256": "2b947fa43c05273c79e0685dc076a977986a302ecb31d4b06c0c14d50279c5a8"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/kimi-stlye/STYLE.md",
+      "size": 4402,
+      "sha256": "feeaf2483b544358b05dc367a7ca2589020d6a869b758d36a06ea1ac3823bcc2"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/layered-paper-cut-concept-poster/META.md",
+      "size": 3501,
+      "sha256": "4a29ce66555a6e89b26afcb15100c94b31695f87f7cb9fd15578006ad3259eeb"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/layered-paper-cut-concept-poster/STYLE.md",
+      "size": 6645,
+      "sha256": "e6d7fdbf156d766b5d876d134c3f5b17580478ad72cef378e1cf730415ee5cea"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/messy-crayon-pet-portrait/META.md",
+      "size": 853,
+      "sha256": "bc302518cdb6fbf48aae2b013b301063806f92482fcceb84aa5b4618a933d972"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/messy-crayon-pet-portrait/STYLE.md",
+      "size": 2411,
+      "sha256": "3ecafad567e6add690d7a82c01c44989fadf0dc88b3c52c9d5d636aa24bf9e2d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/midcentury-surreal-editorial-cover/META.md",
+      "size": 3596,
+      "sha256": "3b9eeb55bf31a5e6fbfe216110428d89302dc6c440cf917c7cf966e94f716128"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/midcentury-surreal-editorial-cover/STYLE.md",
+      "size": 7272,
+      "sha256": "d2c8e2fd1d1376dab7a6d46b09cb828f44b94fd3ff873cd81e8c467b905434fc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/minimal-light-tech/META.md",
+      "size": 3010,
+      "sha256": "30718c54cc1df63f93572d05968bb22cffa4c71ed09e38178752acae9b95903d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/minimal-light-tech/STYLE.md",
+      "size": 7644,
+      "sha256": "90847a9e92c19edc860e3461552fed4e907ca63d774ce824926dc394053e4feb"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/minimal-paper-acrylic-block-illustration/META.md",
+      "size": 3335,
+      "sha256": "04146c3df31ee9fde45879511dbe2b0f2762919f73bac548dbd4fb14ef76e79a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/minimal-paper-acrylic-block-illustration/STYLE.md",
+      "size": 5836,
+      "sha256": "083c2fbdc26e2ad1cd7a00ac4fc900ee027d864bae01bf8c56877fb7662dc01c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/minimal-public-space-photography/META.md",
+      "size": 2947,
+      "sha256": "38fbfdb1f2753c63ec8083db36d06799546f54340f0229f7a1a8d1fc9162032c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/minimal-public-space-photography/STYLE.md",
+      "size": 3033,
+      "sha256": "fe6c9372b4fcb051e04b0c2c1f9f9fcb966b0bf4e09380005def85f4ca741451"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/minimal-visual-metaphor/META.md",
+      "size": 3529,
+      "sha256": "85192e78b64bec351680d38914ac6157d109cfa7f75ea2af895ee9be36068050"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/minimal-visual-metaphor/STYLE.md",
+      "size": 5899,
+      "sha256": "1e04f3c8391cd1ac76814a0e24831461a8f1599a6e1ee1c48036c61879dd47cc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/osb-industrial-blue-line-metaphor/META.md",
+      "size": 3662,
+      "sha256": "d10d344ecea8e524853b96697096749627f1f8442dc9d1c9d6f86f1524399275"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/osb-industrial-blue-line-metaphor/STYLE.md",
+      "size": 6301,
+      "sha256": "0203a676b4e1ce1a1bf5b229b86223a14ef0884a291983610bf40eba414c6051"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/paper-emboss-deboss-cover/META.md",
+      "size": 3455,
+      "sha256": "8ec621bb7b91701a04fab37c83f4af37cff0e152bdf86c3c278cd71160b74632"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/paper-emboss-deboss-cover/STYLE.md",
+      "size": 9364,
+      "sha256": "a830e45daedcb20680bd670bd51c10bac5639f5119d50125190ee1f132442499"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/pixel-avatar/META.md",
+      "size": 771,
+      "sha256": "791f11b224e3e1c20655cc4fb94414e496c4ab2ea33abccfeed81fe00ebf03aa"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/pixel-avatar/STYLE.md",
+      "size": 3174,
+      "sha256": "07a3aafe16e69ceb755b4ed2ee7aafb845f298f2976264a15738b77cfec22e02"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/polaroid-keepsake/META.md",
+      "size": 970,
+      "sha256": "efd6307a93eb37712baa4f45cb60a977949396b1211cf7cf919eb30a8a2d4023"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/polaroid-keepsake/STYLE.md",
+      "size": 10272,
+      "sha256": "00e815d291334ddd236e287e5fdefe1f822d007e74944c65cbeaf716e6808cfb"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/research-journal-concept/META.md",
+      "size": 1971,
+      "sha256": "7c9e60c8c10a725d5cd0ec6c80e22258839fe360ae6cbad791ff90dd8b59148a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/research-journal-concept/STYLE.md",
+      "size": 1931,
+      "sha256": "e73f332a3518619657e2a61a0d75f5c6093d0f4e9104720c09cd03fb9e3411a1"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/retro-diffuse-gradient/META.md",
+      "size": 2017,
+      "sha256": "1e210d636220840e1dc0ebb84e4826f56190db3f88dc238eabc36eb6c8cf3ef1"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/retro-diffuse-gradient/STYLE.md",
+      "size": 1714,
+      "sha256": "15bf54f38d530584489a6aa797d18e67360533fefa2a13821eb56d98ad83729c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/retro-futurism/META.md",
+      "size": 5355,
+      "sha256": "63aa72dc103a30af42259c351e4efb907b8407b235062b353e8a9260871b4085"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/retro-futurism/STYLE.md",
+      "size": 8941,
+      "sha256": "b84e1d774280e4a78c28b5cda18561f9539c7ea0ee84fceaa4967af892f91078"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/retro-ink-dot-matrix-metaphor/META.md",
+      "size": 2933,
+      "sha256": "6e09ed2d5debff073c268d4cfaf570e64a7a75222b26d77db825b3a942e475dc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/retro-ink-dot-matrix-metaphor/STYLE.md",
+      "size": 4819,
+      "sha256": "6d28ffcde267008d017bf456eaf8cb5ef7736afc305c0d3edfbb90806a9f4aed"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/retro-japanese-sci-fi-anime-cover/META.md",
+      "size": 3113,
+      "sha256": "6e268317815dd0b34367aa7718988aa1e816180a19b1a1dbaf813623cf6222b6"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/retro-japanese-sci-fi-anime-cover/STYLE.md",
+      "size": 4528,
+      "sha256": "4a2367ad6c23267cf0955241b3d6eeceff0c1a5b07b578ad40a40eba6f25542b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/retro-torn-collage/META.md",
+      "size": 2019,
+      "sha256": "137c39a2c94b79f776c75d4f9f8c557e2f228ca53ca7fa60d49003b059775344"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/retro-torn-collage/STYLE.md",
+      "size": 1719,
+      "sha256": "2c3f09fdf3d8e79cdd9893d0f96af6eaff8bba544cec46ad8d40c5e12df88845"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/semantic-minimal-translation/META.md",
+      "size": 2008,
+      "sha256": "941f40b563b9effcf3309b4984349f27147a2dfad8da1f4d623a3156d245a2ce"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/semantic-minimal-translation/STYLE.md",
+      "size": 1906,
+      "sha256": "a3df8acfaaf1b23768d8197a5a8a97bacdcf9e82493d0d20be43104466f72a05"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/silver-foil-blue-minimal/META.md",
+      "size": 2801,
+      "sha256": "34ed2d54ad6810ad9e3012b306b0b72f0c372785fa4808d2c38cab29913dc461"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/silver-foil-blue-minimal/STYLE.md",
+      "size": 4195,
+      "sha256": "06e648e3347e221c893af9b1d8d0b27ccd402b114add0de1dedae7fb69540deb"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/surreal-pop-up-paper-landscape/META.md",
+      "size": 2698,
+      "sha256": "7956a7ebbacd5d193e0a9313275ebe15e52d0cfdcc08e7e9f9efbfe524e8e297"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/surreal-pop-up-paper-landscape/STYLE.md",
+      "size": 2972,
+      "sha256": "6f9c12e30ee7ed681d42903f563911ddb722387cf3300dfb96c5e687557597dc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/surreal-pop-up-paper-landscape/references/before-after.md",
+      "size": 3673,
+      "sha256": "9bbe98354eafdd485c3f60e721646bdfe775ac38706add7b15736093a3fcbb9b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-avatar/styles/surreal-pop-up-paper-landscape/references/final-artwork.md",
+      "size": 3691,
+      "sha256": "dfac86ca8590cfb821655df31acf94fd027a1daf0e9b91dc2fbde448f7a46174"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/LICENSE",
+      "size": 1294,
+      "sha256": "eabec4d6e3a87f07e0b4bde70d8441a0143d6a37684ec8b3389de4e7d19781c8"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/SKILL.md",
+      "size": 19923,
+      "sha256": "cf161df58504db9af81dd2719430b8ed10642168761f82c890bef1b6bec48a11"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/agents/openai.yaml",
+      "size": 349,
+      "sha256": "63f1512368428e299c58d62cb942ec2842c1be111ee21c9abba58247068c7044"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/references/cover-prompt-blueprint.md",
+      "size": 8323,
+      "sha256": "8e52170ee8cdbb3f2855347475bd21f44ccf059e8e296abbed8672eeec27b248"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/references/platform-catalog.md",
+      "size": 4108,
+      "sha256": "b827cf46e12f136a4a3892fc402c739cc250b925ca5c8e9fdc5d98cbf4fa5682"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/references/style-catalog.md",
+      "size": 19876,
+      "sha256": "e88f114b0792da6bfd08cbc4824b5697b665c3779305301d662a8541951ee4d5"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/anthropic-research-style/META.md",
+      "size": 2775,
+      "sha256": "44123be63c4781f61cb589e3647a9355153950696c049d009061026ed0baefef"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/anthropic-research-style/STYLE.md",
+      "size": 4538,
+      "sha256": "3838bc44e6c678fb9454379e3e748dfd7e28cd3e3c15c04d33187e4b082b640d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/avant-retro-architecture-poster/META.md",
+      "size": 2980,
+      "sha256": "bd035afdde8a2c997c0b25fd8eed0566b0dbb3ceb3640817db5cd7be06061161"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/avant-retro-architecture-poster/STYLE.md",
+      "size": 6358,
+      "sha256": "09f24068dbb3dcc097c91df9e1b2019fa87037bcc4a5d09d187275712b21b8e4"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/black-midcentury-modernist-cover/META.md",
+      "size": 3348,
+      "sha256": "aee1694ffbcbeebc05476d48c1f24db5bbdcf15f8d70ce83b6d45ae45d8e7ce2"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/black-midcentury-modernist-cover/STYLE.md",
+      "size": 4078,
+      "sha256": "2d4924f2b550e35302719d7d3f83e4ddb7b29de6de7a2f888a4c8d2c2d718050"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/black-red-silhouette/META.md",
+      "size": 2508,
+      "sha256": "2bbb9012a193fd63934cac92b2ca5e22676e70890a2fb81fdb71c9adea710227"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/black-red-silhouette/STYLE.md",
+      "size": 3478,
+      "sha256": "7b9a6f7b91b9d33dbbaa74353989a17912f588b013f77814966f4e01355e756c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/black-white-etching-editorial-cover/META.md",
+      "size": 7887,
+      "sha256": "f3b792ebf570fbf71339f60a6a21f4942267ad732567f69761e43a36a8e94adf"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/black-white-etching-editorial-cover/STYLE.md",
+      "size": 6758,
+      "sha256": "60c6f20c02840f70721b0f8e1ed1958032ea496b4bd6aa5b7151467bffe46f94"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/black-white-gray-avant-geometry/META.md",
+      "size": 1953,
+      "sha256": "7374f269d493b2bbfe47574ed13eae29e263f1117ee2e258be58a2debbefceaa"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/black-white-gray-avant-geometry/STYLE.md",
+      "size": 1990,
+      "sha256": "11e76bcd41a71563895acb96598461748775bae70fddb9fddf2c2af19c8acf90"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/black-white-minimal-concept/META.md",
+      "size": 1865,
+      "sha256": "a42f02cd9e4a208ae1fc59f9914c5bbe81e84d12fd57eba92318b36ed81c05c3"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/black-white-minimal-concept/STYLE.md",
+      "size": 1806,
+      "sha256": "182ef23a7a34e6c9a88cf41baa51ea41c610b076456d791b6ef466226b3a6d3a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/block-world/META.md",
+      "size": 2080,
+      "sha256": "41812b50e59bef28f741fa61951d7bb73ab8b4a5fa8cfde100e05aa338fc9771"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/block-world/STYLE.md",
+      "size": 1652,
+      "sha256": "2458aa63c9dc1c0346de2a91e5e0d029431bce1dc0af859340086741db76fb60"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/brand-collaboration-connection/META.md",
+      "size": 3016,
+      "sha256": "5f3bf10fdddc793a9a8beee3a084bd4973ad596ceb627cdec2be295ebf56a6c6"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/brand-collaboration-connection/STYLE.md",
+      "size": 4405,
+      "sha256": "79979eeaf038e4e9afe6a0795e6246d94c25024088b9ea0c5c3f94d1a59421e8"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/brick-world/META.md",
+      "size": 1853,
+      "sha256": "a96dafa549aa474631c1e2e175f0ddafcfbe8468acffbe33ddda863250efced5"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/brick-world/STYLE.md",
+      "size": 1686,
+      "sha256": "5fe21d68b6f0bfd1d04f2c63a2053f135208363bf5731a238c7874da07b2d65c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/business-magazine-front-page/META.md",
+      "size": 2033,
+      "sha256": "4be2df201dcceb7992ca3551e1f7a8260171fe63586c3b53de00a10b4e79f690"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/business-magazine-front-page/STYLE.md",
+      "size": 1885,
+      "sha256": "45b4e53533be53fc72d9563837c18f2ec5eace97bf885ddb686a377b9b2885b5"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/classical-oil-minimal-metaphor/META.md",
+      "size": 2770,
+      "sha256": "b294919ee225ba50f39eb8f64633a67454f1154544224a81776858d9600e4fde"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/classical-oil-minimal-metaphor/STYLE.md",
+      "size": 3709,
+      "sha256": "5c279e0d6450a7b4e647e6955874faea2122caac8a9b6b12f548fd8992a07246"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/color-neo-constructivist-megastructure-poster/META.md",
+      "size": 2741,
+      "sha256": "fc612db630d09c236e2935f63ffa8eb48ef4154720f841a3dde33a3de004c2af"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/color-neo-constructivist-megastructure-poster/STYLE.md",
+      "size": 3991,
+      "sha256": "4aa47abe058c13de2119b49502c5ef6708aae001dc333e92130e954b0fa0140d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/consulting-report-visual/META.md",
+      "size": 4837,
+      "sha256": "a972b023c55c1329f4c7b303692645dd705bb577180a8ae33ec48e242c656b73"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/consulting-report-visual/STYLE.md",
+      "size": 7366,
+      "sha256": "ca4b95016ff81f7c073b2155dbfe2df58e642b5fc8a501ec439626f51e569abc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/fashion-sketch-observation/META.md",
+      "size": 926,
+      "sha256": "a5a6849e6aa30e30e20145483136d6b5c26152c3ae13ff6d753550e4badc3699"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/fashion-sketch-observation/STYLE.md",
+      "size": 10250,
+      "sha256": "f6fce9d86c44a885b3058f38413c02d290d0a3233a01b6d5029301f0ccaa322a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/french-minimal-ink-poster/META.md",
+      "size": 3367,
+      "sha256": "43a1777f96017d5ae4cb2896f345980735ebd40345ab05b61a2b5cfc57d810f6"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/french-minimal-ink-poster/STYLE.md",
+      "size": 5418,
+      "sha256": "2663310777661c70505e8d81a375cf4c96b0d2a6badf8ef810aeb484e64993f0"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/giant-perspective-chinese-title/META.md",
+      "size": 1929,
+      "sha256": "c3429a4398e7b5473d1b0067d6ee7d9d3ae1dba1f96708b2949e1951e99e55ad"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/giant-perspective-chinese-title/STYLE.md",
+      "size": 1608,
+      "sha256": "ecdeb888c68cbf1e46fd6e6e7bd936835f1de6673cf16d4a93c0461ae023dc2f"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/godot-2d-pixel-metaphor-poster/META.md",
+      "size": 3710,
+      "sha256": "dad573bb70105bd8401b5753d0dd2a63016e088aebe25829a9c98ef127972e87"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/godot-2d-pixel-metaphor-poster/STYLE.md",
+      "size": 6814,
+      "sha256": "f7ff6f0d60c95eb9f86f86a5dd8d0bd68c7eda4ebe20cbef719f45db7191a1ab"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/grotesque-soul-sketch/META.md",
+      "size": 913,
+      "sha256": "7b08c1d7d9a152b09e1acf1749b525f438539a6657ff53bc79231cf590c98714"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/grotesque-soul-sketch/STYLE.md",
+      "size": 3333,
+      "sha256": "7a7b48536f7ec3ba128fef322fb82df4e061881b7ca4fe31c2a4a2a9c7804042"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/interleaved-title-editorial-poster/META.md",
+      "size": 3764,
+      "sha256": "5bf00c506fd743944be5b545f0917a5e48f16b67bec7db1a1142a479145f7dbf"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/interleaved-title-editorial-poster/STYLE.md",
+      "size": 8085,
+      "sha256": "cb2f6b35e5efd0e346d211af44d580160e4c6ec1306ef258dfc528e90951e3ab"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/kimi-stlye/META.md",
+      "size": 2875,
+      "sha256": "2b947fa43c05273c79e0685dc076a977986a302ecb31d4b06c0c14d50279c5a8"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/kimi-stlye/STYLE.md",
+      "size": 4402,
+      "sha256": "feeaf2483b544358b05dc367a7ca2589020d6a869b758d36a06ea1ac3823bcc2"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/layered-paper-cut-concept-poster/META.md",
+      "size": 3501,
+      "sha256": "4a29ce66555a6e89b26afcb15100c94b31695f87f7cb9fd15578006ad3259eeb"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/layered-paper-cut-concept-poster/STYLE.md",
+      "size": 6645,
+      "sha256": "e6d7fdbf156d766b5d876d134c3f5b17580478ad72cef378e1cf730415ee5cea"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/messy-crayon-pet-portrait/META.md",
+      "size": 853,
+      "sha256": "bc302518cdb6fbf48aae2b013b301063806f92482fcceb84aa5b4618a933d972"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/messy-crayon-pet-portrait/STYLE.md",
+      "size": 2411,
+      "sha256": "3ecafad567e6add690d7a82c01c44989fadf0dc88b3c52c9d5d636aa24bf9e2d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/midcentury-surreal-editorial-cover/META.md",
+      "size": 3596,
+      "sha256": "3b9eeb55bf31a5e6fbfe216110428d89302dc6c440cf917c7cf966e94f716128"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/midcentury-surreal-editorial-cover/STYLE.md",
+      "size": 7272,
+      "sha256": "d2c8e2fd1d1376dab7a6d46b09cb828f44b94fd3ff873cd81e8c467b905434fc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/minimal-light-tech/META.md",
+      "size": 3010,
+      "sha256": "30718c54cc1df63f93572d05968bb22cffa4c71ed09e38178752acae9b95903d"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/minimal-light-tech/STYLE.md",
+      "size": 7644,
+      "sha256": "90847a9e92c19edc860e3461552fed4e907ca63d774ce824926dc394053e4feb"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/minimal-paper-acrylic-block-illustration/META.md",
+      "size": 3335,
+      "sha256": "04146c3df31ee9fde45879511dbe2b0f2762919f73bac548dbd4fb14ef76e79a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/minimal-paper-acrylic-block-illustration/STYLE.md",
+      "size": 5836,
+      "sha256": "083c2fbdc26e2ad1cd7a00ac4fc900ee027d864bae01bf8c56877fb7662dc01c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/minimal-public-space-photography/META.md",
+      "size": 2947,
+      "sha256": "38fbfdb1f2753c63ec8083db36d06799546f54340f0229f7a1a8d1fc9162032c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/minimal-public-space-photography/STYLE.md",
+      "size": 3033,
+      "sha256": "fe6c9372b4fcb051e04b0c2c1f9f9fcb966b0bf4e09380005def85f4ca741451"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/minimal-visual-metaphor/META.md",
+      "size": 3529,
+      "sha256": "85192e78b64bec351680d38914ac6157d109cfa7f75ea2af895ee9be36068050"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/minimal-visual-metaphor/STYLE.md",
+      "size": 5899,
+      "sha256": "1e04f3c8391cd1ac76814a0e24831461a8f1599a6e1ee1c48036c61879dd47cc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/osb-industrial-blue-line-metaphor/META.md",
+      "size": 3662,
+      "sha256": "d10d344ecea8e524853b96697096749627f1f8442dc9d1c9d6f86f1524399275"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/osb-industrial-blue-line-metaphor/STYLE.md",
+      "size": 6301,
+      "sha256": "0203a676b4e1ce1a1bf5b229b86223a14ef0884a291983610bf40eba414c6051"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/paper-emboss-deboss-cover/META.md",
+      "size": 3455,
+      "sha256": "8ec621bb7b91701a04fab37c83f4af37cff0e152bdf86c3c278cd71160b74632"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/paper-emboss-deboss-cover/STYLE.md",
+      "size": 9364,
+      "sha256": "a830e45daedcb20680bd670bd51c10bac5639f5119d50125190ee1f132442499"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/pixel-avatar/META.md",
+      "size": 771,
+      "sha256": "791f11b224e3e1c20655cc4fb94414e496c4ab2ea33abccfeed81fe00ebf03aa"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/pixel-avatar/STYLE.md",
+      "size": 3174,
+      "sha256": "07a3aafe16e69ceb755b4ed2ee7aafb845f298f2976264a15738b77cfec22e02"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/polaroid-keepsake/META.md",
+      "size": 970,
+      "sha256": "efd6307a93eb37712baa4f45cb60a977949396b1211cf7cf919eb30a8a2d4023"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/polaroid-keepsake/STYLE.md",
+      "size": 10272,
+      "sha256": "00e815d291334ddd236e287e5fdefe1f822d007e74944c65cbeaf716e6808cfb"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/research-journal-concept/META.md",
+      "size": 1971,
+      "sha256": "7c9e60c8c10a725d5cd0ec6c80e22258839fe360ae6cbad791ff90dd8b59148a"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/research-journal-concept/STYLE.md",
+      "size": 1931,
+      "sha256": "e73f332a3518619657e2a61a0d75f5c6093d0f4e9104720c09cd03fb9e3411a1"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/retro-diffuse-gradient/META.md",
+      "size": 2017,
+      "sha256": "1e210d636220840e1dc0ebb84e4826f56190db3f88dc238eabc36eb6c8cf3ef1"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/retro-diffuse-gradient/STYLE.md",
+      "size": 1714,
+      "sha256": "15bf54f38d530584489a6aa797d18e67360533fefa2a13821eb56d98ad83729c"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/retro-futurism/META.md",
+      "size": 5355,
+      "sha256": "63aa72dc103a30af42259c351e4efb907b8407b235062b353e8a9260871b4085"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/retro-futurism/STYLE.md",
+      "size": 8941,
+      "sha256": "b84e1d774280e4a78c28b5cda18561f9539c7ea0ee84fceaa4967af892f91078"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/retro-ink-dot-matrix-metaphor/META.md",
+      "size": 2933,
+      "sha256": "6e09ed2d5debff073c268d4cfaf570e64a7a75222b26d77db825b3a942e475dc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/retro-ink-dot-matrix-metaphor/STYLE.md",
+      "size": 4819,
+      "sha256": "6d28ffcde267008d017bf456eaf8cb5ef7736afc305c0d3edfbb90806a9f4aed"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/retro-japanese-sci-fi-anime-cover/META.md",
+      "size": 3113,
+      "sha256": "6e268317815dd0b34367aa7718988aa1e816180a19b1a1dbaf813623cf6222b6"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/retro-japanese-sci-fi-anime-cover/STYLE.md",
+      "size": 4528,
+      "sha256": "4a2367ad6c23267cf0955241b3d6eeceff0c1a5b07b578ad40a40eba6f25542b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/retro-torn-collage/META.md",
+      "size": 2019,
+      "sha256": "137c39a2c94b79f776c75d4f9f8c557e2f228ca53ca7fa60d49003b059775344"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/retro-torn-collage/STYLE.md",
+      "size": 1719,
+      "sha256": "2c3f09fdf3d8e79cdd9893d0f96af6eaff8bba544cec46ad8d40c5e12df88845"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/semantic-minimal-translation/META.md",
+      "size": 2008,
+      "sha256": "941f40b563b9effcf3309b4984349f27147a2dfad8da1f4d623a3156d245a2ce"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/semantic-minimal-translation/STYLE.md",
+      "size": 1906,
+      "sha256": "a3df8acfaaf1b23768d8197a5a8a97bacdcf9e82493d0d20be43104466f72a05"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/silver-foil-blue-minimal/META.md",
+      "size": 2801,
+      "sha256": "34ed2d54ad6810ad9e3012b306b0b72f0c372785fa4808d2c38cab29913dc461"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/silver-foil-blue-minimal/STYLE.md",
+      "size": 4195,
+      "sha256": "06e648e3347e221c893af9b1d8d0b27ccd402b114add0de1dedae7fb69540deb"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/surreal-pop-up-paper-landscape/META.md",
+      "size": 2698,
+      "sha256": "7956a7ebbacd5d193e0a9313275ebe15e52d0cfdcc08e7e9f9efbfe524e8e297"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/surreal-pop-up-paper-landscape/STYLE.md",
+      "size": 2972,
+      "sha256": "6f9c12e30ee7ed681d42903f563911ddb722387cf3300dfb96c5e687557597dc"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/surreal-pop-up-paper-landscape/references/before-after.md",
+      "size": 3673,
+      "sha256": "9bbe98354eafdd485c3f60e721646bdfe775ac38706add7b15736093a3fcbb9b"
+    },
+    {
+      "path": "cola-skills-bundle/deps/punk-cover/styles/surreal-pop-up-paper-landscape/references/final-artwork.md",
+      "size": 3691,
+      "sha256": "dfac86ca8590cfb821655df31acf94fd027a1daf0e9b91dc2fbde448f7a46174"
+    }
+  ],
+  "bundle": "cola-skills-bundle.zip",
+  "bundle_size_bytes": 18716008,
+  "bundle_sha256": "a3bcfcefb16ec9d04611786a9e602edbba0e7884bb414db26da2cc925fe0a0f7"
+}

@@ -1,0 +1,104 @@
+/* guochao | 国潮：米黄宣纸底、朱红明黄配靛青墨绿、粗宋标题、印章式标签、回纹饰带与祥云，喜庆有年味；适合节庆民俗、非遗、国货国潮品牌、城市文旅 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700;900&family=Noto+Sans+SC:wght@400;500;700;900&display=block');
+:root {
+  --font-head: 'Noto Serif SC', 'Songti SC', 'STSong', serif;
+  --font-body: 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --bg: #F6ECD8;
+  --ink: #2A1712;
+  --muted: #7A5F4E;
+  --rule: #C9AE86;
+  --rule-soft: #E6D6B8;
+  --fig-bg: #FFF8EA;
+  --card: #FFFBF2;
+  --on-acc: #FFF3DC;
+  --radius: 4px;
+  --radius-sm: 3px;
+  --panel-mix: 10%;
+  --sec-rule: 2px solid #2A1712;
+  --h2-ink: #2A1712;
+  --fig-border: 1px solid #D8C29C;
+  --card-shadow: 0 0 0 1px #E2CFAD;
+  --guard-bg: #2A1712;
+  --guard-ink: #FFF3DC;
+  --guard-muted: #C9AE86;
+  --guard-x: #F2B53A;
+  --gold: #E7A92A;
+  --gc-fret: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 24' width='36' height='24'%3E%3Cpath d='M0 21.5H36M4.5 21.5V3.5H31.5V16.5H10.5V9.5H24.5' fill='none' stroke='%23B01E17' stroke-width='3'/%3E%3C/svg%3E");
+  --gc-fret-gold: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 24' width='36' height='24'%3E%3Cpath d='M0 21.5H36M4.5 21.5V3.5H31.5V16.5H10.5V9.5H24.5' fill='none' stroke='%23D99A1E' stroke-width='3'/%3E%3C/svg%3E");
+  --gc-cloud: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 100'%3E%3Cpath d='M8 92H232M62 92A30 30 0 0 1 62 32A22.2 22.2 0 0 1 62 76.4A14.4 14.4 0 0 1 62 47.6A6.6 6.6 0 0 1 62 60.8M120 92A40 40 0 0 0 120 12A29.6 29.6 0 0 0 120 71.2A19.2 19.2 0 0 0 120 32.8A8.8 8.8 0 0 0 120 50.4M176 92A26 26 0 0 0 176 40A19.2 19.2 0 0 0 176 78.5A12.5 12.5 0 0 0 176 53.5A5.7 5.7 0 0 0 176 65' fill='none' stroke='%23D99A1E' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E");
+  --accent-1: #B01E17;
+  --accent-2: #1F3F7A;
+  --accent-3: #17513F;
+  --accent-4: #A2491B;
+  --accent-5: #6E2A5E;
+  --accent-6: #8A6A12;
+}
+/* 回纹 band along the bottom edge, 祥云 on the cover */
+.page, .card { isolation: isolate; }
+.page::after, .card::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 24px; z-index: -1;
+  background: var(--gc-fret) left bottom / 36px 24px repeat-x;
+}
+.card::after { height: 12px; background-size: 18px 12px; }
+.page::before, .c-cover::before {
+  content: ""; position: absolute; z-index: -1; right: 40px; top: 64px; width: 230px; height: 96px; opacity: .55;
+  background: var(--gc-cloud) center / contain no-repeat;
+}
+.c-cover::before { right: -18px; top: 46px; width: 190px; height: 80px; opacity: .45; }
+/* Titles: heavy Song with a gold underline on the key words */
+.pg-title, .cv-title { letter-spacing: .02em; }
+.pg-title b, .cv-title b, .end-h b, .pg-closing b {
+  color: #B01E17; background: linear-gradient(transparent 64%, color-mix(in srgb, var(--gold) 70%, transparent) 64% 92%, transparent 92%);
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+.pg-part { display: inline-block; background: var(--acc); color: var(--on-acc); padding: 3px 16px; border-radius: 3px; letter-spacing: .12em; margin-top: 14px; }
+.cv-kicker { display: inline-block; align-self: flex-start; background: #B01E17; color: #FFF3DC; padding: 1px 12px; border-radius: 3px; letter-spacing: .14em; }
+.cv-rule { width: 144px; height: 10px; margin: 18px 0 14px; background: var(--gc-fret-gold) left center / 15px 10px repeat-x; }
+/* Seal-style section labels */
+.sec-label { color: var(--acc-text); font-weight: 700; letter-spacing: .12em; }
+.card .sec-label {
+  background: var(--acc); color: var(--on-acc); border-radius: 3px; letter-spacing: .12em;
+  box-shadow: inset 0 0 0 2px var(--acc), inset 0 0 0 3px color-mix(in srgb, var(--gold) 80%, transparent);
+}
+.sec-h { position: relative; }
+/* Figure cards get corner brackets */
+.fig-card, .c-fig-card {
+  background:
+    linear-gradient(var(--acc), var(--acc)) left top / 16px 2px no-repeat,
+    linear-gradient(var(--acc), var(--acc)) left top / 2px 16px no-repeat,
+    linear-gradient(var(--acc), var(--acc)) right top / 16px 2px no-repeat,
+    linear-gradient(var(--acc), var(--acc)) right top / 2px 16px no-repeat,
+    linear-gradient(var(--acc), var(--acc)) left bottom / 16px 2px no-repeat,
+    linear-gradient(var(--acc), var(--acc)) left bottom / 2px 16px no-repeat,
+    linear-gradient(var(--acc), var(--acc)) right bottom / 16px 2px no-repeat,
+    linear-gradient(var(--acc), var(--acc)) right bottom / 2px 16px no-repeat,
+    var(--fig-bg);
+}
+.box { border-radius: 3px; }
+.hb-bar { border-radius: 0 3px 3px 0; }
+/* Takeaways in a double frame */
+.c-take, .sec-take { background: var(--fig-bg); border: 1.5px solid var(--acc); box-shadow: inset 0 0 0 3px var(--fig-bg), inset 0 0 0 4px color-mix(in srgb, var(--acc) 45%, transparent); }
+.c-take { border-radius: 3px; padding: 11px 16px; }
+.sec-take { display: inline-block; padding: 8px 16px; font-weight: 700; border-radius: 3px; }
+.panel { border: 1px solid color-mix(in srgb, var(--acc) 25%, transparent); }
+/* Checklists */
+.cl-card { border-top: 6px solid var(--acc); }
+.c-stage { border-left-width: 6px; }
+.c-guard, .cl-guard { background-image: linear-gradient(90deg, var(--gold), var(--gold)); background-size: 100% 3px; background-repeat: no-repeat; background-position: left top; }
+.end-cta { background: #B01E17; color: #FFE7B0; letter-spacing: .14em; box-shadow: inset 0 0 0 3px #B01E17, inset 0 0 0 4px var(--gold); }
+.pg-closing { border-top: 2px solid #2A1712; border-bottom: 2px solid #2A1712; }
+.pg-brand-name { color: #B01E17; }
+
+/* Cover: a gold sun behind the headline, a vermilion band edged with 回纹 */
+.cv-deco { right: -60px; top: -60px; width: 250px; height: 250px; }
+.cv-deco i:nth-child(1) { background: var(--gold); opacity: .32; }
+.cv-deco i:nth-child(2) { inset: 9%; border: 2px solid var(--gold); opacity: .7; }
+.cv-deco i:nth-child(3) { display: none; }
+.cv-band, .cv-hook .c-foot { background-color: #B01E17; color: #FFE7B0; }
+.cv-band { background-image: var(--gc-fret-gold); background-size: 15px 10px; background-repeat: repeat-x; background-position: left 8px; padding-top: 30px; }
+.cv-chips span { border-radius: 3px; border-width: 1px; }
+.card.c-quote { box-shadow: inset 0 0 0 10px var(--acc), inset 0 0 0 12px color-mix(in srgb, var(--gold) 80%, transparent); }
+.card.c-quote::after { display: none; }
+.cq-mark { color: var(--gold); opacity: 1; }
+.cv-vs-col { border-radius: 3px; }
+.cv-vs-mid { background: var(--gold); color: #2A1712; }

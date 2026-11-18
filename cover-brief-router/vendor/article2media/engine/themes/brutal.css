@@ -1,0 +1,74 @@
+/* brutal | 新粗野大字报：米黄底、粗黑描边与硬投影、高饱和撞色色块、超粗黑体，醒目抓眼、点击率高；适合教程攻略、避坑清单、反常识观点、工具推荐 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=block');
+:root {
+  --font-head: 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --font-body: var(--font-head);
+  --bg: #FFF3DC;
+  --ink: #111111;
+  --muted: #4B4B4B;
+  --rule: #111111;
+  --rule-soft: #E6D7BA;
+  --fig-bg: #FFFFFF;
+  --card: #FFFFFF;
+  --on-acc: #111111;
+  --radius: 6px;
+  --radius-sm: 4px;
+  --panel-mix: 32%;
+  --guard-bg: #111111;
+  --guard-ink: #FFFFFF;
+  --guard-muted: #BDBDBD;
+  --guard-x: #FF5C5C;
+  --sec-rule: 3px solid #111111;
+  --h2-ink: #111111;
+  --fig-border: 3px solid #111111;
+  --panel-border: 3px solid #111111;
+  --card-border: 2px solid #111111;
+  --card-shadow: 4px 4px 0 #111111;
+  /* Light accents are fills only; text and thin lines stay ink */
+  --acc-text-override: #111111;
+  --acc-line-override: #111111;
+  --accent-1: #FFD23F;
+  --accent-2: #FF7EB3;
+  --accent-3: #58A6FF;
+  --accent-4: #3DD68C;
+  --accent-5: #FF9F43;
+  --accent-6: #B794F6;
+}
+.fig-card, .panel, .c-fig-card { box-shadow: 5px 5px 0 #111111; }
+.box { border-width: 2px; box-shadow: 2px 2px 0 #111111; }
+.f-acc { stroke: #111111; stroke-width: 1.5px; }
+.hb-bar { border: 2px solid #111111; }
+.cmp-col { border-width: 2px; }
+/* Accent-colored words become marker highlights */
+.sec-take, .pg-part, .cv-title b, .end-h b, .ss-val, .c-take b {
+  background: var(--acc); padding: 0 .25em; box-decoration-break: clone; -webkit-box-decoration-break: clone;
+}
+.sec-take { display: inline; font-weight: 700; line-height: 2; }
+.pg-part { display: inline-block; border: 2px solid #111111; padding: 2px 10px; margin-top: 12px; }
+.ss-val { display: inline-block; }
+.sec-label { color: #111111; font-weight: 700; }
+.card .sec-label { border: 2px solid #111111; background: var(--acc); }
+.c-take { border: 3px solid #111111; background: color-mix(in srgb, var(--acc) 45%, #FFFFFF); box-shadow: 4px 4px 0 #111111; border-radius: var(--radius-sm); }
+.cl-card { border: 3px solid #111111; border-top: 10px solid var(--acc); box-shadow: 5px 5px 0 #111111; border-radius: var(--radius); }
+.c-stage { border: 2px solid #111111; border-left: 10px solid var(--acc); box-shadow: 3px 3px 0 #111111; border-radius: var(--radius-sm); }
+.cv-rule { background: #111111; }
+.end-cta { border: 3px solid #111111; box-shadow: 4px 4px 0 #111111; }
+.pg-title, .cv-title { letter-spacing: -.01em; }
+
+/* Cover: poster shapes with hard outlines, a ruled-off band */
+.cv-deco { right: -56px; top: -78px; width: 176px; height: 176px; }
+.wx-cover.wide .cv-deco { width: 330px; height: 330px; right: -50px; }
+.wx-cover.wide .cv-deco i:nth-child(2) { left: -4%; bottom: 4%; }
+.wx-cover.wide .cv-deco i:nth-child(3) { left: 4%; bottom: 62%; }
+.cv-deco i:nth-child(1) { border: 3px solid #111111; opacity: 1; background: var(--accent-2); box-shadow: 6px 6px 0 #111111; }
+.cv-deco i:nth-child(2) { inset: auto; left: -22%; bottom: 14%; width: 30%; height: 30%; border: 3px solid #111111; border-radius: 0; opacity: 1; background: var(--accent-3); transform: rotate(12deg); }
+.cv-deco i:nth-child(3) { left: -44%; bottom: 44%; width: 10%; height: 10%; background: #111111; }
+.cv-band { border-top: 4px solid #111111; }
+/* The marker block behind the key words needs room, or it covers the line above */
+.cv-hook .cv-title { line-height: 1.3; }
+.cv-chips span { border: 2px solid #111111; background: #FFFFFF; border-radius: 4px; box-shadow: 2px 2px 0 #111111; }
+.card.c-quote { border: 0; }
+.card.c-quote .cq-text { text-shadow: 3px 3px 0 #FFFFFF; }
+.cq-mark, .cv-qmark { opacity: 1; color: #111111; }
+.cv-vs-col { border: 3px solid #111111 !important; box-shadow: 5px 5px 0 #111111; }
+.cv-num b, .cn-num b { -webkit-text-stroke: 0; text-shadow: 5px 5px 0 var(--acc); }

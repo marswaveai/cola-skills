@@ -1,0 +1,57 @@
+/* quiet | 静线：暖纸底、暖黑字、全卡只有一种暗朱红、细线与大留白，图表和卡片都退到线框，像一本安静的读书杂志；适合哲思、单一观念、书与论文的深度解读 */
+@import url('https://cdn.jsdelivr.net/npm/@chinese-fonts/jhlst@3.0.0/dist/%E4%BA%AC%E8%8F%AF%E8%80%81%E5%AE%8B%E4%BD%93v2_002/result.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&display=block');
+:root {
+  --font-head: 'KingHwa_OldSong', 'Noto Serif SC', 'Songti SC', 'STSong', serif;
+  --font-body: 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', 'STSong', serif;
+  --font-label: 'Noto Serif SC', 'Songti SC', serif;
+  --bg: #FAF6EC;
+  --ink: #292621;
+  --ink-strong: #1E1B17;
+  --muted: #746F68;
+  --rule: #DED7CC;
+  --rule-soft: #EAE4D8;
+  --fig-bg: #F4EEE1;
+  --card: #FDFAF3;
+  --on-acc: #FDFAF3;
+  --radius: 0px;
+  --radius-sm: 0px;
+  --panel-mix: 7%;
+  --guard-bg: #2F2B25;
+  --guard-ink: #F3EEE3;
+  --guard-muted: #B5AC9D;
+  --guard-x: #D9826F;
+  /* One accent for the whole piece: it marks turns, control points and load-bearing numbers. */
+  --accent-1: #B6533F;
+  --accent-2: #B6533F;
+  --accent-3: #B6533F;
+  --w-title: 700;
+  --w-h2: 700;
+  --h2-ink: var(--ink);
+  --sec-rule: 1px solid var(--rule);
+  --fig-border: 1px solid var(--rule);
+  --card-border: 1px solid var(--rule);
+  --card-shadow: none;
+  --panel-border: 0;
+}
+/* Keep everything on lines: no filled chrome, accents only where the argument turns. */
+.sec-label { letter-spacing: .12em; }
+.sec-take { font-family: var(--font-head); color: var(--acc-text); padding-left: 14px; border-left: 2px solid var(--accent-1); }
+.c-take { font-family: var(--font-head); background: transparent; border-left: 2px solid var(--accent-1); }
+.box.hl { background: transparent; color: var(--acc-text); border-width: 1.6px; }
+.pg-closing { font-weight: 700; }
+
+/* Cover and full-card sentences stay on lines: one thin circle, a ruled deck, no filled color */
+.cv-deco i:nth-child(1), .cv-deco i:nth-child(3) { display: none; }
+.cv-deco i:nth-child(2) { inset: 0; border-width: 1px; opacity: .7; }
+.cv-band, .cv-hook .c-foot { background: transparent; color: var(--ink); }
+.cv-band { border-top: 1px solid var(--ink); margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
+.cv-band .cv-sub { font-family: var(--font-head); }
+.cv-chips span { border: 0; border-bottom: 1px solid var(--accent-1); border-radius: 0; padding: 0 0 1px; font-weight: 500; }
+.cv-hook .c-foot { color: var(--muted); }
+.card.c-quote { background: var(--bg); color: var(--ink); }
+.card.c-quote .c-top, .card.c-quote .c-foot { color: var(--muted); opacity: 1; }
+.card.c-quote .sec-label { color: var(--acc-text); border: 0; padding-left: 0; }
+.card.c-quote .cq-mark { color: var(--accent-1); opacity: 1; }
+.card.c-quote .cq { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.cv-vs-col.yes { background: transparent; color: var(--ink); border: 1.5px solid var(--accent-1); }

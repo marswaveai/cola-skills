@@ -1,9 +1,16 @@
 #!/usr/bin/env python3
 """Detect/install cover skills using only Python 3's standard library.
 
---check is strictly offline/read-only. Explicit --skills-dir isolates discovery
-unless --search-dir is supplied. No existing skill, asset or settings is edited.
-Resource checks certify packaged core files, not external runtimes/API access.
+The ten dependency skills ship inside this package, so the default path is
+fully offline: a bundled copy under vendor/<folder> is verified in place, or
+installed from vendor/cola-skills-bundle.zip. The pinned GitHub download stays
+as a last-resort fallback for a package whose vendor payload is missing.
+
+--check is strictly offline/read-only with respect to the skills directory
+(temporary extraction is only used to verify bundled files). Explicit
+--skills-dir isolates discovery unless --search-dir is supplied. No existing
+skill, asset or settings is edited. Resource checks certify packaged core
+files, not external runtimes/API access.
 """
 import argparse
 import ctypes
@@ -23,6 +30,13 @@ import zipfile
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = PACKAGE_ROOT / "references" / "dependencies.json"
+VENDOR_ROOT = PACKAGE_ROOT / "vendor"
+# One archive ships the same ten skills for package layouts that cannot carry
+# nested SKILL.md files (Skill Hub zips allow exactly one).
+VENDOR_BUNDLE = VENDOR_ROOT / "cola-skills-bundle.zip"
+BUNDLE_ROOT = "cola-skills-bundle"
+BUNDLE_PREFIX = "deps"
+BUNDLED_MESSAGE = "Bundled with this skill; no network required."
 USER_AGENT = "Mozilla/5.0 (compatible; CoverWorkflowDependencyInstaller/1.0)"
 MAX_DOWNLOAD = 128 * 1024 * 1024
 MAX_EXTRACTED = 512 * 1024 * 1024
@@ -108,6 +122,14 @@ def load_manifest(path=MANIFEST):
     return data["dependencies"]
 
 
+def parse_skill_name(text):
+    match = re.match(r"\A---\s*\r?\n(.*?)\r?\n---(?:\s|$)", text, re.S)
+    if not match:
+        return None
+    name = re.search(r"^name:[ \t]*(?:\"([^\"]+)\"|'([^']+)'|([^\s#]+))[ \t]*(?:#.*)?$", match.group(1), re.M)
+    return next((part for part in name.groups() if part), None) if name else None
+
+
 def skill_name(path):
     try:
         with (path / "SKILL.md").open(encoding="utf-8-sig") as stream:
@@ -126,11 +148,7 @@ def skill_name(path):
             text = "".join(lines)
     except (OSError, UnicodeError):
         return None
-    match = re.match(r"\A---\s*\r?\n(.*?)\r?\n---(?:\s|$)", text, re.S)
-    if not match:
-        return None
-    name = re.search(r"^name:[ \t]*(?:\"([^\"]+)\"|'([^']+)'|([^\s#]+))[ \t]*(?:#.*)?$", match.group(1), re.M)
-    return next((part for part in name.groups() if part), None) if name else None
+    return parse_skill_name(text)
 
 
 def read_disabled(settings_path):
@@ -281,6 +299,150 @@ def detect(dep, entries, disabled):
     return result(dep, "incomplete", entry["path"], missing_resources=missing,
                   resource_overrides=overrides, exists=True,
                   action="Existing folder was not changed. Restore its missing resources manually, or use another cover route. To install separately, choose a fresh --skills-dir.")
+
+
+_SHIPPED = {}
+
+
+def shipped_dependency(dep):
+    """True only for a manifest entry at its pinned commit.
+
+    Vendor/bundle copies are keyed by folder name, so a caller-supplied
+    dependency that merely reuses a folder name must never be served from the
+    shipped payload; it has to follow its own repo/ref.
+    """
+    key = (dep.get("repo"), dep.get("ref"), dep.get("folder"))
+    if "entries" not in _SHIPPED:
+        try:
+            _SHIPPED["entries"] = {(d["repo"], d["ref"], d["folder"]) for d in load_manifest()}
+        except (DependencyError, OSError, ValueError, KeyError, TypeError):
+            _SHIPPED["entries"] = set()
+    return key in _SHIPPED["entries"]
+
+
+def vendor_path(dep):
+    return VENDOR_ROOT / dep["folder"]
+
+
+def detect_bundled(dep, disabled):
+    """Tier 1: a verified copy shipped as vendor/<folder>."""
+    path = vendor_path(dep)
+    if not shipped_dependency(dep) or not path.is_dir():
+        return None
+    if identities(dep) & disabled:
+        return result(dep, "disabled", path,
+                      message="Disabled choice preserved; not installed, enabled or modified.")
+    missing, overrides = verify_resources(dep, path)
+    if missing:
+        return result(dep, "incomplete", path, exists=True, missing_resources=missing,
+                      resource_overrides=overrides,
+                      action="Bundled copy is incomplete; restore vendor/{}/ from the released package."
+                             .format(dep["folder"]))
+    return result(dep, "existing", path, resource_overrides=overrides, bundled=True,
+                  message=BUNDLED_MESSAGE)
+
+
+def bundle_entries(dep):
+    """Names of the bundled archive members that belong to one dependency."""
+    if not shipped_dependency(dep) or not VENDOR_BUNDLE.is_file():
+        return []
+    prefix = "{}/{}/{}/".format(BUNDLE_ROOT, BUNDLE_PREFIX, dep["folder"])
+    try:
+        with zipfile.ZipFile(VENDOR_BUNDLE) as archive:
+            return [name for name in archive.namelist() if name.startswith(prefix)]
+    except (OSError, zipfile.BadZipFile):
+        return []
+
+
+def extract_bundled(dep, destination):
+    """Extract one dependency out of the bundled archive and verify it."""
+    with zipfile.ZipFile(VENDOR_BUNDLE) as archive:
+        index = archive_index(archive)
+        extract_subtree(archive, index, "{}/{}".format(BUNDLE_PREFIX, dep["folder"]), destination)
+
+
+def check_bundled(dep):
+    """Offline verification of a bundled archive entry; reads the zip index only."""
+    return verify_bundled(dep)
+
+
+def install_bundled(dep, skills_dir):
+    """Install one dependency from the bundled archive; no network involved."""
+    target = skills_dir / dep["folder"]
+    if os.path.lexists(target):
+        raise FileExistsError("Destination exists: " + str(target))
+    skills_dir.mkdir(parents=True, exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix=".cover-dependency-stage-", dir=skills_dir) as stage:
+        staged = Path(stage) / dep["folder"]
+        staged.mkdir()
+        extract_bundled(dep, staged)
+        missing, _ = verify_resources(dep, staged, new=True)
+        if missing:
+            raise DependencyError("Bundled skill failed resource checks: " + "; ".join(missing))
+        atomic_no_replace(staged, target)
+    _, overrides = verify_resources(dep, target)
+    return result(dep, "installed", target, resource_overrides=overrides, bundled=True,
+                  message=BUNDLED_MESSAGE,
+                  source={"bundle": str(VENDOR_BUNDLE), "folder": dep["folder"]})
+
+
+def verify_bundled(dep):
+    """Verify one dependency inside vendor/cola-skills-bundle.zip without extracting.
+
+    Reads the archive member list only: required files, required_any groups, the
+    SKILL.md YAML name, the packaged style library and its catalog links.
+    """
+    prefix = "{}/{}/{}/".format(BUNDLE_ROOT, BUNDLE_PREFIX, dep["folder"])
+    if not shipped_dependency(dep):
+        return None
+    try:
+        with zipfile.ZipFile(VENDOR_BUNDLE) as archive:
+            members = {info.filename[len(prefix):]: info for info in archive.infolist()
+                       if info.filename.startswith(prefix) and not info.is_dir()}
+            if not members:
+                return None
+
+            def nonempty(relative):
+                info = members.get(relative)
+                return bool(info and info.file_size > 0)
+
+            def text_of(relative):
+                with archive.open(members[relative]) as stream:
+                    return stream.read().decode("utf-8", "replace")
+
+            missing = [value for value in dep.get("required", []) if not nonempty(value)]
+            for group in dep.get("required_any", []):
+                if not any(nonempty(value) for value in group):
+                    missing.append("one of: " + ", ".join(group))
+            name = parse_skill_name(text_of("SKILL.md")) if nonempty("SKILL.md") else None
+            if name not in identities(dep):
+                missing.append("SKILL.md YAML name must match " + dep["id"])
+            if dep.get("copy_resources"):
+                metas = sorted(value[:-len("/META.md")] for value in members
+                               if value.startswith("styles/") and value.endswith("/META.md")
+                               and value.count("/") == 2)
+                if not metas:
+                    missing.append("styles/*/META.md")
+                for style in metas:
+                    for filename in ("META.md", "STYLE.md"):
+                        if not nonempty(style + "/" + filename):
+                            missing.append(style + "/" + filename)
+                if nonempty("references/style-catalog.md"):
+                    links = set(re.findall(
+                        r"(?:\.\./)*styles/([a-z0-9-]+/(?:META\.md|STYLE\.md|references/[a-z0-9-]+\.md))",
+                        text_of("references/style-catalog.md")))
+                    for link in sorted(links):
+                        if not nonempty("styles/" + link):
+                            missing.append("styles/" + link)
+                for value in dep.get("patch_files", []):
+                    if nonempty(value) and "../../styles" in text_of(value):
+                        missing.append(value + " still refers outside the skill")
+            nested = sorted(value for value in members
+                            if value.endswith("SKILL.md") and value != "SKILL.md")
+            missing.extend("unexpected nested skill: " + value for value in nested)
+    except (OSError, zipfile.BadZipFile, KeyError, RuntimeError) as exc:
+        return ["bundled archive unreadable: {}".format(exc)]
+    return missing
 
 
 def download_archive(url, destination, timeout=30, attempts=2):
@@ -473,26 +635,47 @@ def run(dependencies, skills_dir, search_dirs=(), check=False, only=None,
     # Finish offline detection for every requested dependency before any download.
     pending = []
     for dep in selected:
+        bundled = detect_bundled(dep, disabled)
+        if bundled:
+            results.append(bundled)
+            continue
         found = detect(dep, entries, disabled)
         if found:
             results.append(found)
         elif check:
-            results.append(result(dep, "incomplete", skills_dir / dep["folder"], exists=False,
-                                  missing_resources=["skill not installed"],
-                                  action="Run again without --check to install this missing dependency."))
+            missing = check_bundled(dep)
+            if missing is None:
+                results.append(result(dep, "incomplete", skills_dir / dep["folder"], exists=False,
+                                      missing_resources=["skill not installed"],
+                                      action="Run again without --check to install this missing dependency."))
+            elif missing:
+                results.append(result(dep, "incomplete", VENDOR_BUNDLE, exists=False,
+                                      missing_resources=missing, bundled=True,
+                                      action="Bundled archive copy is incomplete; reinstall this skill from the released package."))
+            else:
+                results.append(result(dep, "existing", VENDOR_BUNDLE, bundled=True,
+                                      message=BUNDLED_MESSAGE,
+                                      action="Run without --check to install it from the bundled archive (no network)."))
         else:
             pending.append(dep)
     downloads = 0
     if pending:
         with tempfile.TemporaryDirectory(prefix="cover-dependency-cache-") as cache_dir:
-            cache = ArchiveCache(cache_dir, timeout, attempts, downloader)
+            cache = None
             for dep in pending:
                 try:
                     # Recheck preferences/paths between installs (including aliases).
                     disabled = expand_disabled(read_disabled(settings_path), dependencies)
                     entries = scan_skills(roots, disabled)
                     found = detect(dep, entries, disabled)
-                    results.append(found if found else install(dep, skills_dir, cache))
+                    if found:
+                        results.append(found)
+                    elif bundle_entries(dep):
+                        results.append(install_bundled(dep, skills_dir))
+                    else:
+                        if cache is None:
+                            cache = ArchiveCache(cache_dir, timeout, attempts, downloader)
+                        results.append(install(dep, skills_dir, cache))
                 except FileExistsError:
                     disabled = expand_disabled(read_disabled(settings_path), dependencies)
                     found = detect(dep, scan_skills(roots, disabled), disabled)
@@ -501,7 +684,7 @@ def run(dependencies, skills_dir, search_dirs=(), check=False, only=None,
                 except (DependencyError, OSError, ValueError, zipfile.BadZipFile, RuntimeError) as exc:
                     results.append(result(dep, "error", skills_dir / dep["folder"], message=str(exc),
                                           action="Use another cover route, fix the reported source/network issue, then retry this ID."))
-            downloads = cache.downloads
+            downloads = cache.downloads if cache else 0
     order = {dep["id"]: n for n, dep in enumerate(selected)}
     results.sort(key=lambda item: order[item["id"]])
     # Surface transitive skill needs without installing unrequested children.

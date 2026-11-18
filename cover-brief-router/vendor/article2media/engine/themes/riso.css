@@ -1,0 +1,83 @@
+/* riso | 孔版印刷：米色再生纸颗粒、荧光粉配孔版蓝、正片叠底的错位色块与套印标记，独立杂志感；适合设计、艺术、展览、摄影、创意灵感 */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Noto+Sans+SC:wght@400;500;700;900&display=block');
+:root {
+  --font-head: 'Bricolage Grotesque', 'Noto Sans SC', 'PingFang SC', sans-serif;
+  --font-body: 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  --bg: #F3EEE3;
+  --ink: #1D2A5C;
+  --muted: #5E6487;
+  --rule: #1D2A5C;
+  --rule-soft: #DCD3C2;
+  --fig-bg: #FAF7F0;
+  --card: #FAF7F0;
+  --on-acc: #FFFFFF;
+  --radius: 0px;
+  --radius-sm: 0px;
+  --panel-mix: 16%;
+  --sec-rule: 2px solid #1D2A5C;
+  --h2-ink: #1D2A5C;
+  --card-shadow: 0 0 0 1.5px #1D2A5C;
+  --guard-bg: #1D2A5C;
+  --guard-ink: #F3EEE3;
+  --guard-muted: #AEB3D3;
+  --guard-x: #FF6CBF;
+  --pink: #F0359A;
+  --blue: #0078BF;
+  --yellow: #FFE14D;
+  --rs-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.16 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --accent-1: #E8318F;
+  --accent-2: #0078BF;
+  --accent-3: #00935A;
+  --accent-4: #EE5A24;
+  --accent-5: #6C4BA6;
+  --accent-6: #0091A0;
+}
+/* Paper grain printed over everything; overlapping plates in the corner */
+.page, .card { isolation: isolate; }
+.page::after, .card::after {
+  content: ""; position: absolute; inset: 0; z-index: 3; pointer-events: none; mix-blend-mode: multiply;
+  background: var(--rs-grain) 0 0 / 220px 220px;
+}
+.page::before, .c-cover::before {
+  content: ""; position: absolute; z-index: -1; right: -70px; top: -90px; width: 260px; height: 260px; border-radius: 50%;
+  background: var(--pink); mix-blend-mode: multiply; opacity: .9; box-shadow: -110px 60px 0 -50px var(--blue);
+}
+.c-cover::before { right: -80px; top: -96px; width: 210px; height: 210px; box-shadow: -96px 70px 0 -46px var(--blue); }
+/* Page numbers sit on a paper chip so they stay readable over the plates */
+.pg-top span:last-child, .c-cover .c-top span:last-child { background: var(--bg); padding: 1px 8px; color: var(--ink); }
+/* Titles: pink plate with a blue plate printed slightly off-register */
+.pg-title, .cv-title { color: var(--pink); text-shadow: 3px 2px 0 color-mix(in srgb, var(--blue) 70%, transparent); letter-spacing: -.01em; }
+.pg-title b, .cv-title b, .end-h b {
+  color: var(--blue); text-shadow: none;
+  background: linear-gradient(transparent 58%, var(--yellow) 58% 90%, transparent 90%); -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+.sec-h, .card .sec-h { text-shadow: 2px 1.5px 0 color-mix(in srgb, var(--acc) 45%, transparent); }
+.pg-part { color: var(--ink); font-weight: 900; letter-spacing: .08em; }
+.pg-part::before { content: "No."; font-family: var(--font-head); color: var(--pink); margin-right: 8px; }
+.cv-kicker { display: inline-block; align-self: flex-start; background: var(--blue); color: #FFFFFF; padding: 2px 10px; transform: rotate(-2deg); letter-spacing: .1em; }
+.cv-rule { width: 180px; height: 10px; background: linear-gradient(90deg, var(--pink) 0 60%, var(--yellow) 60%); mix-blend-mode: multiply; }
+.sec-label { color: var(--ink); font-weight: 900; letter-spacing: .1em; }
+.card .sec-label { background: var(--acc); color: #FFFFFF; transform: rotate(-1.5deg); }
+/* Off-register color blocks behind cards instead of borders */
+.fig-card, .c-fig-card { box-shadow: 6px 6px 0 color-mix(in srgb, var(--acc) 60%, transparent); }
+.panel { box-shadow: 6px 6px 0 color-mix(in srgb, var(--acc) 35%, transparent); }
+.box { border-width: 1.5px; }
+.hb-bar { mix-blend-mode: multiply; }
+.ss-val { text-shadow: 2px 2px 0 color-mix(in srgb, var(--yellow) 90%, transparent); }
+/* Takeaways as a yellow plate */
+.c-take, .sec-take { background: color-mix(in srgb, var(--yellow) 80%, transparent); border-left: 0; color: var(--ink); font-weight: 900; box-shadow: 4px 4px 0 color-mix(in srgb, var(--acc) 50%, transparent); }
+.c-take { padding: 10px 14px; }
+.sec-take { display: inline; padding: 2px 6px; line-height: 2; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+/* Registration marks on the cover and end card */
+/* Registration mark on the end card */
+.c-end .c-foot::after { content: "⊕"; margin-left: auto; color: var(--pink); font-size: 14px; }
+/* Checklists */
+.cl-card { border-top: 8px solid var(--acc); box-shadow: 6px 6px 0 color-mix(in srgb, var(--acc) 35%, transparent); }
+.c-stage { border-left-width: 8px; box-shadow: 4px 4px 0 color-mix(in srgb, var(--acc) 35%, transparent); }
+.c-box, .cl-box { border-radius: 0; border-width: 2px; }
+.c-guard, .cl-guard { box-shadow: 6px 6px 0 color-mix(in srgb, var(--pink) 70%, transparent); }
+.end-cta { background: var(--pink); box-shadow: 4px 4px 0 var(--blue); letter-spacing: .08em; }
+.pg-closing { border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); font-family: var(--font-body); font-weight: 900; }
+.pg-closing b { background: color-mix(in srgb, var(--yellow) 85%, transparent); }
+.qt-text, .cl-title, .c-stage-h b, .c-guard-h, .end-h { font-family: var(--font-body); }
+.pg-brand-name { color: var(--pink); }
